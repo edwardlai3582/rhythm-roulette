@@ -35,9 +35,8 @@ import LoadingIndicator from 'components/LoadingIndicator';
 
 import styles from './styles.css';
 
-import FullSizeImgWithText from 'components/fullSizeImgWithText';
-import BG from './rr.jpg';
-import ARROW from './arrow-206-64.png';
+import FullSizeImgWithText from '../fullSizeImgWithText';
+
 
 export class HomePage extends React.Component {
   /**
@@ -93,7 +92,7 @@ export class HomePage extends React.Component {
         />
         <div>
                      
-        <FullSizeImgWithText src={BG} alt="rr" arrowsrc={ARROW} /> 
+        <FullSizeImgWithText /> 
                      
           <section className={`${styles.textSection} ${styles.centered}`}>
             <H2>

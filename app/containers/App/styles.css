@@ -1,9 +1,13 @@
 /* Global styles */
+html { 
+    height: 100%; 
+    width: 100%;
+    overflow:auto;
+}
 
-html,
-body {
-  height: 100%;
-  width: 100%;
+body { 
+
+    width: 100%;
 }
 
 body {
