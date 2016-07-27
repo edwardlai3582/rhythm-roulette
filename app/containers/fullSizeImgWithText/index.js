@@ -24,7 +24,7 @@ export class FullSizeImgWithText extends React.Component { // eslint-disable-lin
             if (y >= domHeight) {
               clearInterval(id);
             } else {
-              y+= 10; 
+              y+= 15; 
               window.scrollTo(0,y);
             }
         }
@@ -34,14 +34,12 @@ export class FullSizeImgWithText extends React.Component { // eslint-disable-lin
         return (
             <section className={styles.imgWrapper} ref="myText">  
                 <img src={BG} alt='RHYTHM ROULETTE' className={styles.bg} />
-                <div className={styles.arrowWrapper} > 
-                    <img src={ARROW} alt="scroll down" className={styles.arrow} onClick={this.goDown} />
-                </div> 
+                <img src={ARROW} alt="scroll down" className={styles.arrow} onClick={this.goDown} />
             </section>
         );
     }
 }
-
+//<div className={styles.arrowWrapper} >  </div> 
 FullSizeImgWithText.propTypes = {
     
 };

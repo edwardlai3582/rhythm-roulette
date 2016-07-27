@@ -96,11 +96,12 @@ export class HomePage extends React.Component {
                      
           <section className={`${styles.textSection} ${styles.centered}`}>
             <H2>
-              <FormattedMessage {...messages.startProjectHeader} />
+              How to Rhythm Roulette?
             </H2>
-            <p>
-              <FormattedMessage {...messages.startProjectMessage} />
-            </p>
+            <p> 1. Find record store </p>
+            <p> 2. Blind-fold producer </p>
+            <p> 3. Pick 3 random records </p>
+            <p> 4. Make a beat by sampling </p>
           </section>
           <section className={styles.textSection}>
             <H2>

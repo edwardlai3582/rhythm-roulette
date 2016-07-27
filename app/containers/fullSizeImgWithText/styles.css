@@ -9,20 +9,21 @@
     position: relative;
 }
 
-.arrowWrapper{
+.arrow{
+    width: 40px;
+    max-width: 40px;
     z-index: 2;
     position: absolute;
+    left: calc( 50% - 20px );
     bottom: 0px;
     margin: 0 0 15px 0;
-    left: calc( 50% - 32px );
     cursor: pointer;
 }
 
-.arrowWrapper:hover{
+.arrow:hover{
     filter: brightness(75%);
     -webkit-filter: brightness(75%);
 }
-
 
 @media screen and (max-width: 1523px){
         
