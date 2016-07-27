@@ -1,0 +1,62 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(./digital-7.ttf);
+}
+
+.HowToSection{
+    position: relative;
+    background-size: cover;  
+    color: white;
+    width: 100%;
+    height: 48vw;
+}
+
+.HowToSection p{
+    margin: 0;
+    padding: 0;
+}
+
+.HowToDisplay{
+    position: absolute;
+    left: 29.5vw;
+    top: 9vw;
+    font-size: 3.6vw;
+    width: 42vw;
+    font-family: myFirstFont;
+    transform: rotate(1deg);
+    display: flex;
+    
+}
+
+.HowToText{
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 0 5vw;
+    font-size: 10vw;
+    line-height: normal;
+}
+
+.HowToButton{
+    position: absolute;
+    bottom: 3vw;
+    right: 0;
+    margin: 0 5vw 0 0;
+    font-size: 5vw;
+}
+
+.HowToButton > button{
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    margin-left:1vw;
+    width: 5vw;
+    height: 5vw;
+    font-size: 4vw;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.HowToButton > button.current{
+    background-color: teal;
+    color: white;
+}

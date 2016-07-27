@@ -35,7 +35,8 @@ import LoadingIndicator from 'components/LoadingIndicator';
 
 import styles from './styles.css';
 
-import FullSizeImgWithText from '../fullSizeImgWithText';
+import FullSizeImgWithText from 'components/fullSizeImgWithText';
+import HowTo from 'components/HowTo';
 
 
 export class HomePage extends React.Component {
@@ -92,7 +93,8 @@ export class HomePage extends React.Component {
         />
         <div>
                      
-        <FullSizeImgWithText /> 
+        <FullSizeImgWithText />
+        <HowTo />
                      
           <section className={`${styles.textSection} ${styles.centered}`}>
             <H2>

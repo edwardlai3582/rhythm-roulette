@@ -1,6 +1,7 @@
 .imgWrapper{
     width: 100%;
     position: relative;
+    margin: 0;
 }
 
 .bg{
@@ -22,7 +23,6 @@
 
 .arrow:hover{
     filter: brightness(75%);
-    -webkit-filter: brightness(75%);
 }
 
 @media screen and (max-width: 1523px){

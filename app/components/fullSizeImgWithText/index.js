@@ -6,8 +6,6 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { connect } from 'react-redux';
-import { createSelector } from 'reselect';
 
 import styles from './styles.css';
 
@@ -19,12 +17,12 @@ export class FullSizeImgWithText extends React.Component { // eslint-disable-lin
     goDown = () => {
         let domHeight = ReactDOM.findDOMNode(this).clientHeight;
         let y = window.scrollY;
-        let id = setInterval(frame, 10);
+        let id = setInterval(frame, 1);
         function frame() {
             if (y >= domHeight) {
               clearInterval(id);
             } else {
-              y+= 15; 
+              y+= 5; 
               window.scrollTo(0,y);
             }
         }
@@ -39,19 +37,5 @@ export class FullSizeImgWithText extends React.Component { // eslint-disable-lin
         );
     }
 }
-//<div className={styles.arrowWrapper} >  </div> 
-FullSizeImgWithText.propTypes = {
-    
-};
 
-const mapStateToProps = createSelector(
-    
-);
-
-function mapDispatchToProps(dispatch) {
-  return {
-    dispatch,
-  };
-}
-
-export default connect(null, null)(FullSizeImgWithText);
+export default FullSizeImgWithText;
