@@ -49,9 +49,12 @@
     margin-left:1vw;
     width: 5vw;
     height: 5vw;
-    font-size: 4vw;
+    font-size: 4.5vw;
     cursor: pointer;
     font-weight: bold;
+    font-family: 'Exo';
+    text-align: center;
+    line-height: 5vw;
 }
 
 .HowToButton > button.current{

@@ -10,6 +10,7 @@ import ReactDOM from 'react-dom';
 import styles from './styles.css';
 
 import BG from './rr.jpg';
+import BGVIDEO from './rropening.mp4';
 import ARROW from './arrow-206-64.png';
 
 export class FullSizeImgWithText extends React.Component { // eslint-disable-line
@@ -29,9 +30,12 @@ export class FullSizeImgWithText extends React.Component { // eslint-disable-lin
     };
 
     render() {
+        //<img src={BG} alt='RHYTHM ROULETTE' className={styles.bg} />
         return (
             <section className={styles.imgWrapper} ref="myText">  
-                <img src={BG} alt='RHYTHM ROULETTE' className={styles.bg} />
+                <video loop autoPlay="autoplay" poster={BG}  className={styles.bg}>
+                  <source  type="video/mp4" />
+                </video>
                 <img src={ARROW} alt="scroll down" className={styles.arrow} onClick={this.goDown} />
             </section>
         );
