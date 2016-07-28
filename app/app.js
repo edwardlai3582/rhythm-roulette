@@ -29,13 +29,15 @@ import LanguageProvider from 'containers/LanguageProvider';
 // Observe loading of Open Sans (to remove open sans, remove the <link> tag in
 // the index.html file and this observer)
 import styles from 'containers/App/styles.css';
-const openSansObserver = new FontFaceObserver('Open Sans', {});
+const openSansObserver = new FontFaceObserver('Aref Ruqaa');
 
 // When Open Sans is loaded, add a font-family using Open Sans to the body
 openSansObserver.load().then(() => {
-  document.body.classList.add(styles.fontLoaded);
+    console.log('Font is available');
+    document.body.classList.add(styles.fontLoaded);
 }, () => {
-  document.body.classList.remove(styles.fontLoaded);
+    console.log('Font fail');
+    document.body.classList.remove(styles.fontLoaded);
 });
 
 // Import i18n messages
