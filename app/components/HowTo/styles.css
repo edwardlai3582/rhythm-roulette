@@ -1,3 +1,4 @@
+@font-face { font-family: digital7; src: url(digital-7.ttf); }
 
 .HowToSection{
     position: relative;
@@ -18,11 +19,12 @@
     top: 9vw;
     font-size: 3.6vw;
     width: 42vw;
-    font-family: 'myDigiFont';
     transform: rotate(1deg);
     display: flex;
-    font-family: 'Aref Ruqaa', sans-serif;
-    /*font-family: 'Exo', sans-serif;'Digital7'*/
+    font-family: digital7, sans-serif;
+}
+.HowToDisplay p{
+    font-family: digital7, sans-serif;
 }
 
 .HowToText{

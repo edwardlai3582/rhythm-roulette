@@ -29,7 +29,7 @@ import LanguageProvider from 'containers/LanguageProvider';
 // Observe loading of Open Sans (to remove open sans, remove the <link> tag in
 // the index.html file and this observer)
 import styles from 'containers/App/styles.css';
-const openSansObserver = new FontFaceObserver('Aref Ruqaa');
+const openSansObserver = new FontFaceObserver('digital7');
 
 // When Open Sans is loaded, add a font-family using Open Sans to the body
 openSansObserver.load().then(() => {

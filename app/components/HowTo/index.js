@@ -32,14 +32,11 @@ export class HowTo extends React.Component { // eslint-disable-line
         let step3 = this.state.currentStep == 2 ? styles.current : '';
         let step4 = this.state.currentStep == 3 ? styles.current : '';
         
-        let digiFont = "@font-face { font-family: digital7; src: url(http://edwardlai3582.com/digital-7.ttf); }"
-        
         return (
             <section className={styles.HowToSection} style={{backgroundImage: 'url(' + MPC + ')',}}>
-                <style>{ digiFont }</style>
                 <div className={styles.HowToDisplay}>
-                    <p className={styles.stepOrder}  style={{fontFamily: 'digital7'}}> 00{this.state.currentStep+1}: &nbsp;</p>
-                    <p style={{fontFamily: 'digital7'}}> {this.state.steps[this.state.currentStep]} </p>
+                    <p className={styles.stepOrder} > 00{this.state.currentStep+1}: &nbsp;</p>
+                    <p > {this.state.steps[this.state.currentStep]} </p>
                 </div>
                 <div className={styles.HowToText}>
                     <p>How to?</p>
