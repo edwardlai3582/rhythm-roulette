@@ -2,7 +2,7 @@
     "rhythmroulettes": [
       {
             "name":"Brasstracks",
-            "photo": "Brasstracks.jpg",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Brasstracks.jpg?alt=media&token=71ee6f2c-941f-4aa6-a170-260cd55edba5",
             "date": "1469126021",
             "youtubeLink": "https://www.youtube.com/watch?v=Nj5bdyqYCN0",
             "shop": "Norman’s Sound & Vision",
@@ -23,7 +23,7 @@
         },
         {
             "name":"MeLo-X",
-            "photo": "MeLo-X.jpg",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/MeLo-X.jpg?alt=media&token=9389a44e-c0a6-47aa-83a4-a6adec835d13",
             "date": "1468523287",
             "youtubeLink": "https://www.youtube.com/watch?v=M4WyOKU_hWI",
             "shop": "JW Records",
@@ -44,7 +44,7 @@
         },
         {
             "name":"DJ Dahi",
-            "photo": "DJ-Dahi.jpg",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DJ-Dahi.jpg?alt=media&token=0c4b49c5-03c7-456c-a0f9-0e6cb5068d1b",
             "date": "1466708887",
             "youtubeLink": "https://www.youtube.com/watch?v=-DEGJMQxPR4",
             "shop": "Amoeba music",
@@ -65,7 +65,7 @@
         },
         {
             "name":"Dot Da Genius",
-            "photo": "DotDaGenius.jpg",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DotDaGenius.jpg?alt=media&token=e53c77cb-3bfb-4956-9e78-6f01ed4d4550",
             "date": "1465499287",
             "youtubeLink": "https://www.youtube.com/watch?v=RapBG3Erq5I",
             "shop": "Academy Records",

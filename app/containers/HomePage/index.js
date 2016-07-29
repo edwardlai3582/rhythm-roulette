@@ -38,7 +38,7 @@ import styles from './styles.css';
 
 import FullSizeImgWithText from 'components/fullSizeImgWithText';
 import HowTo from 'components/HowTo';
-
+import ProducerList from 'components/ProducerList';
 
 export class HomePage extends React.Component {
   /**
@@ -85,12 +85,7 @@ export class HomePage extends React.Component {
     } else if (this.props.repos !== false) {
       mainContent = (<List items={this.props.repos} component={RepoListItem} />);
     }
-
-    let content = (<div>nothing</div>); 
-    if (this.props.rrs !== false) {
-        //content = this.props.rrs.map((rr, index) => ());
-         content = (<div>qq</div>); 
-    }            
+          
                      
     return (
       <article>
@@ -114,9 +109,9 @@ export class HomePage extends React.Component {
             <p> 3. Pick 3 random records </p>
             <p> 4. Make a beat by sampling </p>
           </section>
-<div>
-{content}
-</div>  
+
+            <ProducerList rrs={this.props.rrs} />
+
           <section className={styles.textSection}>
             <H2>
               <FormattedMessage {...messages.trymeHeader} />

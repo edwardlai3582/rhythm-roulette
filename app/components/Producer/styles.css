@@ -1,0 +1,15 @@
+.wrapperA{
+    width: 20vw;
+    text-align: center;
+    background-color: white;
+}
+
+.producerImgWrapper{
+    position: relative;
+    width: 20vw;
+}
+
+.producerImg{
+    width: 20vw;
+    height: 20vw;
+}
