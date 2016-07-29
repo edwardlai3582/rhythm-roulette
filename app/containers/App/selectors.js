@@ -26,6 +26,11 @@ const selectRepos = () => createSelector(
   (globalState) => globalState.getIn(['userData', 'repositories'])
 );
 
+const selectRrs = () => createSelector(
+  selectGlobal(),
+  (globalState) => globalState.getIn(['rrData', 'rhythmroulettes'])
+);
+
 const selectLocationState = () => {
   let prevRoutingState;
   let prevRoutingStateJS;
@@ -49,4 +54,5 @@ export {
   selectError,
   selectRepos,
   selectLocationState,
+      selectRrs
 };

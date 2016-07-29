@@ -16,6 +16,7 @@ import {
   selectRepos,
   selectLoading,
   selectError,
+    selectRrs
 } from 'containers/App/selectors';
 
 import {
@@ -23,7 +24,7 @@ import {
 } from './selectors';
 
 import { changeUsername } from './actions';
-import { loadRepos } from '../App/actions';
+import { loadRepos, loadRrs } from '../App/actions';
 
 import { FormattedMessage } from 'react-intl';
 import RepoListItem from 'containers/RepoListItem';
@@ -47,7 +48,9 @@ export class HomePage extends React.Component {
     if (this.props.username && this.props.username.trim().length > 0) {
       this.props.onSubmitForm();
     }
+    this.props.searchRrs();  
   }
+    
   /**
    * Changes the route
    *
@@ -83,6 +86,12 @@ export class HomePage extends React.Component {
       mainContent = (<List items={this.props.repos} component={RepoListItem} />);
     }
 
+    let content = (<div>nothing</div>); 
+    if (this.props.rrs !== false) {
+        //content = this.props.rrs.map((rr, index) => ());
+         content = (<div>qq</div>); 
+    }            
+                     
     return (
       <article>
         <Helmet
@@ -95,7 +104,7 @@ export class HomePage extends React.Component {
                      
         <FullSizeImgWithText />
         <HowTo />
-                     
+                   
           <section className={`${styles.textSection} ${styles.centered}`}>
             <H2>
               How to Rhythm Roulette?
@@ -105,6 +114,9 @@ export class HomePage extends React.Component {
             <p> 3. Pick 3 random records </p>
             <p> 4. Make a beat by sampling </p>
           </section>
+<div>
+{content}
+</div>  
           <section className={styles.textSection}>
             <H2>
               <FormattedMessage {...messages.trymeHeader} />
@@ -161,6 +173,8 @@ function mapDispatchToProps(dispatch) {
       dispatch(loadRepos());
     },
 
+    searchRrs: () => dispatch(loadRrs()),
+
     dispatch,
   };
 }
@@ -170,6 +184,7 @@ const mapStateToProps = createStructuredSelector({
   username: selectUsername(),
   loading: selectLoading(),
   error: selectError(),
+  rrs: selectRrs(),
 });
 
 // Wrap the component to inject dispatch and state into it

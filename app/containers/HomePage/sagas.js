@@ -4,11 +4,14 @@
 
 import { take, call, put, select, fork, cancel } from 'redux-saga/effects';
 import { LOCATION_CHANGE } from 'react-router-redux';
-import { LOAD_REPOS } from 'containers/App/constants';
-import { reposLoaded, repoLoadingError } from 'containers/App/actions';
+import { LOAD_REPOS, LOAD_RRS } from 'containers/App/constants';
+import { reposLoaded, repoLoadingError, rrsLoaded, rrsLoadingError } from 'containers/App/actions';
 
 import request from 'utils/request';
 import { selectUsername } from 'containers/HomePage/selectors';
+
+import customData from './data.json';
+
 
 /**
  * Github repos request/response handler
@@ -49,7 +52,51 @@ export function* githubData() {
   yield cancel(watcher);
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * Github repos request/response handler
+ */
+export function* getRrs() {
+  /*    
+  const requestURL = "./data.json";
+  const rrs = yield call(request, requestURL);
+
+  if (!rrs.err) {
+    yield put(rrsLoaded(rrs.data));
+  } else {
+    yield put(rrsLoadingError(rrs.err));
+  }
+  */
+  console.log(customData);    
+  yield put(rrsLoaded(customData));    
+}
+
+/**
+ * Watches for LOAD_REPOS action and calls handler
+ */
+export function* getRrsWatcher() {
+  while (yield take(LOAD_RRS)) {
+    yield call(getRrs);
+  }
+}
+
+/**
+ * Root saga manages watcher lifecycle
+ */
+export function* rrsData() {
+  // Fork watcher so we can continue execution
+  const watcher = yield fork(getRrsWatcher);
+
+  // Suspend execution until location changes
+  yield take(LOCATION_CHANGE);
+  yield cancel(watcher);
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
 // Bootstrap sagas
 export default [
   githubData,
+  rrsData    
 ];

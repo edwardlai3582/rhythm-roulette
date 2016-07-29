@@ -12,3 +12,7 @@
 export const LOAD_REPOS = 'boilerplate/App/LOAD_REPOS';
 export const LOAD_REPOS_SUCCESS = 'boilerplate/App/LOAD_REPOS_SUCCESS';
 export const LOAD_REPOS_ERROR = 'boilerplate/App/LOAD_REPOS_ERROR';
+////
+export const LOAD_RRS = 'boilerplate/App/LOAD_RRS';
+export const LOAD_RRS_SUCCESS = 'boilerplate/App/LOAD_RRS_SUCCESS';
+export const LOAD_RRS_ERROR = 'boilerplate/App/LOAD_RRS_ERROR';
