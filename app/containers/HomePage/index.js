@@ -99,7 +99,8 @@ export class HomePage extends React.Component {
                      
         <FullSizeImgWithText />
         <HowTo />
-                   
+        <ProducerList rrs={this.props.rrs} />
+                     
           <section className={`${styles.textSection} ${styles.centered}`}>
             <H2>
               How to Rhythm Roulette?
@@ -110,7 +111,7 @@ export class HomePage extends React.Component {
             <p> 4. Make a beat by sampling </p>
           </section>
 
-            <ProducerList rrs={this.props.rrs} />
+           
 
           <section className={styles.textSection}>
             <H2>

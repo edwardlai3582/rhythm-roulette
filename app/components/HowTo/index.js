@@ -22,7 +22,6 @@ export class HowTo extends React.Component { // eslint-disable-line
     }
 
     nextStep = (step) => {
-        //this.state.currentStep+1>=4?this.setState({currentStep: 0}):this.setState({currentStep: this.state.currentStep+1});
         this.setState({currentStep: step});
     };
 

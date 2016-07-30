@@ -1,6 +1,27 @@
 {
     "rhythmroulettes": [
       {
+            "name":"The 45 King",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/45-king.jpg?alt=media&token=3a019c5d-6d52-4b6d-b26c-a4d38161ffd6",
+            "date": "1469770485",
+            "youtubeLink": "https://www.youtube.com/watch?v=7vpgCapG6lg",
+            "shop": "Scotti's Record Shops",
+            "record": [
+                {
+                    "artist": "Courtney Pine",
+                    "album": "Journey to the Urge Within"
+                },
+                {
+                    "artist": "Weather Report",
+                    "album": "Mysterious Traveller"    
+                },
+                {
+                    "artist": "Sonny & Brownie",
+                    "album": "Sonny & Brownie"    
+                }
+            ]
+        },        
+      {
             "name":"Brasstracks",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Brasstracks.jpg?alt=media&token=71ee6f2c-941f-4aa6-a170-260cd55edba5",
             "date": "1469126021",

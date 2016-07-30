@@ -16,9 +16,12 @@ function ProducerList(props) {
   }
 
   return (
-    <div className={styles.ProducerlistWrapper}>
-        {content}
-    </div>
+    <section className={styles.ProducerlistWrapper}>
+        <h2>Producers</h2>
+        <div className={styles.ProducerItemsWrapper}>
+            {content}
+        </div>
+    </section>
   );
 }
 
