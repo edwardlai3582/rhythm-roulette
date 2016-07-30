@@ -17,7 +17,7 @@ function ProducerList(props) {
 
   return (
     <section className={styles.ProducerlistWrapper}>
-        <h2>Producers</h2>
+        <h2>EPISODES</h2>
         <div className={styles.ProducerItemsWrapper}>
             {content}
         </div>
