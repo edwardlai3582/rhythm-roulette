@@ -13,49 +13,37 @@ import Helmet from 'react-helmet';
 import { createStructuredSelector } from 'reselect';
 
 import {
-  selectLoading,
-  selectError,
     selectEp
 } from 'containers/App/selectors';
 
 import { loadEp } from '../App/actions';
 
 
-
-import List from 'components/List';
-import ListItem from 'components/ListItem';
 import LoadingIndicator from 'components/LoadingIndicator';
 
 import styles from './styles.css';
 
-
 export class EpPage extends React.Component {
-  /**
-   * when initial state username is not null, submit the form to load repos
-   */
-  componentDidMount() {
-    //this.props.searchRrs();  
-  }
-    
 
+    componentDidMount() {
+        //this.props.searchRrs();  
+    }
 
-  render() {
-          
-                     
-    return (
-      <article>
-        <Helmet
-          title="Ep Page"
-          meta={[
-            { name: 'description', content: 'A React.js Boilerplate application homepage' },
-          ]}
-        />
-        <div>
-           qq
-         </div>
-      </article>
-    );
-  }
+    render() {
+        return (
+            <article>
+                <Helmet
+                    title="Ep Page"
+                    meta={[
+                    { name: 'description', content: 'A React.js Boilerplate application homepage' },
+                    ]}
+                />
+                <div>
+                    qq
+                </div>
+            </article>
+        );
+    }
 }
 
 EpPage.propTypes = {
@@ -78,8 +66,6 @@ function mapDispatchToProps(dispatch) {
 }
 
 const mapStateToProps = createStructuredSelector({
-  loading: selectLoading(),
-  error: selectError(),
   ep: selectEp(),
 });
 

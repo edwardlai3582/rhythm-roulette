@@ -9,28 +9,27 @@
  * case YOUR_ACTION_CONSTANT:
  *   return state.set('yourStateVariable', true);
  */
-/*
-    import {
-      CHANGE_USERNAME,
-    } from './constants';
-    import { fromJS } from 'immutable';
 
-    // The initial state of the App
-    const initialState = fromJS({
-      username: '',
-    });
+import {
+    CHANGE_EP,
+} from './constants';
+import { fromJS } from 'immutable';
 
-    function homeReducer(state = initialState, action) {
-      switch (action.type) {
-        case CHANGE_USERNAME:
-          // console.log("user name change to: "+action.name);
-          // Delete prefixed '@' from the github username
-          return state
-            .set('username', action.name.replace(/@/gi, ''));
+// The initial state of the App
+const initialState = fromJS({
+    ep: {},
+});
+
+function epReducer(state = initialState, action) {
+    switch (action.type) {
+        case CHANGE_EP:
+            // console.log("user name change to: "+action.name);
+            // Delete prefixed '@' from the github username
+            return state;
+                    //.set('username', action.name.replace(/@/gi, ''));
         default:
-          return state;
-      }
+            return state;
     }
+}
 
-    export default homeReducer;
-*/
+export default epReducer;

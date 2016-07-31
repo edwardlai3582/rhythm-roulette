@@ -14,11 +14,11 @@
  *        return { type: YOUR_ACTION_CONSTANT, var: var }
  *    }
  */
-/*
+
 import {
-  CHANGE_USERNAME,
+  CHANGE_EP,
 } from './constants';
-*/
+
 /**
  * Changes the input field of the form
  *
@@ -26,11 +26,11 @@ import {
  *
  * @return {object}    An action object with a type of CHANGE_USERNAME
  */
-/*
-export function changeUsername(name) {
+
+export function changeEp(nme) {
   return {
-    type: CHANGE_USERNAME,
+    type: CHANGE_EP,
     name,
   };
 }
-*/
+

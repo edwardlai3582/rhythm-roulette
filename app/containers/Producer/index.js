@@ -25,7 +25,7 @@ export class Producer extends React.Component {
 //onClick={this.openRoute.bind(this,'/ep')}
   render() {
     return (
-        <Link className={styles.wrapperA}  to={"/ep/"+this.props.name}>
+        <Link className={styles.wrapperA}  to={"/ep/"+this.props.name.replace(/\s/gi, '_')}>
             <div className={styles.producerImgWrapper}>
                 <img src={this.props.photo} alt={this.props.name} className={styles.producerImg} />
             </div>
