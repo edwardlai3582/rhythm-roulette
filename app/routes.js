@@ -46,7 +46,38 @@ export default function createRoutes(store) {
           .then(loadModule(cb))
           .catch(errorLoading);
       },
-    }, {
+    }, 
+    ///*  
+    {
+      path: '/ep/:name',
+      name: 'ep',
+      getComponent(nextState, cb) {
+        /*  
+        const importModules = Promise.all([
+          System.import('containers/EpPage/reducer'),
+          System.import('containers/EpPage/sagas'),
+          System.import('containers/EpPage'),
+        ]);
+
+        const renderRoute = loadModule(cb);
+
+        importModules.then(([reducer, sagas, component]) => {
+          injectReducer('ep', reducer.default);
+          injectSagas(sagas.default);
+
+          renderRoute(component);
+        });
+
+        importModules.catch(errorLoading);
+        */
+          
+          System.import('containers/EpPage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, 
+    //*/
+    {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {

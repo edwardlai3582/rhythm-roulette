@@ -1,0 +1,33 @@
+.wrapperA{
+    position: relative;
+    width: 25%;
+    text-align: center;
+    font-size: 3vw;
+    background-color: white;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrapperA:hover{
+    background-color: darkgrey;
+}
+
+.wrapperA:hover  .producerImg{
+    background-color: darkgrey;
+    filter: none;
+}
+
+.producerImgWrapper{
+    position: relative;
+    width: 100%;
+}
+
+.producerImg{
+    width: 100%;
+    height: 25vw;
+    filter:grayscale(0.5) sepia(0.5);;
+}

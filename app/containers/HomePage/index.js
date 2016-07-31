@@ -13,7 +13,6 @@ import messages from './messages';
 import { createStructuredSelector } from 'reselect';
 
 import {
-  selectRepos,
   selectLoading,
   selectError,
     selectRrs
@@ -24,10 +23,10 @@ import {
 } from './selectors';
 
 import { changeUsername } from './actions';
-import { loadRepos, loadRrs } from '../App/actions';
+import { loadRrs } from '../App/actions';
 
 import { FormattedMessage } from 'react-intl';
-import RepoListItem from 'containers/RepoListItem';
+
 import Button from 'components/Button';
 import H2 from 'components/H2';
 import List from 'components/List';
@@ -38,7 +37,8 @@ import styles from './styles.css';
 
 import FullSizeImgWithText from 'components/fullSizeImgWithText';
 import HowTo from 'components/HowTo';
-import ProducerList from 'components/ProducerList';
+
+import Producer from 'containers/Producer';
 
 export class HomePage extends React.Component {
   /**
@@ -68,24 +68,16 @@ export class HomePage extends React.Component {
   };
 
   render() {
-    let mainContent = null;
 
-    // Show a loading indicator when we're loading
-    if (this.props.loading) {
-      mainContent = (<List component={LoadingIndicator} />);
 
-    // Show an error if there is one
-    } else if (this.props.error !== false) {
-      const ErrorComponent = () => (
-        <ListItem item={'Something went wrong, please try again!'} />
-      );
-      mainContent = (<List component={ErrorComponent} />);
+let content = (<div> 0 producer</div>);    
+if (this.props.rrs) {
+content = this.props.rrs.rhythmroulettes.map(function(rr) {
+return <Producer  key={rr.name} name={rr.name} photo={rr.photo} youtubeLink={rr.youtubeLink} />
+})
+}
+//handleRoute={this.props.changeRoute.bind(this,'/ep')}
 
-    // If we're not loading, don't have an error and there are repos, show the repos
-    } else if (this.props.repos !== false) {
-      mainContent = (<List items={this.props.repos} component={RepoListItem} />);
-    }
-          
                      
     return (
       <article>
@@ -99,7 +91,14 @@ export class HomePage extends React.Component {
                      
         <FullSizeImgWithText />
         <HowTo />
-        <ProducerList rrs={this.props.rrs} />
+        
+        <section className={styles.ProducerlistWrapper}>
+            <h2>EPISODES</h2>
+            <div className={styles.ProducerItemsWrapper}>
+                {content}  
+            </div>
+        </section>
+      
                      
           <section className={`${styles.textSection} ${styles.centered}`}>
             <H2>
@@ -113,31 +112,6 @@ export class HomePage extends React.Component {
 
            
 
-          <section className={styles.textSection}>
-            <H2>
-              <FormattedMessage {...messages.trymeHeader} />
-            </H2>
-            <form className={styles.usernameForm} onSubmit={this.props.onSubmitForm}>
-              <label htmlFor="username">
-                <FormattedMessage {...messages.trymeMessage} />
-                <span className={styles.atPrefix}>
-                  <FormattedMessage {...messages.trymeAtPrefix} />
-                </span>
-                <input
-                  id="username"
-                  className={styles.input}
-                  type="text"
-                  placeholder="mxstbr"
-                  value={this.props.username}
-                  onChange={this.props.onChangeUsername}
-                />
-              </label>
-            </form>
-            {mainContent}
-          </section>
-          <Button handleRoute={this.openFeaturesPage}>
-            <FormattedMessage {...messages.featuresButton} />
-          </Button>
         </div>
       </article>
     );
@@ -151,10 +125,7 @@ HomePage.propTypes = {
     React.PropTypes.object,
     React.PropTypes.bool,
   ]),
-  repos: React.PropTypes.oneOfType([
-    React.PropTypes.array,
-    React.PropTypes.bool,
-  ]),
+
   onSubmitForm: React.PropTypes.func,
   username: React.PropTypes.string,
   onChangeUsername: React.PropTypes.func,
@@ -164,10 +135,7 @@ function mapDispatchToProps(dispatch) {
   return {
     onChangeUsername: (evt) => dispatch(changeUsername(evt.target.value)),
     changeRoute: (url) => dispatch(push(url)),
-    onSubmitForm: (evt) => {
-      if (evt !== undefined && evt.preventDefault) evt.preventDefault();
-      dispatch(loadRepos());
-    },
+
 
     searchRrs: () => dispatch(loadRrs()),
 
@@ -176,7 +144,7 @@ function mapDispatchToProps(dispatch) {
 }
 
 const mapStateToProps = createStructuredSelector({
-  repos: selectRepos(),
+
   username: selectUsername(),
   loading: selectLoading(),
   error: selectError(),
