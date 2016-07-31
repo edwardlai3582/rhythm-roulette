@@ -58,12 +58,12 @@ function appReducer(state = initialState, action) {
         .set('error', false)
         .setIn(['rrData', 'rhythmroulettes'], false);
     case LOAD_RRS_SUCCESS:
-          console.log(action.rrs);
+          console.log("success: "+action.rrs);
       return state
         .setIn(['rrData', 'rhythmroulettes'], action.rrs)
         .set('loading', false);
     case LOAD_RRS_ERROR:
-          console.log(action.error);
+          console.log("error: "+action.error);
       return state
         .set('error', action.error)
         .set('loading', false);

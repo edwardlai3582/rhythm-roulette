@@ -12,7 +12,17 @@ import { selectUsername } from 'containers/HomePage/selectors';
 
 import customData from './data.json';
 
-
+import { getAll, get } from 'firebase-saga';
+/*
+import firebase from 'firebase';
+const config = {
+    apiKey: "AIzaSyABOvyyjtmu4ioGemSRy4SJcjtBU5DUsqA",
+    authDomain: "rhythmroulette-78b71.firebaseapp.com",
+    databaseURL: "https://rhythmroulette-78b71.firebaseio.com",
+    storageBucket: "rhythmroulette-78b71.appspot.com",    
+};
+firebase.initializeApp(config);
+*/
 /**
  * Github repos request/response handler
  */
@@ -69,8 +79,25 @@ export function* getRrs() {
     yield put(rrsLoadingError(rrs.err));
   }
   */
+/*
+var eee=""    
+var qq =Firebase.database().ref('rhythmroulettes').once('value').then(function(snapshot) {
+    eee=snapshot.val();
+    console.log(eee);
+});  
+*/  
+    //const ref = firebase.database().ref('rhythmroulettes');
+    //const data = yield call([ref, ref.once], 'value');
+    //const qq= yield data.then(function(snapshot) {
+    //    return snapshot.val();
+    //}, function(error){return error});  
+    //yield put(rrsLoaded(qq));
+     const rhythmroulettes = yield call(getAll, 'rhythmroulettes');
+        yield put(rrsLoaded({rhythmroulettes:rhythmroulettes}));
+  /*    
   console.log(customData);    
-  yield put(rrsLoaded(customData));    
+  yield put(rrsLoaded(customData));
+  */
 }
 
 /**
