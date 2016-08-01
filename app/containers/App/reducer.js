@@ -13,7 +13,11 @@
 import {
   LOAD_RRS_SUCCESS,
   LOAD_RRS,
-  LOAD_RRS_ERROR,    
+  LOAD_RRS_ERROR,
+/////////////////////
+  LOAD_EP_SUCCESS,
+  LOAD_EP,
+  LOAD_EP_ERROR,    
 } from './constants';
 import { fromJS } from 'immutable';
 
@@ -30,15 +34,15 @@ const initialState = fromJS({
     rhythmroulettes: false,    
   }),
 ///////////////////////////
+    eploading: false,
+    eperror: false,    
   epData: fromJS({
     ep: false,    
-  })      
+  }),    
 });
 
 function appReducer(state = initialState, action) {
   switch (action.type) {
-
-/////////////////////////////////////////////////////////////// 
     case LOAD_RRS:
       return state
         .set('loading', true)
@@ -53,26 +57,24 @@ function appReducer(state = initialState, action) {
           console.log("error: "+action.error);
       return state
         .set('error', action.error)
-        .set('loading', false);
-/////////////////////////////////////////////////////////////// 
-          /*
+        .set('loading', false);   
+/////////////////////////////////////////////////////////////
     case LOAD_EP:
       return state
-        .set('loading', true)
-        .set('error', false)
+        .set('eploading', true)
+        .set('eperror', false)
         .setIn(['epData', 'ep'], false);
     case LOAD_EP_SUCCESS:
-          console.log("success: "+action.ep);
+          console.log("ep success: "+action.ep);
       return state
         .setIn(['epData', 'ep'], action.ep)
-        .set('loading', false);
+        .set('eploading', false);
     case LOAD_EP_ERROR:
-          console.log("error: "+action.error);
+          console.log("ep error: "+action.eperror);
       return state
-        .set('error', action.error)
-        .set('loading', false);       
-        */
-///////////////////////////////////////////////////////////////           
+        .set('eperror', action.eperror)
+        .set('eploading', false);   
+///////////////////////////////////////////////////////////////          
     default:
       return state;
   }

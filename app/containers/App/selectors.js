@@ -36,6 +36,8 @@ const selectEp = () => createSelector(
   (globalState) => globalState.getIn(['epData', 'ep'])
 );
 
+
+
 const selectLocationState = () => {
   let prevRoutingState;
   let prevRoutingStateJS;

@@ -1,36 +1,27 @@
-/*
- * Home Actions
- *
- * Actions change things in your application
- * Since this boilerplate uses a uni-directional data flow, specifically redux,
- * we have these actions which are the only way your application interacts with
- * your appliction state. This guarantees that your state is up to date and nobody
- * messes it up weirdly somewhere.
- *
- * To add a new Action:
- * 1) Import your constant
- * 2) Add a function like this:
- *    export function yourAction(var) {
- *        return { type: YOUR_ACTION_CONSTANT, var: var }
- *    }
- */
 
 import {
-  CHANGE_EP,
+
+  LOAD_EP,
+  LOAD_EP_SUCCESS,
+  LOAD_EP_ERROR,     
 } from './constants';
 
-/**
- * Changes the input field of the form
- *
- * @param  {name} name The new text of the input field
- *
- * @return {object}    An action object with a type of CHANGE_USERNAME
- */
-
-export function changeEp(nme) {
+export function loadEp() {
   return {
-    type: CHANGE_EP,
-    name,
+    type: LOAD_EP,
   };
 }
 
+export function epLoaded(ep) {
+  return {
+    type: LOAD_EP_SUCCESS,
+    ep,
+  };
+}
+
+export function epLoadingError(eperror) {
+  return {
+    type: LOAD_EP_ERROR,
+    eperror,
+  };
+}

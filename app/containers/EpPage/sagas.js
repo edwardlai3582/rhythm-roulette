@@ -1,6 +1,3 @@
-/**
- * Gets the repositories of the user from Github
- */
 
 import { take, call, put, select, fork, cancel } from 'redux-saga/effects';
 import { LOCATION_CHANGE } from 'react-router-redux';
@@ -8,16 +5,28 @@ import { LOAD_EP } from 'containers/App/constants';
 import { epLoaded, epLoadingError } from 'containers/App/actions';
 
 import request from 'utils/request';
+//import { selectUsername } from 'containers/HomePage/selectors';
+import { get } from 'firebase-saga';
 
-import { getAll, get } from 'firebase-saga';
+import { selectLocationState } from 'containers/App/selectors';
 
 export function* getEp() {
-    const rhythmroulettes = yield call(getAll, 'rhythmroulettes');
-    yield put(rrsLoaded({rhythmroulettes:rhythmroulettes}));
+    
+    const epname = yield select(selectLocationState());
+    const epnameArray = epname.locationBeforeTransitions.pathname.split("/");
+    const ep = yield call(get, 'eps', epnameArray[epnameArray.length-1].replace(/\_/gi, ' '));
+    yield put(epLoaded(ep));
+    /*
+    if (!ep.err) {
+        console.log(ep);  
+    } else {
+        yield put(epLoadingError(ep.err));
+    }
+    */
 }
 
 /**
- * Watches for LOAD_REPOS action and calls handler
+ * Watches for LOAD_EP action and calls handler
  */
 export function* getEpWatcher() {
   while (yield take(LOAD_EP)) {
@@ -37,8 +46,7 @@ export function* epData() {
   yield cancel(watcher);
 }
 
-///////////////////////////////////////////////////////////////////////////////////////////////
 // Bootstrap sagas
 export default [
-  epData    
+  epData,
 ];

@@ -10,4 +10,7 @@
  */
 
 //export const CHANGE_USERNAME = 'boilerplate/Home/CHANGE_USERNAME';
-  export const CHANGE_EP = 'boilerplate/Ep/CHANGE_EP';
+
+//export const LOAD_EP =         'boilerplate/Ep/LOAD_EP';
+//export const LOAD_EP_SUCCESS = 'boilerplate/Ep/LOAD_EP_SUCCESS';
+//export const LOAD_EP_ERROR =   'boilerplate/Ep/LOAD_EP_ERROR';

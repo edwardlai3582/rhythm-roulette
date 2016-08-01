@@ -3,6 +3,33 @@
       {
             "name":"The 45 King",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/45-king.jpg?alt=media&token=3a019c5d-6d52-4b6d-b26c-a4d38161ffd6",
+            "date": "1469770485"
+        },        
+      {
+            "name":"Brasstracks",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Brasstracks.jpg?alt=media&token=71ee6f2c-941f-4aa6-a170-260cd55edba5",
+            "date": "1469126021"
+        },
+        {
+            "name":"MeLo-X",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/MeLo-X.jpg?alt=media&token=9389a44e-c0a6-47aa-83a4-a6adec835d13",
+            "date": "1468523287"
+        },
+        {
+            "name":"DJ Dahi",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DJ-Dahi.jpg?alt=media&token=0c4b49c5-03c7-456c-a0f9-0e6cb5068d1b",
+            "date": "1466708887"
+        },
+        {
+            "name":"Dot Da Genius",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DotDaGenius.jpg?alt=media&token=e53c77cb-3bfb-4956-9e78-6f01ed4d4550",
+            "date": "1465499287"
+        }
+    ],
+    "eps":{
+        "The 45 King":{
+            "name":"The 45 King",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/45-king.jpg?alt=media&token=3a019c5d-6d52-4b6d-b26c-a4d38161ffd6",
             "date": "1469770485",
             "youtubeLink": "https://www.youtube.com/watch?v=7vpgCapG6lg",
             "shop": "Scotti's Record Shops",
@@ -19,9 +46,9 @@
                     "artist": "Sonny & Brownie",
                     "album": "Sonny & Brownie"    
                 }
-            ]
-        },        
-      {
+            ]            
+        },
+        "Brasstracks":{
             "name":"Brasstracks",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Brasstracks.jpg?alt=media&token=71ee6f2c-941f-4aa6-a170-260cd55edba5",
             "date": "1469126021",
@@ -40,9 +67,9 @@
                     "artist": "Jack Ü",
                     "album": "Skrillex And Diplo Present Jack Ü"    
                 }
-            ]
+            ]            
         },
-        {
+        "MeLo-X":{
             "name":"MeLo-X",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/MeLo-X.jpg?alt=media&token=9389a44e-c0a6-47aa-83a4-a6adec835d13",
             "date": "1468523287",
@@ -61,9 +88,9 @@
                     "artist": "Kitchner",
                     "album": ""    
                 }
-            ]
+            ]            
         },
-        {
+        "DJ Dahi":{
             "name":"DJ Dahi",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DJ-Dahi.jpg?alt=media&token=0c4b49c5-03c7-456c-a0f9-0e6cb5068d1b",
             "date": "1466708887",
@@ -82,9 +109,9 @@
                     "artist": "Neil Young",
                     "album": "Hawks & Doves"    
                 }
-            ]
+            ]            
         },
-        {
+        "Dot Da Genius":{
             "name":"Dot Da Genius",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DotDaGenius.jpg?alt=media&token=e53c77cb-3bfb-4956-9e78-6f01ed4d4550",
             "date": "1465499287",
@@ -103,7 +130,7 @@
                     "artist": "The Feed-Back",
                     "album": "The Feed-Back"    
                 }
-            ]
+            ]            
         }
-    ]
+    }
 }

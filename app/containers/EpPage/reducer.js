@@ -11,24 +11,36 @@
  */
 
 import {
-    CHANGE_EP,
+  LOAD_EP_SUCCESS,
+  LOAD_EP,
+  LOAD_EP_ERROR,    
 } from './constants';
 import { fromJS } from 'immutable';
 
-// The initial state of the App
-const initialState = fromJS({
-    ep: {},
-});
+
+const initialState = fromJS({ });
 
 function epReducer(state = initialState, action) {
     switch (action.type) {
-        case CHANGE_EP:
-            // console.log("user name change to: "+action.name);
-            // Delete prefixed '@' from the github username
-            return state;
-                    //.set('username', action.name.replace(/@/gi, ''));
-        default:
-            return state;
+    /*        
+    case LOAD_EP:
+      return state
+        .set('eploading', true)
+        .set('eperror', false)
+        .setIn(['epData', 'ep'], false);
+    case LOAD_EP_SUCCESS:
+          console.log("ep success: "+action.ep);
+      return state
+        .setIn(['epData', 'ep'], action.ep)
+        .set('eploading', false);
+    case LOAD_EP_ERROR:
+          console.log("ep error: "+action.eperror);
+      return state
+        .set('eperror', action.eperror)
+        .set('eploading', false);      
+    */
+    default:
+      return state;
     }
 }
 

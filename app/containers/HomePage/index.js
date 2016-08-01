@@ -45,10 +45,7 @@ export class HomePage extends React.Component {
    * when initial state username is not null, submit the form to load repos
    */
   componentDidMount() {
-    if (this.props.username && this.props.username.trim().length > 0) {
-      this.props.onSubmitForm();
-    }
-    this.props.searchRrs();  
+    if(!this.props.rrs){this.props.searchRrs();}  
   }
     
   /**

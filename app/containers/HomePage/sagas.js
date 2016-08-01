@@ -8,9 +8,9 @@ import { LOAD_RRS } from 'containers/App/constants';
 import { rrsLoaded, rrsLoadingError } from 'containers/App/actions';
 
 import request from 'utils/request';
-import { selectUsername } from 'containers/HomePage/selectors';
 
-import customData from './data.json';
+//import { selectRrs } from 'containers/App/selectors';
+
 
 import { getAll, get } from 'firebase-saga';
 /*
