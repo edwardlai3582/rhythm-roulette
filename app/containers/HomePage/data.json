@@ -31,7 +31,7 @@
             "name":"The 45 King",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/45-king.jpg?alt=media&token=3a019c5d-6d52-4b6d-b26c-a4d38161ffd6",
             "date": "1469770485",
-            "youtubeLink": "https://www.youtube.com/watch?v=7vpgCapG6lg",
+            "youtubeId": "7vpgCapG6lg",
             "shop": "Scotti's Record Shops",
             "record": [
                 {
@@ -52,7 +52,7 @@
             "name":"Brasstracks",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Brasstracks.jpg?alt=media&token=71ee6f2c-941f-4aa6-a170-260cd55edba5",
             "date": "1469126021",
-            "youtubeLink": "https://www.youtube.com/watch?v=Nj5bdyqYCN0",
+            "youtubeId": "Nj5bdyqYCN0",
             "shop": "Norman’s Sound & Vision",
             "record": [
                 {
@@ -73,7 +73,7 @@
             "name":"MeLo-X",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/MeLo-X.jpg?alt=media&token=9389a44e-c0a6-47aa-83a4-a6adec835d13",
             "date": "1468523287",
-            "youtubeLink": "https://www.youtube.com/watch?v=M4WyOKU_hWI",
+            "youtubeId": "M4WyOKU_hWI",
             "shop": "JW Records",
             "record": [
                 {
@@ -94,7 +94,7 @@
             "name":"DJ Dahi",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DJ-Dahi.jpg?alt=media&token=0c4b49c5-03c7-456c-a0f9-0e6cb5068d1b",
             "date": "1466708887",
-            "youtubeLink": "https://www.youtube.com/watch?v=-DEGJMQxPR4",
+            "youtubeId": "-DEGJMQxPR4",
             "shop": "Amoeba music",
             "record": [
                 {
@@ -115,7 +115,7 @@
             "name":"Dot Da Genius",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DotDaGenius.jpg?alt=media&token=e53c77cb-3bfb-4956-9e78-6f01ed4d4550",
             "date": "1465499287",
-            "youtubeLink": "https://www.youtube.com/watch?v=RapBG3Erq5I",
+            "youtubeId": "RapBG3Erq5I",
             "shop": "Academy Records",
             "record": [
                 {

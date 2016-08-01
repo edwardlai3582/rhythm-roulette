@@ -13,6 +13,7 @@ import Helmet from 'react-helmet';
 import { createStructuredSelector } from 'reselect';
 
 import {
+    selectLocationState,
     selectEp
 } from 'containers/App/selectors';
 
@@ -34,24 +35,36 @@ export class EpPage extends React.Component {
     }
 
     render() {
-        let qq="qq"
+        let producerName="";
+        let pathNameArray;
+        let src="";
+        if(this.props.location.locationBeforeTransitions){
+            pathNameArray= this.props.location.locationBeforeTransitions.pathname.split("/");
+            producerName=pathNameArray[pathNameArray.length-1].replace(/\_/gi, ' ');            
+        }
+        
         if(this.props.ep){
             console.log(this.props.ep);
-            qq=this.props.ep.name+', '+this.props.ep.shop;
+            //qq=this.props.ep.name+', '+this.props.ep.shop;
+            src = "https://www.youtube.com/embed/"+this.props.ep.youtubeId
         }
         
         return (
-            <article  className={styles.epPageWrapper}>
+            <article className={styles.epPageWrapper}>
                 <Helmet
-                    title="Ep Page"
+                    title={producerName}
                     meta={[
-                    { name: 'description', content: 'A React.js Boilerplate application homepage' },
+                    { name: 'description', content: {producerName} },
                     ]}
                 />
-                <div>
-                    {qq}
-                    
-                </div>
+                <section className={styles.epSectionWrapper}>
+                    <h1 className={styles.epSectionH1}> 
+                        {producerName} 
+                    </h1>
+                    <div className={styles.videoWrapper}>
+                        <iframe src={src} frameBorder="0" allowFullScreen></iframe>
+                    </div>
+                </section>
             </article>
         );
     }
@@ -59,7 +72,6 @@ export class EpPage extends React.Component {
 
 EpPage.propTypes = {
     changeRoute: React.PropTypes.func,
-    epname: React.PropTypes.string,
     ep: React.PropTypes.oneOfType([
         React.PropTypes.object,
         React.PropTypes.bool,
@@ -77,7 +89,8 @@ function mapDispatchToProps(dispatch) {
 }
 
 const mapStateToProps = createStructuredSelector({
-  ep: selectEp(),
+    location: selectLocationState(),
+    ep: selectEp(),
 });
 
 

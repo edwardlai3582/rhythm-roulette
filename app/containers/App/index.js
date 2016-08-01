@@ -84,7 +84,7 @@ class App extends React.Component {
                         <img src={logoWhite} alt="massappeal" className={styles.logo} onClick={this.openHomePage} />
                 </header>
                 {this.props.children}
-                <Footer />
+                
             </div>
         );
     }
@@ -94,6 +94,8 @@ class App extends React.Component {
       <A className={styles.logoWrapper} href="https://twitter.com/mxstbr">
         <Img className={styles.logo} src={Banner} alt="react-boilerplate - Logo" />
       </A>
+      
+      <Footer />
 */
 
 App.propTypes = {
