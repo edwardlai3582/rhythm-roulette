@@ -32,12 +32,14 @@ export class EpPage extends React.Component {
           this.props.searchEp();     
         //} 
         
+        //http://edwardlai3582.com/goo?placeid=ChIJCabEhUJbwokRRogoDkVJzTM
+        
     }
 
     render() {
         let producerName="";
         let pathNameArray;
-        let src="";
+        let youtubeSrc="";
         if(this.props.location.locationBeforeTransitions){
             pathNameArray= this.props.location.locationBeforeTransitions.pathname.split("/");
             producerName=pathNameArray[pathNameArray.length-1].replace(/\_/gi, ' ');            
@@ -45,8 +47,7 @@ export class EpPage extends React.Component {
         
         if(this.props.ep){
             console.log(this.props.ep);
-            //qq=this.props.ep.name+', '+this.props.ep.shop;
-            src = "https://www.youtube.com/embed/"+this.props.ep.youtubeId;//+"?controls=0";
+            youtubeSrc = "https://www.youtube.com/embed/"+this.props.ep.youtubeId;
         }
         
         return (
@@ -63,8 +64,9 @@ export class EpPage extends React.Component {
                     </h1>
                     <section className={styles.videoAndShopWrapper}>
                         <div className={styles.iframeWrapper}>
-                            <iframe src={src} frameBorder="0" allowFullScreen></iframe>
+                            <iframe src={youtubeSrc} frameBorder="0" allowFullScreen></iframe>
                         </div>
+                        
                     </section>
                     <section className={styles.recordsWrapper}>
             
