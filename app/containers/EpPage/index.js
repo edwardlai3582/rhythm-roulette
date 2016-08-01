@@ -46,7 +46,7 @@ export class EpPage extends React.Component {
         if(this.props.ep){
             console.log(this.props.ep);
             //qq=this.props.ep.name+', '+this.props.ep.shop;
-            src = "https://www.youtube.com/embed/"+this.props.ep.youtubeId
+            src = "https://www.youtube.com/embed/"+this.props.ep.youtubeId;//+"?controls=0";
         }
         
         return (
@@ -61,9 +61,14 @@ export class EpPage extends React.Component {
                     <h1 className={styles.epSectionH1}> 
                         {producerName} 
                     </h1>
-                    <div className={styles.videoWrapper}>
-                        <iframe src={src} frameBorder="0" allowFullScreen></iframe>
-                    </div>
+                    <section className={styles.videoAndShopWrapper}>
+                        <div className={styles.iframeWrapper}>
+                            <iframe src={src} frameBorder="0" allowFullScreen></iframe>
+                        </div>
+                    </section>
+                    <section className={styles.recordsWrapper}>
+            
+                    </section>
                 </section>
             </article>
         );
