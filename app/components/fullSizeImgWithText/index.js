@@ -20,7 +20,7 @@ export class FullSizeImgWithText extends React.Component { // eslint-disable-lin
         let y = window.scrollY;
         let id = setInterval(frame, 1);
         function frame() {
-            if (y >= domHeight) {
+            if (y >= domHeight-75) {
               clearInterval(id);
             } else {
               y+= 5; 
@@ -30,7 +30,6 @@ export class FullSizeImgWithText extends React.Component { // eslint-disable-lin
     };
 
     render() {
-        //<img src={BG} alt='RHYTHM ROULETTE' className={styles.bg} />
         return (
             <section className={styles.imgWrapper} ref="myText">  
                 <video loop autoPlay="autoplay" poster={BG}  className={styles.bg}>

@@ -36,12 +36,23 @@ body.fontLoaded {
   */    
 }
 
-.logoWrapper {
-  /*padding: 2em 0;*/
+.headerWrapper{
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 2vw;
+    background-color: none;
+    transition: ease-in-out, all 0.25s ease-in-out;
 }
 
-.logo {
-  width: 100%;
-  margin: 0 auto;
-  display: block;
+.headerWrapperBlack{
+   
+    background-color: black;
+    transition: ease-in-out, all 0.5s ease-in-out;
+}
+
+.logo{
+    cursor: pointer;
 }

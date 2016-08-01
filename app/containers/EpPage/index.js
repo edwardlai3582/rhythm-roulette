@@ -37,11 +37,11 @@ export class EpPage extends React.Component {
         let qq="qq"
         if(this.props.ep){
             console.log(this.props.ep);
-            qq=this.props.ep.name;
+            qq=this.props.ep.name+', '+this.props.ep.shop;
         }
         
         return (
-            <article>
+            <article  className={styles.epPageWrapper}>
                 <Helmet
                     title="Ep Page"
                     meta={[

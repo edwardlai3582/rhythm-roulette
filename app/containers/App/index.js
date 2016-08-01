@@ -7,7 +7,16 @@
  */
 
 import React from 'react';
+import { connect } from 'react-redux';
+import { Link } from 'react-router';
+import { push } from 'react-router-redux';
 import Helmet from 'react-helmet';
+
+import { createStructuredSelector } from 'reselect';
+
+import {
+  selectLocationState
+} from './selectors';
 
 // Import the CSS reset, which HtmlWebpackPlugin transfers to the build folder
 import 'sanitize.css/sanitize.css';
@@ -18,22 +27,67 @@ import Banner from './banner-metal.jpg';
 import A from 'components/A';
 
 import styles from './styles.css';
+import logoBlack from './logo.svg';
+import logoWhite from './logo-white.svg';
+import logoYellow from './logo-yellow.svg';
 
-function App(props) {
-  return (
-    <div className={styles.wrapper}>
-      <Helmet
-        titleTemplate="%s - Rhythm Roulette"
-        defaultTitle="Rhythm Roulette"
-        meta={[
-          { name: 'description', content: 'A Rhythm Roulette information site' },
-        ]}
-      />
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {backgroundClass: false};
+    }
+    
+    componentDidMount(){
+        window.addEventListener('scroll', this.handleScroll.bind(this));
+    }
+    
+    handleScroll(){
+        if(window.pageYOffset > 75){
+            this.setState({backgroundClass: true})
+        }
+        else{
+            this.setState({backgroundClass: false})    
+        }
+    }
+    
+    openRoute = (route) => {
+        this.props.changeRoute(route);
+    };
 
-      {props.children}
-      <Footer />
-    </div>
-  );
+    openHomePage = () => {
+        if(this.props.location.locationBeforeTransitions.pathname.split("/")[1] !== ""){
+            this.openRoute('/');    
+        }
+    };
+    
+    render() {
+        let isHomePage = this.props.location.locationBeforeTransitions.pathname.split("/")[1]===""?true:false;
+        let headerWrapperClass = styles.headerWrapper;
+        
+        if(!isHomePage){
+            headerWrapperClass= `${styles.headerWrapper} ${styles.headerWrapperBlack}`;    
+        }        
+        else if(this.state.backgroundClass){
+            headerWrapperClass= `${styles.headerWrapper} ${styles.headerWrapperBlack}`;
+        }
+        
+        return (
+            <div className={styles.wrapper}>
+                <Helmet
+                    titleTemplate="%s - Rhythm Roulette"
+                    defaultTitle="Rhythm Roulette"
+                    meta={[
+                    { name: 'description', content: 'A Rhythm Roulette information site' },
+                    ]}
+                />
+                <header className={headerWrapperClass}>
+                        <img src={logoWhite} alt="massappeal" className={styles.logo} onClick={this.openHomePage} />
+                </header>
+                {this.props.children}
+                <Footer />
+            </div>
+        );
+    }
 }
 
 /*
@@ -44,6 +98,18 @@ function App(props) {
 
 App.propTypes = {
   children: React.PropTypes.node,
+  location: React.PropTypes.object,   
 };
 
-export default App;
+const mapStateToProps = createStructuredSelector({
+  location: selectLocationState(),
+});
+
+function mapDispatchToProps(dispatch) {
+  return {
+    changeRoute: (url) => dispatch(push(url)),
+  };
+}
+
+// Wrap the component to inject dispatch and state into it
+export default connect(mapStateToProps, mapDispatchToProps)(App);
