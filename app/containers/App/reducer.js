@@ -21,7 +21,11 @@ import {
 /////////////////////
   LOAD_SHOP_SUCCESS,
   LOAD_SHOP,
-  LOAD_SHOP_ERROR,     
+  LOAD_SHOP_ERROR,  
+/////////////////////
+  LOAD_SHOPIMG_SUCCESS,
+  LOAD_SHOPIMG,
+  LOAD_SHOPIMG_ERROR,      
 } from './constants';
 import { fromJS } from 'immutable';
 
@@ -48,6 +52,12 @@ const initialState = fromJS({
     shoperror: false,    
     shopData: fromJS({
         shop: false,    
+    }), 
+///////////////////////////
+    shopimgloading: false,
+    shopimgerror: false,    
+    shopimgData: fromJS({
+        shopimg: false,    
     }),     
 });
 
@@ -100,7 +110,24 @@ function appReducer(state = initialState, action) {
           console.log("shop error: "+action.shoperror);
       return state
         .set('shoperror', action.shoperror)
-        .set('shoploading', false);             
+        .set('shoploading', false);  
+/////////////////////////////////////////////////////////////
+    case LOAD_SHOPIMG:
+      return state
+        .set('shopimgloading', true)
+        .set('shopimgerror', false)
+        .setIn(['shopimgData', 'shopimg'], false);
+    case LOAD_SHOPIMG_SUCCESS:
+          console.log("shop img success: ");
+          console.log(action.shopimg);
+      return state
+        .setIn(['shopimgData', 'shopimg'], action.shopimg)
+        .set('shopimgloading', false);
+    case LOAD_SHOPIMG_ERROR:
+          console.log("shop img error: "+action.shopimgerror);
+      return state
+        .set('shopimgerror', action.shopimgerror)
+        .set('shopimgloading', false);            
 ///////////////////////////////////////////////////////////////          
     default:
       return state;

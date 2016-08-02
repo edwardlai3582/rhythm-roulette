@@ -86,17 +86,23 @@ return <Producer  key={rr.name} name={rr.name} photo={rr.photo} youtubeLink={rr.
         />
         <div>
                      
-        <FullSizeImgWithText />
-        <HowTo />
-        
-        <section className={styles.ProducerlistWrapper}>
-            <h2>EPISODES</h2>
-            <div className={styles.ProducerItemsWrapper}>
-                {content}  
-            </div>
-        </section>
-      
-                     
+            <FullSizeImgWithText />
+            <HowTo />
+
+            <section className={styles.ProducerlistWrapper}>
+                <h2>EPISODES</h2>
+                <div className={styles.ProducerItemsWrapper}>
+                    {content}  
+                </div>
+            </section>   
+
+        </div>
+      </article>
+    );
+  }
+}
+
+/*
           <section className={`${styles.textSection} ${styles.centered}`}>
             <H2>
               How to Rhythm Roulette?
@@ -106,14 +112,7 @@ return <Producer  key={rr.name} name={rr.name} photo={rr.photo} youtubeLink={rr.
             <p> 3. Pick 3 random records </p>
             <p> 4. Make a beat by sampling </p>
           </section>
-
-           
-
-        </div>
-      </article>
-    );
-  }
-}
+*/
 
 HomePage.propTypes = {
   changeRoute: React.PropTypes.func,

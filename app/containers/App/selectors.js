@@ -40,6 +40,11 @@ const selectShop = () => createSelector(
   selectGlobal(),
   (globalState) => globalState.getIn(['shopData', 'shop'])
 );
+
+const selectShopimg = () => createSelector(
+  selectGlobal(),
+  (globalState) => globalState.getIn(['shopimgData', 'shopimg'])
+);
 ///////////////////////////////////////////////////////////////////////////////////
 const selectLocationState = () => {
   let prevRoutingState;
@@ -67,4 +72,5 @@ export {
     selectRrs,
     selectEp,
     selectShop,
+    selectShopimg,    
 };

@@ -24,3 +24,7 @@ export const LOAD_EP_ERROR =   'boilerplate/App/LOAD_EP_ERROR';
 export const LOAD_SHOP =         'boilerplate/App/LOAD_SHOP';
 export const LOAD_SHOP_SUCCESS = 'boilerplate/App/LOAD_SHOP_SUCCESS';
 export const LOAD_SHOP_ERROR =   'boilerplate/App/LOAD_SHOP_ERROR';
+
+export const LOAD_SHOPIMG =         'boilerplate/App/LOAD_SHOPIMG';
+export const LOAD_SHOPIMG_SUCCESS = 'boilerplate/App/LOAD_SHOPIMG_SUCCESS';
+export const LOAD_SHOPIMG_ERROR =   'boilerplate/App/LOAD_SHOPIMG_ERROR';

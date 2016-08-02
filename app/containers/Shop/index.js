@@ -17,6 +17,8 @@ import LoadingIndicator from 'components/LoadingIndicator';
 
 import styles from './styles.css';
 
+import Shopimg from 'containers/Shopimg';
+
 export class Shop extends React.Component {
 
     componentDidMount() {
@@ -34,19 +36,32 @@ export class Shop extends React.Component {
     }
 
     render() {
-        let qq="ssss";
+        let name = "";
+        let photo_reference = "";
+        let address = "";
+        let rating = "";
+        let phone = "";
         ///*
         if(this.props.shop.data){
             if(this.props.shop.data.status==="OK"){
-                qq =  this.props.shop.data.result.name;
-                //console.log(qq);   
+                name =    this.props.shop.data.result.name;
+                address = this.props.shop.data.result.formatted_address;
+                rating = this.props.shop.data.result.rating;
+                phone = this.props.shop.data.result.formatted_phone_number
+                if(this.props.shop.data.result.photos){
+                    photo_reference = this.props.shop.data.result.photos[0].photo_reference;    
+                }  
             }
         }
         //*/
         return (
-            <article>
-                <section >
-                    {qq}
+            <article className={styles.shopWrpper} >
+                <section>
+                    {name}
+                    <Shopimg photo_reference={photo_reference} />
+                    <p>{address}</p>
+                    <p>{phone}</p>
+                    <p>rating: {rating}</p>
                 </section>
             </article>
         );

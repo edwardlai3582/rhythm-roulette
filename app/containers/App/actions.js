@@ -26,7 +26,11 @@ import {
 /////////////////////
   LOAD_SHOP_SUCCESS,
   LOAD_SHOP,
-  LOAD_SHOP_ERROR,     
+  LOAD_SHOP_ERROR,  
+/////////////////////
+  LOAD_SHOPIMG_SUCCESS,
+  LOAD_SHOPIMG,
+  LOAD_SHOPIMG_ERROR,      
 } from './constants';
 
 /**
@@ -93,7 +97,7 @@ export function loadShop(placeid) {
     //console.log("from loadShop: "+placeid)
   return {
     type: LOAD_SHOP,
-    placeid: placeid,  
+    placeid,  
   };
 }
 
@@ -108,5 +112,27 @@ export function shopLoadingError(shoperror) {
   return {
     type: LOAD_SHOP_ERROR,
     shoperror,
+  };
+}
+///////////////////////////////////////////////////////////////////////
+export function loadShopimg(photo_reference) {
+    //console.log("from loadShop: "+placeid)
+  return {
+    type: LOAD_SHOPIMG,
+    photo_reference,  
+  };
+}
+
+export function shopimgLoaded(shopimg) {
+  return {
+    type: LOAD_SHOPIMG_SUCCESS,
+    shopimg,
+  };
+}
+
+export function shopimgLoadingError(shopimgerror) {
+  return {
+    type: LOAD_SHOPIMG_ERROR,
+    shopimgerror,
   };
 }
