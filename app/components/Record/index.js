@@ -8,19 +8,22 @@ export class Record extends React.Component {
         let title = "";
         let artist = "";
         let image = "";
+        let discogsLink = ""
         if(this.props.record.data){
             title = this.props.record.data.title;
             artist = this.props.record.data.artists[0].name;
+            discogsLink = (<a target="_blank" href={this.props.record.data.uri}>Discogs</a>); 
             if(this.props.record.data.images && this.props.record.data.images.length>0){
                 image=(<img src={this.props.record.data.images[0].uri150} />);
             }
         }
         
         return (
-            <section>
-                       {image}
+            <section className={styles.recordWrapper}>
+                {image}
                 <p>{title}</p>
                 <p>{artist}</p>
+                <p>{discogsLink}</p>      
             </section>
         );
     }
