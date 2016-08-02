@@ -17,7 +17,11 @@ import {
 /////////////////////
   LOAD_EP_SUCCESS,
   LOAD_EP,
-  LOAD_EP_ERROR,    
+  LOAD_EP_ERROR, 
+/////////////////////
+  LOAD_SHOP_SUCCESS,
+  LOAD_SHOP,
+  LOAD_SHOP_ERROR,     
 } from './constants';
 import { fromJS } from 'immutable';
 
@@ -36,9 +40,15 @@ const initialState = fromJS({
 ///////////////////////////
     eploading: false,
     eperror: false,    
-  epData: fromJS({
-    ep: false,    
-  }),    
+    epData: fromJS({
+        ep: false,    
+    }), 
+///////////////////////////
+    shoploading: false,
+    shoperror: false,    
+    shopData: fromJS({
+        shop: false,    
+    }),     
 });
 
 function appReducer(state = initialState, action) {
@@ -49,7 +59,7 @@ function appReducer(state = initialState, action) {
         .set('error', false)
         .setIn(['rrData', 'rhythmroulettes'], false);
     case LOAD_RRS_SUCCESS:
-          console.log("success: "+action.rrs);
+          //console.log("success: "+action.rrs);
       return state
         .setIn(['rrData', 'rhythmroulettes'], action.rrs)
         .set('loading', false);
@@ -65,7 +75,7 @@ function appReducer(state = initialState, action) {
         .set('eperror', false)
         .setIn(['epData', 'ep'], false);
     case LOAD_EP_SUCCESS:
-          console.log("ep success: "+action.ep);
+          //console.log("ep success: "+action.ep);
       return state
         .setIn(['epData', 'ep'], action.ep)
         .set('eploading', false);
@@ -74,6 +84,23 @@ function appReducer(state = initialState, action) {
       return state
         .set('eperror', action.eperror)
         .set('eploading', false);   
+/////////////////////////////////////////////////////////////
+    case LOAD_SHOP:
+      return state
+        .set('shoploading', true)
+        .set('shoperror', false)
+        .setIn(['shopData', 'shop'], false);
+    case LOAD_SHOP_SUCCESS:
+          console.log("shop success: ");
+          console.log(action.shop);
+      return state
+        .setIn(['shopData', 'shop'], action.shop)
+        .set('shoploading', false);
+    case LOAD_SHOP_ERROR:
+          console.log("shop error: "+action.shoperror);
+      return state
+        .set('shoperror', action.shoperror)
+        .set('shoploading', false);             
 ///////////////////////////////////////////////////////////////          
     default:
       return state;

@@ -1,14 +1,16 @@
 
-import { take, call, put, select, fork, cancel } from 'redux-saga/effects';
+import { take, takeEvery, call, put, select, fork, cancel } from 'redux-saga/effects';
 import { LOCATION_CHANGE } from 'react-router-redux';
-import { LOAD_EP } from 'containers/App/constants';
-import { epLoaded, epLoadingError } from 'containers/App/actions';
+import { LOAD_EP, LOAD_SHOP } from 'containers/App/constants';
+import { epLoaded, epLoadingError, loadShop, shopLoaded, shopLoadingError } from 'containers/App/actions';
 
 import request from 'utils/request';
 //import { selectUsername } from 'containers/HomePage/selectors';
 import { get } from 'firebase-saga';
 
 import { selectLocationState } from 'containers/App/selectors';
+
+import shopSagas from 'containers/Shop/sagas';
 
 export function* getEp() {
     
@@ -23,6 +25,7 @@ export function* getEp() {
         yield put(epLoadingError(ep.err));
     }
     */
+    //yield put(loadShop(ep.placeid));
 }
 
 /**
@@ -46,7 +49,9 @@ export function* epData() {
   yield cancel(watcher);
 }
 
+
 // Bootstrap sagas
 export default [
   epData,
+  ...shopSagas,   
 ];

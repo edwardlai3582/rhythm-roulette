@@ -22,7 +22,11 @@ import {
 /////////////////////
   LOAD_EP_SUCCESS,
   LOAD_EP,
-  LOAD_EP_ERROR,      
+  LOAD_EP_ERROR, 
+/////////////////////
+  LOAD_SHOP_SUCCESS,
+  LOAD_SHOP,
+  LOAD_SHOP_ERROR,     
 } from './constants';
 
 /**
@@ -84,4 +88,25 @@ export function epLoadingError(eperror) {
     eperror,
   };
 }
+///////////////////////////////////////////////////////////////////////
+export function loadShop(placeid) {
+    console.log("from loadShop: "+placeid)
+  return {
+    type: LOAD_SHOP,
+    placeid: placeid,  
+  };
+}
 
+export function shopLoaded(shop) {
+  return {
+    type: LOAD_SHOP_SUCCESS,
+    shop,
+  };
+}
+
+export function shopLoadingError(shoperror) {
+  return {
+    type: LOAD_SHOP_ERROR,
+    shoperror,
+  };
+}

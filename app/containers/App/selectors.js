@@ -36,8 +36,11 @@ const selectEp = () => createSelector(
   (globalState) => globalState.getIn(['epData', 'ep'])
 );
 
-
-
+const selectShop = () => createSelector(
+  selectGlobal(),
+  (globalState) => globalState.getIn(['shopData', 'shop'])
+);
+///////////////////////////////////////////////////////////////////////////////////
 const selectLocationState = () => {
   let prevRoutingState;
   let prevRoutingStateJS;
@@ -55,12 +58,13 @@ const selectLocationState = () => {
 };
 
 export {
-  selectGlobal,
-  selectCurrentUser,
-  selectLoading,
-  selectError,
-  //selectRepos,
-  selectLocationState,
-      selectRrs,
-      selectEp
+    selectGlobal,
+    selectCurrentUser,
+    selectLoading,
+    selectError,
+    //selectRepos,
+    selectLocationState,
+    selectRrs,
+    selectEp,
+    selectShop,
 };

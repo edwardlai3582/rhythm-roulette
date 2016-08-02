@@ -20,3 +20,7 @@ export const LOAD_RRS_ERROR = 'boilerplate/App/LOAD_RRS_ERROR';
 export const LOAD_EP =         'boilerplate/App/LOAD_EP';
 export const LOAD_EP_SUCCESS = 'boilerplate/App/LOAD_EP_SUCCESS';
 export const LOAD_EP_ERROR =   'boilerplate/App/LOAD_EP_ERROR';
+
+export const LOAD_SHOP =         'boilerplate/App/LOAD_SHOP';
+export const LOAD_SHOP_SUCCESS = 'boilerplate/App/LOAD_SHOP_SUCCESS';
+export const LOAD_SHOP_ERROR =   'boilerplate/App/LOAD_SHOP_ERROR';

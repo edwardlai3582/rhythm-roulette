@@ -17,20 +17,23 @@ import {
     selectEp
 } from 'containers/App/selectors';
 
-import { loadEp } from '../App/actions';
-
+import { 
+    loadEp
+} from '../App/actions';
 
 import LoadingIndicator from 'components/LoadingIndicator';
 
 import styles from './styles.css';
 
+import Shop from 'containers/Shop';
+
 export class EpPage extends React.Component {
 
     componentWillMount() {
-        
-        //if(!this.props.ep || this.props.ep.name !== this.props.epanme){
+        //console.log(this.props.params.name);
+        if(!this.props.ep || this.props.ep.name !== this.props.params.name.replace(/\_/gi, ' ')){
           this.props.searchEp();     
-        //} 
+        } 
         
         //http://edwardlai3582.com/goo?placeid=ChIJCabEhUJbwokRRogoDkVJzTM
         
@@ -40,14 +43,17 @@ export class EpPage extends React.Component {
         let producerName="";
         let pathNameArray;
         let youtubeSrc="";
+        let placeid="";
         if(this.props.location.locationBeforeTransitions){
             pathNameArray= this.props.location.locationBeforeTransitions.pathname.split("/");
             producerName=pathNameArray[pathNameArray.length-1].replace(/\_/gi, ' ');            
         }
         
         if(this.props.ep){
-            console.log(this.props.ep);
+            //console.log(this.props.ep);
             youtubeSrc = "https://www.youtube.com/embed/"+this.props.ep.youtubeId;
+            placeid = this.props.ep.placeid;
+            //console.log("EP: placeid="+this.props.ep.placeid);
         }
         
         return (
@@ -66,7 +72,7 @@ export class EpPage extends React.Component {
                         <div className={styles.iframeWrapper}>
                             <iframe src={youtubeSrc} frameBorder="0" allowFullScreen></iframe>
                         </div>
-                        
+                        <Shop placeid={placeid}/>
                     </section>
                     <section className={styles.recordsWrapper}>
             
