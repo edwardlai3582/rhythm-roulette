@@ -18,9 +18,16 @@
     margin: 0;
 }
 
+.epContentUpperWrapper{
+    width: 100%;
+    padding-bottom: 10px;
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+}
+
 .videoAndShopWrapper{
     width: 65%;
-    padding-bottom: 10px;
 }
 
 .iframeWrapper {
@@ -39,6 +46,6 @@
 	height: 100%;
 }
 
-.infoWrapper{
-    
+.shopWrapper{
+    width: 30%;
 }

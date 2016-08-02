@@ -35,12 +35,12 @@ export class Shopimg extends React.Component {
     render() {
         let imgSrc="";
         if(this.props.photo_reference!="" && this.props.shopimg){
-            imgSrc = this.props.shopimg.data[0];
+            imgSrc = (<img src={this.props.shopimg.data[0]} />);
         }
         
         return (
-            <div>
-            <img src={imgSrc} />
+            <div className={styles.shopimg}>
+            {imgSrc}
             </div>
         );
     }

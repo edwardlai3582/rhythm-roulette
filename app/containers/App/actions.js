@@ -30,7 +30,17 @@ import {
 /////////////////////
   LOAD_SHOPIMG_SUCCESS,
   LOAD_SHOPIMG,
-  LOAD_SHOPIMG_ERROR,      
+  LOAD_SHOPIMG_ERROR, 
+/////////////////////
+  LOAD_RECORD1_SUCCESS,
+  LOAD_RECORD1,
+  LOAD_RECORD1_ERROR, 
+  LOAD_RECORD2_SUCCESS,
+  LOAD_RECORD2,
+  LOAD_RECORD2_ERROR, 
+  LOAD_RECORD3_SUCCESS,
+  LOAD_RECORD3,
+  LOAD_RECORD3_ERROR,     
 } from './constants';
 
 /**
@@ -134,5 +144,71 @@ export function shopimgLoadingError(shopimgerror) {
   return {
     type: LOAD_SHOPIMG_ERROR,
     shopimgerror,
+  };
+}
+///////////////////////////////////////////////////////////////////////
+export function loadRecord1(master_id) {
+    //console.log("from loadShop: "+placeid)
+  return {
+    type: LOAD_RECORD1,
+    master_id,  
+  };
+}
+
+export function record1Loaded(record1) {
+  return {
+    type: LOAD_RECORD1_SUCCESS,
+    record1,
+  };
+}
+
+export function record1LoadingError(record1error) {
+  return {
+    type: LOAD_RECORD1_ERROR,
+    record1error,
+  };
+}
+
+export function loadRecord2(master_id) {
+    //console.log("from loadShop: "+placeid)
+  return {
+    type: LOAD_RECORD2,
+    master_id,  
+  };
+}
+
+export function record2Loaded(record2) {
+  return {
+    type: LOAD_RECORD2_SUCCESS,
+    record2,
+  };
+}
+
+export function record2LoadingError(record2error) {
+  return {
+    type: LOAD_RECORD2_ERROR,
+    record2error,
+  };
+}
+
+export function loadRecord3(master_id) {
+    //console.log("from loadShop: "+placeid)
+  return {
+    type: LOAD_RECORD3,
+    master_id,  
+  };
+}
+
+export function record3Loaded(record3) {
+  return {
+    type: LOAD_RECORD3_SUCCESS,
+    record3,
+  };
+}
+
+export function record3LoadingError(record3error) {
+  return {
+    type: LOAD_RECORD3_ERROR,
+    record3error,
   };
 }

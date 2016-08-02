@@ -14,7 +14,10 @@ import { createStructuredSelector } from 'reselect';
 
 import {
     selectLocationState,
-    selectEp
+    selectEp,
+    selectRecord1, selectRecord1Loading,
+    selectRecord2, selectRecord2Loading,
+    selectRecord3, selectRecord3Loading
 } from 'containers/App/selectors';
 
 import { 
@@ -22,6 +25,7 @@ import {
 } from '../App/actions';
 
 import LoadingIndicator from 'components/LoadingIndicator';
+import Record from 'components/Record';
 
 import styles from './styles.css';
 
@@ -68,14 +72,21 @@ export class EpPage extends React.Component {
                     <h1 className={styles.epSectionH1}> 
                         {producerName} 
                     </h1>
-                    <section className={styles.videoAndShopWrapper}>
-                        <div className={styles.iframeWrapper}>
-                            <iframe src={youtubeSrc} frameBorder="0" allowFullScreen></iframe>
+                    <section className={styles.epContentUpperWrapper}>
+                        <div className={styles.videoAndShopWrapper}>
+                            <div className={styles.iframeWrapper}>
+                                <iframe src={youtubeSrc} frameBorder="0" allowFullScreen></iframe>
+                            </div>
                         </div>
-                        <Shop placeid={placeid}/>
+                        <div className={styles.shopWrapper}>
+                            <Shop placeid={placeid}/>
+                        </div>
+                        
                     </section>
                     <section className={styles.recordsWrapper}>
-            
+                        <Record record={this.props.record1}/>
+                        <Record record={this.props.record2}/>
+                        <Record record={this.props.record3}/>
                     </section>
                 </section>
             </article>
@@ -104,6 +115,9 @@ function mapDispatchToProps(dispatch) {
 const mapStateToProps = createStructuredSelector({
     location: selectLocationState(),
     ep: selectEp(),
+    record1 : selectRecord1(),
+    record2 : selectRecord2(),
+    record3 : selectRecord3(),
 });
 
 

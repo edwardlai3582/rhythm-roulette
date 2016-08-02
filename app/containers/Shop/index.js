@@ -6,7 +6,8 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 
 import {
-    selectShop
+    selectShop,
+    selectShopLoading,
 } from 'containers/App/selectors';
 
 import { 
@@ -36,17 +37,21 @@ export class Shop extends React.Component {
     }
 
     render() {
-        let name = "";
+        let name = ""; 
         let photo_reference = "";
         let address = "";
         let rating = "";
         let phone = "";
         ///*
+        if(this.props.shopLoading){
+            name = (<LoadingIndicator />);     
+        }            
+                    
         if(this.props.shop.data){
             if(this.props.shop.data.status==="OK"){
                 name =    this.props.shop.data.result.name;
                 address = this.props.shop.data.result.formatted_address;
-                rating = this.props.shop.data.result.rating;
+                rating = "rating: "+this.props.shop.data.result.rating;
                 phone = this.props.shop.data.result.formatted_phone_number
                 if(this.props.shop.data.result.photos){
                     photo_reference = this.props.shop.data.result.photos[0].photo_reference;    
@@ -58,10 +63,11 @@ export class Shop extends React.Component {
             <article className={styles.shopWrpper} >
                 <section>
                     {name}
-                    <Shopimg photo_reference={photo_reference} />
+                    <div  className={styles.shopimgWrapper}>    
+                        <Shopimg photo_reference={photo_reference} />
+                    </div>
                     <p>{address}</p>
                     <p>{phone}</p>
-                    <p>rating: {rating}</p>
                 </section>
             </article>
         );
@@ -86,6 +92,7 @@ function mapDispatchToProps(dispatch) {
 
 const mapStateToProps = createStructuredSelector({
     shop: selectShop(),
+    shopLoading: selectShopLoading(),
 });
 
 

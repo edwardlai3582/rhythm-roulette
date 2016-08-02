@@ -33,18 +33,21 @@
             "date": "1469770485",
             "youtubeId": "7vpgCapG6lg",
             "placeid": "ChIJsfrLt7ymw4kRkMu_t48XATE",
-            "record": [
+            "records": [
                 {
                     "artist": "Courtney Pine",
-                    "album": "Journey to the Urge Within"
+                    "album": "Journey to the Urge Within",
+                    "master_id": "74224"
                 },
                 {
                     "artist": "Weather Report",
-                    "album": "Mysterious Traveller"    
+                    "album": "Mysterious Traveller",
+                    "master_id": "21696"
                 },
                 {
-                    "artist": "Sonny & Brownie",
-                    "album": "Sonny & Brownie"    
+                    "artist": "Sonny Terry & Brownie McGhee",
+                    "album": "Sonny & Brownie",
+                    "master_id": "278868"
                 }
             ]            
         },
@@ -54,7 +57,7 @@
             "date": "1469126021",
             "youtubeId": "Nj5bdyqYCN0",
             "placeid": "ChIJc8zhpllZwokRfRsxwwkvi5M",
-            "record": [
+            "records": [
                 {
                     "artist": "Gene McDaniels",
                     "album": "100 Lbs. of Clay!"
@@ -75,7 +78,7 @@
             "date": "1468523287",
             "youtubeId": "M4WyOKU_hWI",
             "placeid": "ChIJCabEhUJbwokRRogoDkVJzTM",
-            "record": [
+            "records": [
                 {
                     "artist": "Various",
                     "album": "Marmalade"
@@ -96,7 +99,7 @@
             "date": "1466708887",
             "youtubeId": "-DEGJMQxPR4",
             "placeid": "ChIJRdmfADq_woARYaVhnfQSUTI",
-            "record": [
+            "records": [
                 {
                     "artist": "Torche",
                     "album": "Healer / Across The Shields"
@@ -117,7 +120,7 @@
             "date": "1465499287",
             "youtubeId": "RapBG3Erq5I",
             "placeid": "ChIJ0Zdc4aJZwokROG_LCvanUhE",
-            "record": [
+            "records": [
                 {
                     "artist": "Cortijo",
                     "album": "The Ansonia Years 1969-1971"

@@ -4,7 +4,7 @@ import styles from './styles.css';
 
 function LoadingIndicator() {
   return (
-    <div>
+    <div className={styles.loadingIndicatorWrapper}>
       <div className={styles['sk-fading-circle']}>
         <div className={styles.skCircle}></div>
         <div className={styles['sk-circle2']}></div>

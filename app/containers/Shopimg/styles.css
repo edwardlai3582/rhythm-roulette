@@ -1,0 +1,8 @@
+.shopimg{
+    position: relative;
+    width: 100%;
+}
+
+.shopimg > img{
+    width: 100%;
+}

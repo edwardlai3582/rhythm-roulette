@@ -25,7 +25,17 @@ import {
 /////////////////////
   LOAD_SHOPIMG_SUCCESS,
   LOAD_SHOPIMG,
-  LOAD_SHOPIMG_ERROR,      
+  LOAD_SHOPIMG_ERROR,
+/////////////////////
+  LOAD_RECORD1_SUCCESS,
+  LOAD_RECORD1,
+  LOAD_RECORD1_ERROR, 
+  LOAD_RECORD2_SUCCESS,
+  LOAD_RECORD2,
+  LOAD_RECORD2_ERROR, 
+  LOAD_RECORD3_SUCCESS,
+  LOAD_RECORD3,
+  LOAD_RECORD3_ERROR,     
 } from './constants';
 import { fromJS } from 'immutable';
 
@@ -58,7 +68,23 @@ const initialState = fromJS({
     shopimgerror: false,    
     shopimgData: fromJS({
         shopimg: false,    
-    }),     
+    }), 
+///////////////////////////
+    record1loading: false,
+    record1error: false,    
+    record1Data: fromJS({
+        record1: false,    
+    }),  
+    record2loading: false,
+    record2error: false,    
+    record2Data: fromJS({
+        record2: false,    
+    }),  
+    record3loading: false,
+    record3error: false,    
+    record3Data: fromJS({
+        record3: false,    
+    }),      
 });
 
 function appReducer(state = initialState, action) {
@@ -128,7 +154,58 @@ function appReducer(state = initialState, action) {
       return state
         .set('shopimgerror', action.shopimgerror)
         .set('shopimgloading', false);            
-///////////////////////////////////////////////////////////////          
+/////////////////////////////////////////////////////////////// 
+    case LOAD_RECORD1:
+      return state
+        .set('record1loading', true)
+        .set('record1error', false)
+        .setIn(['record1Data', 'record1'], false);
+    case LOAD_RECORD1_SUCCESS:
+          console.log("record1 success: ");
+          console.log(action.record1);
+      return state
+        .setIn(['record1Data', 'record1'], action.record1)
+        .set('record1loading', false);
+    case LOAD_RECORD1_ERROR:
+          console.log("record1 error: "+action.record1error);
+      return state
+        .set('record1error', action.record1error)
+        .set('record1loading', false);            
+///////////////////////////////////////////////////////////////  
+    case LOAD_RECORD2:
+      return state
+        .set('record2loading', true)
+        .set('record2error', false)
+        .setIn(['record2Data', 'record2'], false);
+    case LOAD_RECORD2_SUCCESS:
+          console.log("record2 success: ");
+          console.log(action.record2);
+      return state
+        .setIn(['record2Data', 'record2'], action.record2)
+        .set('record2loading', false);
+    case LOAD_RECORD2_ERROR:
+          console.log("record2 error: "+action.record2error);
+      return state
+        .set('record2error', action.record2error)
+        .set('record2loading', false);            
+/////////////////////////////////////////////////////////////// 
+    case LOAD_RECORD3:
+      return state
+        .set('record3loading', true)
+        .set('record3error', false)
+        .setIn(['record3Data', 'record3'], false);
+    case LOAD_RECORD3_SUCCESS:
+          console.log("record3 success: ");
+          console.log(action.record3);
+      return state
+        .setIn(['record3Data', 'record3'], action.record3)
+        .set('record3loading', false);
+    case LOAD_RECORD3_ERROR:
+          console.log("record3 error: "+action.record3error);
+      return state
+        .set('record3error', action.record3error)
+        .set('record3loading', false);            
+///////////////////////////////////////////////////////////////            
     default:
       return state;
   }

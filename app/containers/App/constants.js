@@ -28,3 +28,14 @@ export const LOAD_SHOP_ERROR =   'boilerplate/App/LOAD_SHOP_ERROR';
 export const LOAD_SHOPIMG =         'boilerplate/App/LOAD_SHOPIMG';
 export const LOAD_SHOPIMG_SUCCESS = 'boilerplate/App/LOAD_SHOPIMG_SUCCESS';
 export const LOAD_SHOPIMG_ERROR =   'boilerplate/App/LOAD_SHOPIMG_ERROR';
+
+//records
+export const LOAD_RECORD1 =         'boilerplate/App/LOAD_RECORD1';
+export const LOAD_RECORD1_SUCCESS = 'boilerplate/App/LOAD_RECORD1_SUCCESS';
+export const LOAD_RECORD1_ERROR =   'boilerplate/App/LOAD_RECORD1_ERROR';
+export const LOAD_RECORD2 =         'boilerplate/App/LOAD_RECORD2';
+export const LOAD_RECORD2_SUCCESS = 'boilerplate/App/LOAD_RECORD2_SUCCESS';
+export const LOAD_RECORD2_ERROR =   'boilerplate/App/LOAD_RECORD2_ERROR';
+export const LOAD_RECORD3 =         'boilerplate/App/LOAD_RECORD3';
+export const LOAD_RECORD3_SUCCESS = 'boilerplate/App/LOAD_RECORD3_SUCCESS';
+export const LOAD_RECORD3_ERROR =   'boilerplate/App/LOAD_RECORD3_ERROR';

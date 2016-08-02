@@ -1,8 +1,13 @@
 
 import { take, takeEvery, call, put, select, fork, cancel } from 'redux-saga/effects';
 import { LOCATION_CHANGE } from 'react-router-redux';
-import { LOAD_EP, LOAD_SHOP } from 'containers/App/constants';
-import { epLoaded, epLoadingError, loadShop, shopLoaded, shopLoadingError } from 'containers/App/actions';
+import { LOAD_EP, LOAD_SHOP, LOAD_RECORD1, LOAD_RECORD2, LOAD_RECORD3 } from 'containers/App/constants';
+import { epLoaded, epLoadingError, 
+         loadShop, shopLoaded, shopLoadingError, 
+         loadRecord1, record1Loaded, record1LoadingError,
+         loadRecord2, record2Loaded, record2LoadingError,
+         loadRecord3, record3Loaded, record3LoadingError
+       } from 'containers/App/actions';
 
 import request from 'utils/request';
 //import { selectUsername } from 'containers/HomePage/selectors';
@@ -26,6 +31,20 @@ export function* getEp() {
     }
     */
     //yield put(loadShop(ep.placeid));
+    //console.log("ep=");
+    //console.log(ep);
+    const records = ep.records;
+    for(let i=0; i< records.length; i++){
+        if(i === 0){
+            yield put(loadRecord1(records[0].master_id));    
+        }
+        else if(i === 1){
+            yield put(loadRecord2(records[1].master_id));   
+        }  
+        else if(i === 2){
+            yield put(loadRecord3(records[2].master_id));   
+        }  
+    }
 }
 
 /**
@@ -49,9 +68,118 @@ export function* epData() {
   yield cancel(watcher);
 }
 
+////////////////////////////////////////////////////////
+export function* getRecord1(master_id) {
+    const requestURL = "https://edwardlai3582.com/discogsmaster?masterid="+master_id;
+
+    // Call our request helper (see 'utils/request')
+    const record1 = yield call(request, requestURL);
+
+    if (!record1.err) {
+        yield put(record1Loaded(record1));
+    } else {
+        yield put(record1LoadingError(record1.err));
+    }
+}
+
+/**
+ * Watches for LOAD_EP action and calls handler
+ */
+export function* getRecord1Watcher() {
+    while(true){
+        let action = yield take(LOAD_RECORD1);
+        //console.log("getShopWatcher:"+action.placeid);
+        yield call(getRecord1, [action.master_id]);
+    }
+}
+
+/**
+ * Root saga manages watcher lifecycle
+ */
+export function* record1Data() {
+  // Fork watcher so we can continue execution
+  const watcher = yield fork(getRecord1Watcher);
+
+  // Suspend execution until location changes
+  yield take(LOCATION_CHANGE);
+  yield cancel(watcher);
+}
+
+export function* getRecord2(master_id) {
+    const requestURL = "https://edwardlai3582.com/discogsmaster?masterid="+master_id;
+
+    // Call our request helper (see 'utils/request')
+    const record2 = yield call(request, requestURL);
+
+    if (!record2.err) {
+        yield put(record2Loaded(record2));
+    } else {
+        yield put(record2LoadingError(record2.err));
+    }
+}
+
+/**
+ * Watches for LOAD_EP action and calls handler
+ */
+export function* getRecord2Watcher() {
+    while(true){
+        let action = yield take(LOAD_RECORD2);
+        yield call(getRecord2, [action.master_id]);
+    }
+}
+
+/**
+ * Root saga manages watcher lifecycle
+ */
+export function* record2Data() {
+  // Fork watcher so we can continue execution
+  const watcher = yield fork(getRecord2Watcher);
+
+  // Suspend execution until location changes
+  yield take(LOCATION_CHANGE);
+  yield cancel(watcher);
+}
+
+export function* getRecord3(master_id) {
+    const requestURL = "https://edwardlai3582.com/discogsmaster?masterid="+master_id;
+
+    // Call our request helper (see 'utils/request')
+    const record3 = yield call(request, requestURL);
+
+    if (!record3.err) {
+        yield put(record3Loaded(record3));
+    } else {
+        yield put(record3LoadingError(record3.err));
+    }
+}
+
+/**
+ * Watches for LOAD_EP action and calls handler
+ */
+export function* getRecord3Watcher() {
+    while(true){
+        let action = yield take(LOAD_RECORD3);
+        yield call(getRecord3, [action.master_id]);
+    }
+}
+
+/**
+ * Root saga manages watcher lifecycle
+ */
+export function* record3Data() {
+  // Fork watcher so we can continue execution
+  const watcher = yield fork(getRecord3Watcher);
+
+  // Suspend execution until location changes
+  yield take(LOCATION_CHANGE);
+  yield cancel(watcher);
+}
 
 // Bootstrap sagas
 export default [
-  epData,
-  ...shopSagas,   
+    epData,
+    record1Data,
+    record2Data, 
+    record3Data, 
+    ...shopSagas,   
 ];

@@ -67,7 +67,7 @@ export class HomePage extends React.Component {
   render() {
 
 
-let content = (<div> 0 producer</div>);    
+let content = (<LoadingIndicator />);    
 if (this.props.rrs) {
 content = this.props.rrs.rhythmroulettes.map(function(rr) {
 return <Producer  key={rr.name} name={rr.name} photo={rr.photo} youtubeLink={rr.youtubeLink} />

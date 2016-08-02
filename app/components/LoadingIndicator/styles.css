@@ -1,3 +1,7 @@
+.loadingIndicatorWrapper{
+    padding: 15px;
+}
+
 .sk-fading-circle {
   margin: 2em auto;
   width: 40px;
@@ -21,7 +25,7 @@
   height: 15%;
   background-color: #999;
   border-radius: 100%;
-  animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+  animation: sk-circleFadeDelay 0.75s infinite ease-in-out both;
 }
 
 .sk-circle2 {
