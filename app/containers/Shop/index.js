@@ -20,19 +20,15 @@ import styles from './styles.css';
 export class Shop extends React.Component {
 
     componentDidMount() {
-        if(this.props.placeid !== ""){
-            //console.log("FIRE (didMount)loadShop: "+nextProps.placeid);
-            //this.props.searchShop(this.props.placeid);  
-        }
     }
     
     componentWillReceiveProps(nextProps){
-        console.log("===================");
-        console.log("nextProps");
-        console.log(nextProps);
-        console.log("===================");
+        //console.log("===================");
+        //console.log("nextProps");
+        //console.log(nextProps);
+        //console.log("===================");
         if(nextProps.placeid !== this.props.placeid && nextProps.placeid!==""){
-            console.log("FIRE (receivedProps)loadShop: "+nextProps.placeid);
+            //console.log("FIRE (receivedProps)loadShop: "+nextProps.placeid);
             this.props.searchShop(nextProps.placeid);  
         }        
     }

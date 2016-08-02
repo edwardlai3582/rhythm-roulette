@@ -9,7 +9,7 @@ import request from 'utils/request';
 import { selectLocationState } from 'containers/App/selectors';
 ////////////////////////////////////////////////////////////////////////////////////////
 export function* getShop(placeid) {
-    console.log("placeid= "+placeid);
+    //console.log("placeid= "+placeid);
     
     const requestURL = "https://edwardlai3582.com/goo?placeid="+placeid;
 
@@ -29,7 +29,7 @@ export function* getShop(placeid) {
 export function* getShopWatcher() {
     while(true){
         let action = yield take(LOAD_SHOP);
-        console.log("getShopWatcher:"+action.placeid);
+        //console.log("getShopWatcher:"+action.placeid);
         yield call(getShop, [action.placeid]);
     }
 }

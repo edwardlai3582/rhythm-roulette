@@ -90,7 +90,7 @@ export function epLoadingError(eperror) {
 }
 ///////////////////////////////////////////////////////////////////////
 export function loadShop(placeid) {
-    console.log("from loadShop: "+placeid)
+    //console.log("from loadShop: "+placeid)
   return {
     type: LOAD_SHOP,
     placeid: placeid,  
