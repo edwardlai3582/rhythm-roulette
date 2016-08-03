@@ -1,4 +1,4 @@
-.wrapperA{
+.wrapperA {
     position: relative;
     width: 25%;
     text-align: center;
@@ -10,22 +10,22 @@
     cursor: pointer;
 }
 
-.wrapperA:hover{
+.wrapperA:hover {
     background-color: darkgrey;
 }
 
-.wrapperA:hover  .producerImg{
+.wrapperA:hover  .producerImg {
     background-color: darkgrey;
     filter: none;
 }
 
-.producerImgWrapper{
+.producerImgWrapper {
     position: relative;
     width: 100%;
 }
 
-.producerImg{
+.producerImg {
     width: 100%;
     height: 25vw;
-    filter:grayscale(0.5) sepia(0.5);;
+    filter: grayscale(0.5) sepia(0.5);
 }

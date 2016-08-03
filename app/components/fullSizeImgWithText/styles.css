@@ -1,31 +1,33 @@
-.imgWrapper{
+.imgWrapper {
     width: 100%;
     position: relative;
     margin: 0;
 }
 
-.bg{
+.bg {
     width: 100%;
-    height:100vh;
+    height: 100vh;
     position: relative;
     object-fit: fill;
 }
 
-.arrow{
+.arrow {
     width: 40px;
     max-width: 40px;
     z-index: 2;
     position: absolute;
-    left: calc( 50% - 20px );
-    bottom: 0px;
-    margin: 0 0 15px 0;
+    left: calc(50% - 20px);
+    bottom: 0;
+    margin: 0 0 15px;
     cursor: pointer;
 }
 
-.arrow:hover{
+.arrow:hover {
     filter: brightness(75%);
 }
 
-@media screen and (max-width: 1523px){
-        
+/*
+@media screen and (max-width: 1523px) {
+
 }
+*/

@@ -1,42 +1,36 @@
 /* Global styles */
-html { 
-    height: 100%; 
+html {
+    height: 100%;
     width: 100%;
-    overflow:auto;
+    overflow: auto;
 }
 
-body { 
-    height: 100%; 
+body {
+    height: 100%;
     width: 100%;
 }
 
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
 body.fontLoaded {
-  font-family: 'Exo', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: Exo, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-/*Open Sans*/
+
+/* Open Sans */
 :global(#app) {
-  background-color: #FAFAFA;
-  min-height: 100%;
-  min-width: 100%;
+    background-color: #FAFAFA;
+    min-height: 100%;
+    min-width: 100%;
 }
 
 .wrapper {
-  /*max-width: calc(768px + 16px * 2);*/
-    width: 100%;        
-  /*margin: 0 auto;*/
-  
-  min-height: 100%;
-  /*padding: 0 16px;*/
-  /*
-  display: flex;    
-  flex-direction: column;
-  */    
+    width: 100%;
+    min-height: 100%;
 }
 
-.headerWrapper{
+.headerWrapper {
     width: 100%;
     position: fixed;
     z-index: 3;
@@ -47,12 +41,11 @@ body.fontLoaded {
     transition: ease-in-out, all 0.25s ease-in-out;
 }
 
-.headerWrapperBlack{
-   
+.headerWrapperBlack {
     background-color: black;
     transition: ease-in-out, all 0.5s ease-in-out;
 }
 
-.logo{
+.logo {
     cursor: pointer;
 }

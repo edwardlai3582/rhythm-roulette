@@ -84,9 +84,15 @@ export class EpPage extends React.Component {
                         
                     </section>
                     <section className={styles.recordsWrapper}>
-                        <Record record={this.props.record1}/>
-                        <Record record={this.props.record2}/>
-                        <Record record={this.props.record3}/>
+                        <div className={styles.recordWrapper}>
+                            <Record record={this.props.record1} />
+                        </div>
+                        <div className={styles.recordWrapper}>
+                            <Record record={this.props.record2} />
+                        </div>
+                        <div className={styles.recordWrapper}>
+                            <Record record={this.props.record3} />
+                        </div>
                     </section>
                 </section>
             </article>

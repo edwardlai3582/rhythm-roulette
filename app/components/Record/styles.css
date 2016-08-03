@@ -1,3 +1,8 @@
-.recordWrapper{
-    background-color: teal;
+.recordWrapper {
+    width: 100%;
+    position: relative;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
 }

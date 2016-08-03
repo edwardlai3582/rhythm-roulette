@@ -1,21 +1,18 @@
 @import 'https://fonts.googleapis.com/css?family=Anton';
 
 .ProducerlistWrapper {
-
-    background-color: #FFCC00;
-
+    background-color: #FC0;
 }
 
-.ProducerlistWrapper > h2{
+.ProducerlistWrapper > h2 {
     padding: 0;
     margin: 0 0 0 1vw;
     font-size: 5vw;
-    font-family: 'Anton', sans-serif; 
-    font-weight: bold;    
+    font-family: Anton, sans-serif;
+    font-weight: bold;
 }
 
-.ProducerItemsWrapper{
+.ProducerItemsWrapper {
     width: 100%;
     position: relative;
-    
 }

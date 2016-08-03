@@ -10,7 +10,7 @@ import ReactDOM from 'react-dom';
 import styles from './styles.css';
 
 import BG from './rr.jpg';
-import BGVIDEO from './rropening3.mp4';
+//import BGVIDEO from './rropening3.mp4';
 import ARROW from './arrow-206-64.png';
 
 export class FullSizeImgWithText extends React.Component { // eslint-disable-line
@@ -33,7 +33,7 @@ export class FullSizeImgWithText extends React.Component { // eslint-disable-lin
         return (
             <section className={styles.imgWrapper} ref="myText">  
                 <video loop autoPlay="autoplay" poster={BG}  className={styles.bg}>
-                  <source src={BGVIDEO} type="video/mp4" />
+                  <source src="https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/rropening3.mp4?alt=media&token=a2e6140a-242f-4cdb-b616-a658b8b52dd5" type="video/mp4" />
                 </video>
                 <img src={ARROW} alt="scroll down" className={styles.arrow} onClick={this.goDown} />
             </section>
