@@ -51,7 +51,7 @@
             "date": "1461222860"    
         },
         {
-            "name":"Big K.R.I.T.",
+            "name":"Big KRIT",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/bigkrit.jpg?alt=media&token=25088cac-abcc-4c19-9306-a50e148f4f4f",
             "date": "1456820060"
         },
@@ -342,8 +342,8 @@
                 }
             ]            
         },
-        "Big K.R.I.T.":{
-            "name":"Big K.R.I.T.",
+        "Big KRIT":{
+            "name":"Big KRIT",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/bigkrit.jpg?alt=media&token=25088cac-abcc-4c19-9306-a50e148f4f4f",
             "date": "1456820060",                     
             "youtubeId": "cyLtodgl-eg",
