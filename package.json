@@ -20,7 +20,7 @@
     "preinstall": "npm run npmcheckversion",
     "postinstall": "if [ \"$NODE_ENV\" = \"production\" ]; then npm run build; fi",
     "prebuild": "npm run build:clean",
-    "build": "NODE_ENV=production webpack --config internals/webpack/webpack.prod.babel.js --colors -p",
+    "build": "cross-env NODE_ENV=production webpack --config internals/webpack/webpack.prod.babel.js --color -p",
     "build:clean": "npm run test:clean && rimraf ./build",
     "build:dll": "node ./internals/scripts/dependencies.js",
     "start": "if [ \"$NODE_ENV\" = \"production\" ]; then npm run serve-prod; else npm run serve-dev; fi",
