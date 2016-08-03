@@ -44,10 +44,16 @@ export class EpPage extends React.Component {
     }
 
     render() {
-        let producerName="";
+        let producerName = "";
         let pathNameArray;
-        let youtubeSrc="";
-        let placeid="";
+        let youtubeSrc = "";
+        let placeid = "";
+        let r1Artist = "";
+        let r1Album = "";
+        let r2Artist = "";
+        let r2Album = "";
+        let r3Artist = "";
+        let r3Album = "";
         if(this.props.location.locationBeforeTransitions){
             pathNameArray= this.props.location.locationBeforeTransitions.pathname.split("/");
             producerName=pathNameArray[pathNameArray.length-1].replace(/\_/gi, ' ');            
@@ -57,7 +63,12 @@ export class EpPage extends React.Component {
             //console.log(this.props.ep);
             youtubeSrc = "https://www.youtube.com/embed/"+this.props.ep.youtubeId;
             placeid = this.props.ep.placeid;
-            //console.log("EP: placeid="+this.props.ep.placeid);
+            r1Artist = this.props.ep.records[0].artist;
+            r1Album = this.props.ep.records[0].album;
+            r2Artist = this.props.ep.records[1].artist;
+            r2Album = this.props.ep.records[1].album;
+            r3Artist = this.props.ep.records[2].artist;
+            r3Album = this.props.ep.records[2].album;
         }
         
         return (
@@ -85,13 +96,13 @@ export class EpPage extends React.Component {
                     </section>
                     <section className={styles.recordsWrapper}>
                         <div className={styles.recordWrapper}>
-                            <Record record={this.props.record1} />
+                            <Record record={this.props.record1} artist={r1Artist} album={r1Album} />
                         </div>
                         <div className={styles.recordWrapper}>
-                            <Record record={this.props.record2} />
+                            <Record record={this.props.record2} artist={r2Artist} album={r2Album} />
                         </div>
                         <div className={styles.recordWrapper}>
-                            <Record record={this.props.record3} />
+                            <Record record={this.props.record3} artist={r3Artist} album={r3Album} />
                         </div>
                     </section>
                 </section>

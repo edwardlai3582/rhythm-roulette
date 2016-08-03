@@ -24,6 +24,76 @@
             "name":"Dot Da Genius",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DotDaGenius.jpg?alt=media&token=e53c77cb-3bfb-4956-9e78-6f01ed4d4550",
             "date": "1465499287"
+        },
+        {
+            "name":"Da Beatminerz",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DaBeatminerz.jpg?alt=media&token=c4de0b07-6f41-42f5-9b3f-2b25bc7ac4b9",
+            "date": "1464246860"
+        },
+        {
+            "name":"Havoc",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/havoc.jpg?alt=media&token=3d67b93c-7b5c-49a8-973d-fc9877db6242",
+            "date": "1463642060"
+        },
+        {
+            "name":"Hi-Tek",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Hi-Tek.jpg?alt=media&token=ebd6bbab-59ea-4527-877f-3c301914b742",
+            "date": "1462432460"            
+        },
+        {
+            "name":"BINK!",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/bink!.jpeg?alt=media&token=16f273a3-d6b6-4add-9b13-f132eba71874",
+            "date": "1461827660"    
+        },
+        {
+            "name":"Nottz",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Nottz.jpg?alt=media&token=c428db13-3c02-453b-9cac-5bcf47fbe3cb",
+            "date": "1461222860"    
+        },
+        {
+            "name":"Erick The Architect",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Erick%20The%20Architect.jpg?alt=media&token=f05acee4-8314-45b3-9546-cc331d509514",
+            "date": "1458112460"    
+        },
+        {
+            "name":"Apathy",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Apathy.jpg?alt=media&token=b9cbe772-878b-4fc3-a5eb-d23971c89187",
+            "date": "1456906460"    
+        },
+        {
+            "name":"K-Def",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/k-def.jpg?alt=media&token=4a506c12-252f-4ef8-b106-f142f380254a",
+            "date": "1456301660"    
+        },
+        {
+            "name":"Psycho Les",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/PSYCHOLES.jpg?alt=media&token=159e6bcb-36c5-450e-99a4-f3b546d65ae1",
+            "date": "1455092060"
+        },
+        {
+            "name":"9th Wonder",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/9thwonder.jpg?alt=media&token=d4e69e80-a071-4d17-b816-359d6bada4e3",
+            "date": "1451031260"
+        },
+        {
+            "name":"Khrysis",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/khrysis.jpg?alt=media&token=975a9001-7d81-4cd7-a49e-a77f55bb214d",
+            "date": "1450340060"
+        },
+        {
+            "name":"Large Professor",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Large%20Professor.jpg?alt=media&token=866ba737-d274-40ea-91d1-b678160f2c8c",
+            "date": "1448352860"
+        },
+        {
+            "name":"Scoop DeVille",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Scoop_DeVille.jpg?alt=media&token=b613f67d-3a91-40ef-9255-eb9d006952be",
+            "date": "1447229660"
+        },
+        {
+            "name":"Organized Noize",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/organizednoize.jpg?alt=media&token=0605ccaf-0afa-4ce0-ada2-bdcefce60c8d", 
+            "date": "1446102860"
         }
     ],
     "eps":{
@@ -146,6 +216,342 @@
                     "master_id": "691544"
                 }
             ]            
-        }
+        },
+        "Da Beatminerz":{
+            "name":"Da Beatminerz",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DaBeatminerz.jpg?alt=media&token=c4de0b07-6f41-42f5-9b3f-2b25bc7ac4b9",
+            "date": "1464246860",
+            "youtubeId": "1ydKvzllJD4",
+            "placeid": "ChIJFZtIA3ZZwokRNYCPhdEZml0",
+            "records": [
+                {
+                    "artist": "Scotty Wright",
+                    "album": "Too Much Fun!",
+                    "master_id": ""
+                },
+                {
+                    "artist": "Gene Clark",
+                    "album": "Two Sides To Every Story",
+                    "master_id": "351739"
+                },
+                {
+                    "artist": "Can",
+                    "album": "Saw Delight",
+                    "master_id": "11460"
+                }
+            ]            
+        }, 
+        "Havoc":{
+            "name":"Havoc",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/havoc.jpg?alt=media&token=3d67b93c-7b5c-49a8-973d-fc9877db6242",
+            "date": "1463642060",
+            "youtubeId": "R4uZ8S8HBKg",
+            "placeid": "ChIJr96CSp1ZwokRvJd4ai6oKXM",
+            "records": [
+                {
+                    "artist": "The Incredible String Band",
+                    "album": "Changing Horses",
+                    "master_id": "157191"
+                },
+                {
+                    "artist": "Chairmen Of The Board",
+                    "album": "Give Me Just A Little More Time",
+                    "master_id": "164933"
+                },
+                {
+                    "artist": "Libra",
+                    "album": "Winter Day's Nightmare",
+                    "master_id": "912355"
+                }
+            ]            
+        },
+        "Hi-Tek":{
+            "name":"Hi-Tek",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Hi-Tek.jpg?alt=media&token=ebd6bbab-59ea-4527-877f-3c301914b742",
+            "date": "1462432460",                     
+            "youtubeId": "R4VSQLLImNc",
+            "placeid": "ChIJgw4KCU6tQYgRp6U0P2G5toI",
+            "records": [
+                {
+                    "artist": "Spirit",
+                    "album": "Twelve Dreams Of Dr. Sardonicus",
+                    "master_id": "101986"
+                },
+                {
+                    "artist": "The Routers",
+                    "album": "Superbird",
+                    "master_id": "808074"
+                },
+                {
+                    "artist": "Elvis Presley",
+                    "album": "Raised On Rock / For Ol' Times Sake",
+                    "master_id": "198250"
+                }
+            ]            
+        }, 
+        "BINK!":{
+            "name":"BINK!",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/bink!.jpeg?alt=media&token=16f273a3-d6b6-4add-9b13-f132eba71874",
+            "date": "1461827660",                     
+            "youtubeId": "_v_K2UKayic",
+            "placeid": "ChIJj3pT9Q2YuokRfHU5J16XzEU",
+            "records": [
+                {
+                    "artist": "Jan Hammer Group",
+                    "album": "Melodies",
+                    "master_id": "93948"
+                },
+                {
+                    "artist": "Sly & The Family Stone",
+                    "album": "Greatest Hits",
+                    "master_id": "112692"
+                },
+                {
+                    "artist": "The Headhunters",
+                    "album": "Survival Of The Fittest",
+                    "master_id": "19563"
+                }
+            ]            
+        },
+        "Nottz":{
+            "name":"Nottz",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Nottz.jpg?alt=media&token=c428db13-3c02-453b-9cac-5bcf47fbe3cb",
+            "date": "1461222860",                     
+            "youtubeId": "dIT8nYyHPYI",
+            "placeid": "ChIJMQUpZoKXuokRfldhMOlnxnA",
+            "records": [
+                {
+                    "artist": "Various",
+                    "album": "Live Convention “81”",
+                    "master_id": "1977736"
+                },
+                {
+                    "artist": "Daft Punk",
+                    "album": "Daft Club",
+                    "master_id": "27113"
+                },
+                {
+                    "artist": "Herbie Hancock",
+                    "album": "Head Hunters",
+                    "master_id": "19493"
+                }
+            ]            
+        },
+        "Erick The Architect":{
+            "name":"Erick The Architect",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Erick%20The%20Architect.jpg?alt=media&token=f05acee4-8314-45b3-9546-cc331d509514",
+            "date": "1458112460",                     
+            "youtubeId": "5Kyg3NRyaR0",
+            "placeid": "ChIJ_eQDO_xbwokREqbrWP_XtdE",
+            "records": [
+                {
+                    "artist": "Diana Ross & Marvin Gaye",
+                    "album": "Diana & Marvin",
+                    "master_id": "66698"
+                },
+                {
+                    "artist": "Amnesty",
+                    "album": "Free Your Mind: The 700 West Sessions",
+                    "master_id": "156205"
+                },
+                {
+                    "artist": "The Jackson 5",
+                    "album": "The Jackson 5",
+                    "master_id": "121911"
+                }
+            ]            
+        },
+        "Apathy":{
+            "name":"Apathy",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Apathy.jpg?alt=media&token=b9cbe772-878b-4fc3-a5eb-d23971c89187",
+            "date": "1456906460",                     
+            "youtubeId": "85W7g-8-8K0",
+            "placeid": "ChIJC88gJWAO5okR7gd4j2tbZ4o",
+            "records": [
+                {
+                    "artist": "Spirit",
+                    "album": "Twelve Dreams Of Dr. Sardonicus",
+                    "master_id": "101986"
+                },
+                {
+                    "artist": "Zager & Evans",
+                    "album": "Zager & Evans",
+                    "master_id": "475460"
+                },
+                {
+                    "artist": "Sarah Fershko",
+                    "album": "Songs To Remember (Ghetto Songs)",
+                    "master_id": "8542114"
+                }
+            ]            
+        },
+        "K-Def":{
+            "name":"K-Def",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/k-def.jpg?alt=media&token=4a506c12-252f-4ef8-b106-f142f380254a",
+            "date": "1456301660",                     
+            "youtubeId": "FnOnX7rwHNw",
+            "placeid": "ChIJc41AAbVQwokRODkLpEhUlqc",
+            "records": [
+                {
+                    "artist": "The James Last Band",
+                    "album": "Beat In Sweet",
+                    "master_id": "142084"
+                },
+                {
+                    "artist": "Art Blakey And The Jazz Messengers",
+                    "album": "The Witch Doctor",
+                    "master_id": "300942"
+                },
+                {
+                    "artist": "Lee Morgan",
+                    "album": "Cornbread",
+                    "master_id": "259240"
+                }
+            ]            
+        },
+        "Psycho Les":{
+            "name":"Psycho Les",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/PSYCHOLES.jpg?alt=media&token=159e6bcb-36c5-450e-99a4-f3b546d65ae1",
+            "date": "1455092060",                     
+            "youtubeId": "ndesJ5ecLvA",
+            "placeid": "ChIJK_LJbGlfwokRYHaU95A0Zok",
+            "records": [
+                {
+                    "artist": "The Crusaders",
+                    "album": "Royal Jam",
+                    "master_id": "47647"
+                },
+                {
+                    "artist": "Jim Capaldi",
+                    "album": "Daughter Of The Night",
+                    "master_id": "489924"
+                },
+                {
+                    "artist": "Jan Garber And His Orchestra",
+                    "album": "Dance To The Country Hits",
+                    "master_id": "1862790"
+                }
+            ]            
+        },
+        "9th Wonder":{
+            "name":"9th Wonder",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/9thwonder.jpg?alt=media&token=d4e69e80-a071-4d17-b816-359d6bada4e3",
+            "date": "1451031260",                     
+            "youtubeId": "Ce8r9RfK1wk",
+            "placeid": "ChIJP0cc12ZfrIkRTwGJ0BdnvE4",
+            "records": [
+                {
+                    "artist": "Charly McClain",
+                    "album": "On Tour",
+                    "master_id": ""
+                },
+                {
+                    "artist": "Jermaine Jackson",
+                    "album": "Jermaine Jackson",
+                    "master_id": "119747"
+                },
+                {
+                    "artist": "The Temprees",
+                    "album": "Lovemen",
+                    "master_id": "513293"
+                }
+            ]            
+        }, 
+        "Khrysis":{
+            "name":"Khrysis",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/khrysis.jpg?alt=media&token=975a9001-7d81-4cd7-a49e-a77f55bb214d",
+            "date": "1450340060",                     
+            "youtubeId": "A7HbNN9Mknc",
+            "placeid": "ChIJ_T68DpX1rIkR-nxGCEsvkvU",
+            "records": [
+                {
+                    "artist": "First Choice",
+                    "album": "Doctor Love",
+                    "master_id": "65970"
+                },
+                {
+                    "artist": "Booker T & The MG's",
+                    "album": "The Booker T. Set",
+                    "master_id": "150024"
+                },
+                {
+                    "artist": "Sharon Jones & The Dap-Kings",
+                    "album": "Give The People What They Want",
+                    "master_id": "639891"
+                }
+            ]            
+        },
+        "Large Professor":{
+            "name":"Large Professor",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Large%20Professor.jpg?alt=media&token=866ba737-d274-40ea-91d1-b678160f2c8c",
+            "date": "1448352860",                     
+            "youtubeId": "1w0vv8BqRcw",
+            "placeid": "ChIJ_eQDO_xbwokREqbrWP_XtdE",
+            "records": [
+                {
+                    "artist": "Instant Funk",
+                    "album": "No Stoppin' That Rockin'",
+                    "master_id": "8020"
+                },
+                {
+                    "artist": "Harold Melvin & The Blue Notes",
+                    "album": "Black & Blue",
+                    "master_id": "4623"
+                },
+                {
+                    "artist": "Shirley Scott",
+                    "album": "On A Clear Day",
+                    "master_id": "121588"
+                }
+            ]            
+        },  
+        "Scoop DeVille":{
+            "name":"Scoop DeVille",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Scoop_DeVille.jpg?alt=media&token=b613f67d-3a91-40ef-9255-eb9d006952be",
+            "date": "1447229660",                     
+            "youtubeId": "dy7w8Nui5ww",
+            "placeid": "ChIJk_kUZE2uw4kRfP77TJSKVSQ",
+            "records": [
+                {
+                    "artist": "The Righteous Brothers",
+                    "album": "Just Once In My Life",
+                    "master_id": "468598"
+                },
+                {
+                    "artist": "Aztec Two-Step",
+                    "album": "Aztec Two-Step",
+                    "master_id": "482667"
+                },
+                {
+                    "artist": "James Taylor",
+                    "album": "JT",
+                    "master_id": "68265"
+                }
+            ]            
+        },
+        "Organized Noize":{
+            "name":"Organized Noize",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/organizednoize.jpg?alt=media&token=0605ccaf-0afa-4ce0-ada2-bdcefce60c8d", 
+            "date": "1446102860",
+            "youtubeId": "0G4fmSMzM_A",
+            "placeid": "ChIJ47R2y6gG9YgRjZnqmKe5Dd0",
+            "records": [
+                {
+                    "artist": "Four Tops",
+                    "album": "Yesterday's Dreams",
+                    "master_id": "256550"
+                },
+                {
+                    "artist": "Millie Jackson",
+                    "album": "Lovingly Yours",
+                    "master_id": "298023"
+                },
+                {
+                    "artist": "Thin Lizzy",
+                    "album": "1970-1973 Rare Tracks",
+                    "master_id": "3202618"
+                }
+            ]            
+        }        
     }
 }
