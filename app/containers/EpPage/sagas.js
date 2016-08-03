@@ -70,15 +70,24 @@ export function* epData() {
 
 ////////////////////////////////////////////////////////
 export function* getRecord1(master_id) {
-    const requestURL = "https://edwardlai3582.com/discogsmaster?masterid="+master_id;
-
+    let requestURL = "https://edwardlai3582.com/discogsmaster?masterid="+master_id;
+    //discogsrelease
     // Call our request helper (see 'utils/request')
-    const record1 = yield call(request, requestURL);
+    let record1 = yield call(request, requestURL);
 
-    if (!record1.err) {
-        yield put(record1Loaded(record1));
+    if (record1.data.statusCode && record1.data.statusCode === 404) {
+        //yield put(record3Loaded(record3));
+        requestURL = "https://edwardlai3582.com/discogsrelease?id="+master_id;
+        record1 = yield call(request, requestURL);
+        if (record1.data.statusCode && record1.data.statusCode === 404) {
+            yield put(record1LoadingError(record1.err));    
+        }
+        else{
+            yield put(record1Loaded(record1));    
+        }
     } else {
-        yield put(record1LoadingError(record1.err));
+        yield put(record1Loaded(record1));
+        //yield put(record3LoadingError(record3.err));
     }
 }
 
@@ -106,15 +115,23 @@ export function* record1Data() {
 }
 
 export function* getRecord2(master_id) {
-    const requestURL = "https://edwardlai3582.com/discogsmaster?masterid="+master_id;
-
+    let requestURL = "https://edwardlai3582.com/discogsmaster?masterid="+master_id;
+    //discogsrelease
     // Call our request helper (see 'utils/request')
-    const record2 = yield call(request, requestURL);
+    let record2 = yield call(request, requestURL);
 
-    if (!record2.err) {
-        yield put(record2Loaded(record2));
+    if (record2.data.statusCode && record2.data.statusCode === 404) {
+        //yield put(record3Loaded(record3));
+        requestURL = "https://edwardlai3582.com/discogsrelease?id="+master_id;
+        record2 = yield call(request, requestURL);
+        if (record2.data.statusCode && record2.data.statusCode === 404) {
+            yield put(record2LoadingError(record2.err));    
+        }
+        else{
+            yield put(record2Loaded(record2));    
+        }
     } else {
-        yield put(record2LoadingError(record2.err));
+        yield put(record2Loaded(record2));
     }
 }
 
@@ -141,15 +158,24 @@ export function* record2Data() {
 }
 
 export function* getRecord3(master_id) {
-    const requestURL = "https://edwardlai3582.com/discogsmaster?masterid="+master_id;
-
+    let requestURL = "https://edwardlai3582.com/discogsmaster?masterid="+master_id;
+    //discogsrelease
     // Call our request helper (see 'utils/request')
-    const record3 = yield call(request, requestURL);
+    let record3 = yield call(request, requestURL);
 
-    if (!record3.err) {
-        yield put(record3Loaded(record3));
+    if (record3.data.statusCode && record3.data.statusCode === 404) {
+        //yield put(record3Loaded(record3));
+        requestURL = "https://edwardlai3582.com/discogsrelease?id="+master_id;
+        record3 = yield call(request, requestURL);
+        if (record3.data.statusCode && record3.data.statusCode === 404) {
+            yield put(record3LoadingError(record3.err));    
+        }
+        else{
+            yield put(record3Loaded(record3));    
+        }
     } else {
-        yield put(record3LoadingError(record3.err));
+        yield put(record3Loaded(record3));
+        //yield put(record3LoadingError(record3.err));
     }
 }
 

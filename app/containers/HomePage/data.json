@@ -60,15 +60,18 @@
             "records": [
                 {
                     "artist": "Gene McDaniels",
-                    "album": "100 Lbs. of Clay!"
+                    "album": "100 Lbs. of Clay!",
+                    "master_id": "525550"
                 },
                 {
                     "artist": "The 5th Dimension",
-                    "album": "Live!!"    
+                    "album": "Live!!",
+                    "master_id": "99376"
                 },
                 {
                     "artist": "Jack Ü",
-                    "album": "Skrillex And Diplo Present Jack Ü"    
+                    "album": "Skrillex And Diplo Present Jack Ü",
+                    "master_id": "842162"
                 }
             ]            
         },
@@ -81,15 +84,18 @@
             "records": [
                 {
                     "artist": "Various",
-                    "album": "Marmalade"
+                    "album": "Marmalade",
+                    "master_id": "467899"
                 },
                 {
                     "artist": "St. Michael's Cathedral Choir",
-                    "album": ""    
+                    "album": "",
+                    "master_id": ""
                 },
                 {
                     "artist": "Kitchner",
-                    "album": ""    
+                    "album": "",
+                    "master_id": ""
                 }
             ]            
         },
@@ -102,15 +108,18 @@
             "records": [
                 {
                     "artist": "Torche",
-                    "album": "Healer / Across The Shields"
+                    "album": "Healer / Across The Shields",
+                    "master_id": "172927"
                 },
                 {
                     "artist": "Lights",
-                    "album": "Little Machines"    
+                    "album": "Little Machines",
+                    "master_id": "734924"
                 },
                 {
                     "artist": "Neil Young",
-                    "album": "Hawks & Doves"    
+                    "album": "Hawks & Doves",
+                    "master_id": "38615"
                 }
             ]            
         },
@@ -123,15 +132,18 @@
             "records": [
                 {
                     "artist": "Cortijo",
-                    "album": "The Ansonia Years 1969-1971"
+                    "album": "The Ansonia Years 1969-1971",
+                    "master_id": "8244569"
                 },
                 {
                     "artist": "Al Green",
-                    "album": "Gets Next To You"    
+                    "album": "Gets Next To You",
+                    "master_id": "141233"
                 },
                 {
                     "artist": "The Feed-Back",
-                    "album": "The Feed-Back"    
+                    "album": "The Feed-Back",
+                    "master_id": "691544"
                 }
             ]            
         }
