@@ -51,6 +51,11 @@
             "date": "1461222860"    
         },
         {
+            "name":"Big K.R.I.T.",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/bigkrit.jpg?alt=media&token=25088cac-abcc-4c19-9306-a50e148f4f4f",
+            "date": "1456820060"
+        },
+        {
             "name":"Erick The Architect",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Erick%20The%20Architect.jpg?alt=media&token=f05acee4-8314-45b3-9546-cc331d509514",
             "date": "1458112460"    
@@ -337,6 +342,30 @@
                 }
             ]            
         },
+        "Big K.R.I.T.":{
+            "name":"Big K.R.I.T.",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/bigkrit.jpg?alt=media&token=25088cac-abcc-4c19-9306-a50e148f4f4f",
+            "date": "1456820060",                     
+            "youtubeId": "cyLtodgl-eg",
+            "placeid": "ChIJ0Ur8iCQU9YgRG94-njHEkB0",
+            "records": [
+                {
+                    "artist": "Linda Clifford",
+                    "album": "Linda Clifford",
+                    "master_id": "85121"
+                },
+                {
+                    "artist": "Seatrain",
+                    "album": "Seatrain",
+                    "master_id": "302409"
+                },
+                {
+                    "artist": "Culture Club",
+                    "album": "Waking Up With The House On Fire",
+                    "master_id": "48328"
+                }
+            ]            
+        },        
         "Erick The Architect":{
             "name":"Erick The Architect",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Erick%20The%20Architect.jpg?alt=media&token=f05acee4-8314-45b3-9546-cc331d509514",
