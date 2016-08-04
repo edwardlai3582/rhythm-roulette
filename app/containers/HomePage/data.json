@@ -99,6 +99,71 @@
             "name":"Organized Noize",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/organizednoize.jpg?alt=media&token=0605ccaf-0afa-4ce0-ada2-bdcefce60c8d", 
             "date": "1446102860"
+        },
+        {
+            "name":"Sporting Life",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Sporting%20Life.jpg?alt=media&token=219f965a-23ff-4105-9114-4b8676db3904",
+            "date": "1443732201"
+        },
+        {
+            "name":"Just Blaze",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Just_Blaze.jpg?alt=media&token=e6596c06-f37f-41f2-ae4e-b254ae500292",
+            "date": "1441917801"    
+        },
+        {
+            "name":"Georgia Anne Muldrow",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/GeorgiaAnneMuldrow.jpg?alt=media&token=5e6b69d0-af64-42a9-aa61-0bf1f82cf90b",
+            "date": "1441745001"    
+        },
+        {
+            "name":"Exile",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Exile.jpg?alt=media&token=094443f3-1200-43e5-891b-f2bea839f67e",
+            "date": "1441313001"    
+        },
+        {
+            "name":"Mannie Fresh",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Mannie%20Fresh.jpg?alt=media&token=7713078c-4898-4a50-8897-3aea2b2bbc36",
+            "date": "1440794601"    
+        },
+        {
+            "name":"Paul White",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Paul%20White.jpg?alt=media&token=caa030f9-672b-428b-9bf0-f61b283d5d4e",
+            "date": "1438289001"    
+        },
+        {
+            "name":"The Heatmakerz",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Heatmakerz.jpg?alt=media&token=d0c3ccd9-e694-4f76-ba2b-8d3a81fe5994",
+            "date": "1436993001"    
+        },
+        {
+            "name":"Kirk Knight",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Kirk%20Knight.jpg?alt=media&token=981b018a-5378-430c-84e7-2f3b2d392849",
+            "date": "1429821801"    
+        },
+        {
+            "name":"Filthy Rockwell",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Filthy%20Rockwell.jpg?alt=media&token=ed9a40e3-c21f-4476-947f-591bc104eaab",
+            "date": "1428007401"    
+        },
+        {
+            "name":"Skywlkr",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Skywlkr.jpg?alt=media&token=55890b19-678c-4a2d-a811-6e3d3cfef470",
+            "date": "1422567801"    
+        },
+        {
+            "name":"Wara From the NBHD",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Wara%20From%20the%20NBHD.jpg?alt=media&token=f04da821-9c6b-41cf-b195-a2979c6d5883",
+            "date": "1421358201"    
+        },
+        {
+            "name":"DJ Nu-Mark",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DJ%20Nu-Mark.jpg?alt=media&token=0f883b38-cbde-46ad-b839-f055034deb9d",
+            "date": "1418939001"    
+        },
+        {
+            "name":"Oh No",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Oh%20No.jpg?alt=media&token=97faf1a4-a285-47b4-a443-eccc7ed10fbd",
+            "date": "1418161401"    
         }
     ],
     "eps":{
@@ -581,6 +646,318 @@
                     "master_id": "3202618"
                 }
             ]            
-        }        
+        },
+        "Sporting Life":{
+            "name":"Sporting Life",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Sporting%20Life.jpg?alt=media&token=219f965a-23ff-4105-9114-4b8676db3904",
+            "date": "1443732201",                     
+            "youtubeId": "axMjk2ksETE",
+            "placeid": "ChIJI2EfrCBawokR_aDWhkTc8aE",
+            "records": [
+                {
+                    "artist": "",
+                    "album": "",
+                    "master_id": ""
+                },
+                {
+                    "artist": "Various",
+                    "album": "談情集 (tanqingji)",
+                    "master_id": ""
+                },
+                {
+                    "artist": "Various",
+                    "album": "Love Songs",
+                    "master_id": ""
+                }
+            ]            
+        },    
+        "Just Blaze":{
+            "name":"Just Blaze",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Just_Blaze.jpg?alt=media&token=e6596c06-f37f-41f2-ae4e-b254ae500292",
+            "date": "1441917801",                     
+            "youtubeId": "wQ7rkIppxPM",
+            "placeid": "ChIJR5dM6pFZwokRe3YTJLm8JEg",
+            "records": [
+                {
+                    "artist": "The Modulations",
+                    "album": "With A Made Up",
+                    "master_id": "2149557"
+                },
+                {
+                    "artist": "The White Brothers",
+                    "album": "The Way Of Life",
+                    "master_id": "3079617"
+                },
+                {
+                    "artist": "",
+                    "album": "",
+                    "master_id": ""
+                }
+            ]            
+        },
+        "Georgia Anne Muldrow":{
+            "name":"Georgia Anne Muldrow",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/GeorgiaAnneMuldrow.jpg?alt=media&token=5e6b69d0-af64-42a9-aa61-0bf1f82cf90b",
+            "date": "1441745001",                     
+            "youtubeId": "XLX8qSvtFXE",
+            "placeid": "ChIJCfs0I5JZwokRWcvv0UpOYpo",
+            "records": [
+                {
+                    "artist": "",
+                    "album": "",
+                    "master_id": ""
+                },
+                {
+                    "artist": "",
+                    "album": "",
+                    "master_id": ""
+                },
+                {
+                    "artist": "",
+                    "album": "",
+                    "master_id": ""
+                }
+            ]            
+        },
+        "Exile":{
+            "name":"Exile",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Exile.jpg?alt=media&token=094443f3-1200-43e5-891b-f2bea839f67e",
+            "date": "1441313001",                     
+            "youtubeId": "VJW4S06RtUU",
+            "placeid": "ChIJCfs0I5JZwokRWcvv0UpOYpo",
+            "records": [
+                {
+                    "artist": "",
+                    "album": "",
+                    "master_id": ""
+                },
+                {
+                    "artist": "",
+                    "album": "",
+                    "master_id": ""
+                },
+                {
+                    "artist": "",
+                    "album": "",
+                    "master_id": ""
+                }
+            ]            
+        },
+        "Mannie Fresh":{
+            "name":"Mannie Fresh",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Mannie%20Fresh.jpg?alt=media&token=7713078c-4898-4a50-8897-3aea2b2bbc36",
+            "date": "1440794601",                     
+            "youtubeId": "n4Y-_ZjIeNg",
+            "placeid": "ChIJR5dM6pFZwokRe3YTJLm8JEg",
+            "records": [
+                {
+                    "artist": "",
+                    "album": "",
+                    "master_id": ""
+                },
+                {
+                    "artist": "",
+                    "album": "",
+                    "master_id": ""
+                },
+                {
+                    "artist": "",
+                    "album": "",
+                    "master_id": ""
+                }
+            ]            
+        },
+        "Paul White":{
+            "name":"Paul White",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Paul%20White.jpg?alt=media&token=caa030f9-672b-428b-9bf0-f61b283d5d4e",
+            "date": "1438289001",                     
+            "youtubeId": "PfmK5VMnDLQ",
+            "placeid": "ChIJPYu9tnACdkgRqG-XUPlQIEQ",
+            "records": [
+                {
+                    "artist": "Rainbow",
+                    "album": "Down To Earth",
+                    "master_id": "40638"
+                },
+                {
+                    "artist": "Odyssey",
+                    "album": "I Got The Melody",
+                    "master_id": "85574"
+                },
+                {
+                    "artist": "The Byrds",
+                    "album": "Ballad Of Easy Rider",
+                    "master_id": "30076"
+                }
+            ]            
+        },  
+        "The Heatmakerz":{
+            "name":"The Heatmakerz",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Heatmakerz.jpg?alt=media&token=d0c3ccd9-e694-4f76-ba2b-8d3a81fe5994",
+            "date": "1436993001",                     
+            "youtubeId": "l8JCVoBmNNw",
+            "placeid": "ChIJr96CSp1ZwokRvJd4ai6oKXM",
+            "records": [
+                {
+                    "artist": "Howdy Doody",
+                    "album": "The World: Original Cast Starring Howdy Doody",
+                    "master_id": "957360"
+                },
+                {
+                    "artist": "Yoshiaki Masuo",
+                    "album": "Sunshine Avenue",
+                    "master_id": "2768042"
+                },
+                {
+                    "artist": "Various",
+                    "album": "A Good Example Of What It Is",
+                    "master_id": "902643"
+                }
+            ]            
+        },  
+        "Kirk Knight":{
+            "name":"Kirk Knight",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Kirk%20Knight.jpg?alt=media&token=981b018a-5378-430c-84e7-2f3b2d392849",
+            "date": "1429821801",                     
+            "youtubeId": "OzOkEYNXs1o",
+            "placeid": "ChIJR5dM6pFZwokRe3YTJLm8JEg",
+            "records": [
+                {
+                    "artist": "John Denver And The Muppets",
+                    "album": "A Christmas Together",
+                    "master_id": "5146665"
+                },
+                {
+                    "artist": "Ernest Gold",
+                    "album": "Exodus - Original Soundtrack",
+                    "master_id": "313426"
+                },
+                {
+                    "artist": "Rodgers & Hammerstein In Association With Joseph Fields",
+                    "album": "Flower Drum Song",
+                    "master_id": "395715"
+                }
+            ]            
+        }, 
+        "Filthy Rockwell":{
+            "name":"Filthy Rockwell",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Filthy%20Rockwell.jpg?alt=media&token=ed9a40e3-c21f-4476-947f-591bc104eaab",
+            "date": "1428007401",                     
+            "youtubeId": "0-3G0e-7uqw",
+            "placeid": "ChIJUT4JHMrSJIgRQD7JLLVkvMA",
+            "records": [
+                {
+                    "artist": "Lani Hall",
+                    "album": "Albany Park",
+                    "master_id": "642854"
+                },
+                {
+                    "artist": "Michael Quatro",
+                    "album": "In Collaboration With The Gods",
+                    "master_id": "421921"
+                },
+                {
+                    "artist": "Barry White",
+                    "album": "Greatest Hits Volume Two",
+                    "master_id": "479803"
+                }
+            ]            
+        },
+        "Skywlkr":{
+            "name":"Skywlkr",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Skywlkr.jpg?alt=media&token=55890b19-678c-4a2d-a811-6e3d3cfef470",
+            "date": "1422567801",                     
+            "youtubeId": "N_j0bNd5PBU",
+            "placeid": "ChIJUT4JHMrSJIgRQD7JLLVkvMA",
+            "records": [
+                {
+                    "artist": "Earl Bostic",
+                    "album": "The Best Of Bostic",
+                    "master_id": "410887"
+                },
+                {
+                    "artist": "Miki Howard",
+                    "album": "Miki Howard",
+                    "master_id": "158186"
+                },
+                {
+                    "artist": "Nicholas",
+                    "album": "Stand Up!",
+                    "master_id": "3008264"
+                }
+            ]            
+        },
+        "Wara From the NBHD":{
+            "name":"Wara From the NBHD",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Wara%20From%20the%20NBHD.jpg?alt=media&token=f04da821-9c6b-41cf-b195-a2979c6d5883",
+            "date": "1421358201",                     
+            "youtubeId": "8GbMX-g7xmE",
+            "placeid": "ChIJLWFEjQQH9YgR8saEuYO4r8E",
+            "records": [
+                {
+                    "artist": "Jackson Browne",
+                    "album": "Lawyers In Love",
+                    "master_id": "26019"
+                },
+                {
+                    "artist": "Ace Cannon",
+                    "album": "The Happy And Mello Sax Of Ace Cannon",
+                    "master_id": "680255"
+                },
+                {
+                    "artist": "Sternwheeler Steamboat",
+                    "album": "Natchez Calliope",
+                    "master_id": ""
+                }
+            ]            
+        },
+        "DJ Nu-Mark":{
+            "name":"DJ Nu-Mark",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DJ%20Nu-Mark.jpg?alt=media&token=0f883b38-cbde-46ad-b839-f055034deb9d",
+            "date": "1418939001",                     
+            "youtubeId": "GtyHIXQj3sI",
+            "placeid": "ChIJ79VeUzPOwoARbrnw1sAR2dY",
+            "records": [
+                {
+                    "artist": "Charles Mingus",
+                    "album": "Mingus At Antibes",
+                    "master_id": "65022"
+                },
+                {
+                    "artist": "The Rockets",
+                    "album": "No Ballads",
+                    "master_id": "294858"
+                },
+                {
+                    "artist": "George Benson",
+                    "album": "Breezin'",
+                    "master_id": "52525"
+                }
+            ]            
+        },
+        "Oh No":{
+            "name":"Oh No",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Oh%20No.jpg?alt=media&token=97faf1a4-a285-47b4-a443-eccc7ed10fbd",
+            "date": "1418161401",                     
+            "youtubeId": "rSfUiKUo6m4",
+            "placeid": "ChIJ4Ztu4Pw16IAR_kEXbYVH-iw",
+            "records": [
+                {
+                    "artist": "",
+                    "album": "Nascar ’99",
+                    "master_id": ""
+                },
+                {
+                    "artist": "",
+                    "album": "Karate Champ",
+                    "master_id": ""
+                },
+                {
+                    "artist": "",
+                    "album": "NWO/WCW Revenge",
+                    "master_id": ""
+                }
+            ]            
+        }    
     }
 }

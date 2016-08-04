@@ -17,7 +17,8 @@ import {
     selectEp,
     selectRecord1, selectRecord1Loading,
     selectRecord2, selectRecord2Loading,
-    selectRecord3, selectRecord3Loading
+    selectRecord3, selectRecord3Loading,
+    selectShop, selectShopLoading 
 } from 'containers/App/selectors';
 
 import { 
@@ -90,7 +91,7 @@ export class EpPage extends React.Component {
                             </div>
                         </div>
                         <div className={styles.shopWrapper}>
-                            <Shop placeid={placeid}/>
+                            <Shop shop={this.props.shop} shopLoading={this.props.shopLoading} />
                         </div>
                         
                     </section>
@@ -117,6 +118,11 @@ EpPage.propTypes = {
         React.PropTypes.object,
         React.PropTypes.bool,
      ]),
+    shop: React.PropTypes.oneOfType([
+        React.PropTypes.object,
+        React.PropTypes.bool,
+     ]),
+    shopLoading:  React.PropTypes.bool,
 };
 
 function mapDispatchToProps(dispatch) {
@@ -135,6 +141,8 @@ const mapStateToProps = createStructuredSelector({
     record1 : selectRecord1(),
     record2 : selectRecord2(),
     record3 : selectRecord3(),
+    shop: selectShop(),
+    shopLoading: selectShopLoading(),    
 });
 
 

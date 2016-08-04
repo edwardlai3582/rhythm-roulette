@@ -1,4 +1,4 @@
-
+ 
 import { take, takeEvery, call, put, select, fork, cancel } from 'redux-saga/effects';
 import { LOCATION_CHANGE } from 'react-router-redux';
 import { LOAD_EP, LOAD_SHOP, LOAD_RECORD1, LOAD_RECORD2, LOAD_RECORD3 } from 'containers/App/constants';
@@ -33,6 +33,7 @@ export function* getEp() {
     //yield put(loadShop(ep.placeid));
     //console.log("ep=");
     //console.log(ep);
+    yield put(loadShop(ep.placeid));
     const records = ep.records;
     for(let i=0; i< records.length; i++){
         if(i === 0){

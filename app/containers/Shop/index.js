@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 //import Helmet from 'react-helmet';
 
 import { createStructuredSelector } from 'reselect';
-
+/*
 import {
     selectShop,
     selectShopLoading,
@@ -13,7 +13,7 @@ import {
 import { 
     loadShop
 } from '../App/actions';
-
+*/
 import LoadingIndicator from 'components/LoadingIndicator';
 
 import styles from './styles.css';
@@ -30,10 +30,12 @@ export class Shop extends React.Component {
         //console.log("nextProps");
         //console.log(nextProps);
         //console.log("===================");
+        /*
         if(nextProps.placeid !== this.props.placeid && nextProps.placeid!==""){
             //console.log("FIRE (receivedProps)loadShop: "+nextProps.placeid);
             this.props.searchShop(nextProps.placeid);  
-        }        
+        }
+        */
     }
 
     render() {
@@ -75,24 +77,25 @@ export class Shop extends React.Component {
 }
 
 Shop.propTypes = {
-    placeid: React.PropTypes.string,
+    //placeid: React.PropTypes.string,
     shop: React.PropTypes.oneOfType([
         React.PropTypes.object,
         React.PropTypes.bool,
      ]),
+    shopLoading:  React.PropTypes.bool,
 };
 
 function mapDispatchToProps(dispatch) {
   return {
-    searchShop: (placeid) => dispatch(loadShop(placeid)),
+    //searchShop: (placeid) => dispatch(loadShop(placeid)),
 
     dispatch,
   };
 }
 
 const mapStateToProps = createStructuredSelector({
-    shop: selectShop(),
-    shopLoading: selectShopLoading(),
+    //shop: selectShop(),
+    //shopLoading: selectShopLoading(),
 });
 
 
