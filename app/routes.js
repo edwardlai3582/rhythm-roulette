@@ -13,67 +13,91 @@ const loadModule = (cb) => (componentModule) => {
 };
 
 export default function createRoutes(store) {
-  // create reusable async injectors using getAsyncInjectors factory
-  const { injectReducer, injectSagas } = getAsyncInjectors(store);
+    // create reusable async injectors using getAsyncInjectors factory
+    const { injectReducer, injectSagas } = getAsyncInjectors(store);
 
-  return [
-    {
-      path: '/',
-      name: 'home',
-      getComponent(nextState, cb) {
-        const importModules = Promise.all([
-          System.import('containers/HomePage/reducer'),
-          System.import('containers/HomePage/sagas'),
-          System.import('containers/HomePage'),
-        ]);
+    return [
+        {
+            path: '/',
+            name: 'home',
+            getComponent(nextState, cb) {
+                const importModules = Promise.all([
+                    System.import('containers/HomePage/reducer'),
+                    System.import('containers/HomePage/sagas'),
+                    System.import('containers/HomePage'),
+                ]);
 
-        const renderRoute = loadModule(cb);
+                const renderRoute = loadModule(cb);
 
-        importModules.then(([reducer, sagas, component]) => {
-          injectReducer('home', reducer.default);
-          injectSagas(sagas.default);
+                importModules.then(([reducer, sagas, component]) => {
+                    injectReducer('home', reducer.default);
+                    injectSagas(sagas.default);
 
-          renderRoute(component);
-        });
+                    renderRoute(component);
+                });
 
-        importModules.catch(errorLoading);
-      },
-    }, {
-      path: '/features',
-      name: 'features',
-      getComponent(nextState, cb) {
-        System.import('containers/FeaturePage')
-          .then(loadModule(cb))
-          .catch(errorLoading);
-      },
-    }, {
-      path: '/ep/:name',
-      name: 'ep',
-      getComponent(nextState, cb) {
-        const importModules = Promise.all([
-          System.import('containers/EpPage/reducer'),
-          System.import('containers/EpPage/sagas'),
-          System.import('containers/EpPage'),
-        ]);
+                importModules.catch(errorLoading);
+            },
+        }, 
+        {
+            path: '/features',
+            name: 'features',
+            getComponent(nextState, cb) {
+                System.import('containers/FeaturePage')
+                .then(loadModule(cb))
+                .catch(errorLoading);
+            },
+        }, 
+        {
+            path: '/ep',
+            name: 'eps',
+            getComponent(nextState, cb) {
+                const importModules = Promise.all([
+                    System.import('containers/EpsPage/reducer'),
+                    System.import('containers/EpsPage/sagas'),
+                    System.import('containers/EpsPage'),
+                ]);
 
-        const renderRoute = loadModule(cb);
+                const renderRoute = loadModule(cb);
 
-        importModules.then(([reducer, sagas, component]) => {
-          injectReducer('ep', reducer.default);
-          injectSagas(sagas.default);
-          renderRoute(component);
-        });
+                importModules.then(([reducer, sagas, component]) => {
+                    injectReducer('eps', reducer.default);
+                    injectSagas(sagas.default);
+                    renderRoute(component);
+                });
 
-        importModules.catch(errorLoading);
-      },
-    }, {
-      path: '*',
-      name: 'notfound',
-      getComponent(nextState, cb) {
-        System.import('containers/NotFoundPage')
-          .then(loadModule(cb))
-          .catch(errorLoading);
-      },
-    },
-  ];
+                importModules.catch(errorLoading);
+            },
+        },
+        {
+            path: '/ep/:name',
+            name: 'ep',
+            getComponent(nextState, cb) {
+                const importModules = Promise.all([
+                    System.import('containers/EpPage/reducer'),
+                    System.import('containers/EpPage/sagas'),
+                    System.import('containers/EpPage'),
+                ]);
+
+                const renderRoute = loadModule(cb);
+
+                importModules.then(([reducer, sagas, component]) => {
+                    injectReducer('ep', reducer.default);
+                    injectSagas(sagas.default);
+                    renderRoute(component);
+                });
+
+                importModules.catch(errorLoading);
+            },
+        },           
+        {
+            path: '*',
+            name: 'notfound',
+            getComponent(nextState, cb) {
+                System.import('containers/NotFoundPage')
+                .then(loadModule(cb))
+                .catch(errorLoading);
+            },
+        },
+    ];
 }
