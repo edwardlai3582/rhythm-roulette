@@ -63,14 +63,16 @@ export class Shop extends React.Component {
         //*/
         return (
             <article className={styles.shopWrpper} >
-                <section>
-                    {name}
-                    <div  className={styles.shopimgWrapper}>    
-                        <Shopimg photo_reference={photo_reference} />
+                    <header>{name}</header>
+                    <div className={styles.shopImgTextWrpper} >
+                        <div  className={styles.shopimgWrapper}>    
+                            <Shopimg photo_reference={photo_reference} />
+                        </div>
+                        <section  className={styles.textWrapper}>
+                            <p>{address}</p>
+                            <p>{phone}</p>            
+                        </section>
                     </div>
-                    <p>{address}</p>
-                    <p>{phone}</p>
-                </section>
             </article>
         );
     }

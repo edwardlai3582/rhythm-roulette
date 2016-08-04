@@ -1,8 +1,50 @@
 .recordWrapper {
     width: 100%;
     position: relative;
-    background-color: black;
     color: white;
     text-align: center;
     padding: 5px;
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.recordWrapper .recordImgWRapper {
+    margin: 0 auto;
+    width: 25vw;
+    height: 25vw;
+}
+
+.recordWrapper img {
+    width: 100%;
+}
+
+.discogsA {
+    background-color: #FC0;
+    border-radius: 3px;
+    padding: 1vw;
+    color: purple;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .recordWrapper {
+        display: flex;
+        justify-content:space-between;
+        margin-bottom: 1vw;
+    }   
+
+    .recordWrapper .recordImgWRapper {
+        width: 35%;
+        height: 35%;
+    }
+    
+    .textWrapper{
+        width: 65%;
+        text-align: left;
+    }
+
+    .textWrapper p{
+        padding-top: 0;
+        margin-top: 0;
+        margin-left: 2vw;
+    }    
 }

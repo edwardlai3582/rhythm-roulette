@@ -14,7 +14,7 @@ export class Record extends React.Component {
             if(!this.props.record.data.statusCode){
                 //title = this.props.record.data.title;
                 //artist = this.props.record.data.artists[0].name;
-                discogsLink = (<a target="_blank" href={this.props.record.data.uri}>Discogs</a>); 
+                discogsLink = (<a target="_blank" href={this.props.record.data.uri} className={styles.discogsA}>Discogs</a>); 
                 if(this.props.record.data.images && this.props.record.data.images.length>0){
                     image=(<img src={this.props.record.data.images[0].uri150} />);
                 }                
@@ -23,10 +23,14 @@ export class Record extends React.Component {
         
         return (
             <section className={styles.recordWrapper}>
-                {image}
-                <p>{this.props.album}</p>
-                <p>{this.props.artist}</p>
-                <p>{discogsLink}</p>      
+                <div className={styles.recordImgWRapper}>           
+                    {image}
+                </div>           
+                <div className={styles.textWrapper}>
+                    <p>{this.props.album}</p>
+                    <p>{this.props.artist}</p>
+                    <p>{discogsLink}</p>                            
+                </div>                
             </section>
         );
     }

@@ -84,6 +84,7 @@ export class EpPage extends React.Component {
                     <h1 className={styles.epSectionH1}> 
                         {producerName} 
                     </h1>
+            
                     <section className={styles.epContentUpperWrapper}>
                         <div className={styles.videoAndShopWrapper}>
                             <div className={styles.iframeWrapper}>
@@ -91,20 +92,28 @@ export class EpPage extends React.Component {
                             </div>
                         </div>
                         <div className={styles.shopWrapper}>
+                            <h2>
+                                Where the producer picked    
+                            </h2>
                             <Shop shop={this.props.shop} shopLoading={this.props.shopLoading} />
-                        </div>
-                        
+                        </div> 
                     </section>
-                    <section className={styles.recordsWrapper}>
-                        <div className={styles.recordWrapper}>
-                            <Record record={this.props.record1} artist={r1Artist} album={r1Album} />
-                        </div>
-                        <div className={styles.recordWrapper}>
-                            <Record record={this.props.record2} artist={r2Artist} album={r2Album} />
-                        </div>
-                        <div className={styles.recordWrapper}>
-                            <Record record={this.props.record3} artist={r3Artist} album={r3Album} />
-                        </div>
+            
+                    <section className={styles.recordsTotalWrapper}>
+                        <h2>
+                            What the producer picked    
+                        </h2>
+                        <section className={styles.recordsWrapper}>
+                            <div className={styles.recordWrapper}>
+                                <Record record={this.props.record1} artist={r1Artist} album={r1Album} />
+                            </div>
+                            <div className={styles.recordWrapper}>
+                                <Record record={this.props.record2} artist={r2Artist} album={r2Album} />
+                            </div>
+                            <div className={styles.recordWrapper}>
+                                <Record record={this.props.record3} artist={r3Artist} album={r3Album} />
+                            </div>
+                        </section>            
                     </section>
                 </section>
             </article>

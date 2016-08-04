@@ -19,19 +19,6 @@ import styles from './styles.css';
 
 export class Shopimg extends React.Component {
 
-    componentDidMount() {
-    }
-    
-    componentWillReceiveProps(nextProps){
-        //console.log("===================");
-        //console.log("nextProps");
-        //console.log(nextProps);
-        //console.log("===================");
-        if(nextProps.photo_reference !== this.props.photo_reference && nextProps.photo_reference!==""){
-            this.props.searchShopimg(nextProps.photo_reference);  
-        }        
-    }
-
     render() {
         let imgSrc="";
         if(this.props.photo_reference!="" && this.props.shopimg){
@@ -53,7 +40,7 @@ Shopimg.propTypes = {
         React.PropTypes.bool,
      ]),
 };
-
+/*
 function mapDispatchToProps(dispatch) {
   return {
     searchShopimg: (photo_reference) => dispatch(loadShopimg(photo_reference)),
@@ -61,11 +48,11 @@ function mapDispatchToProps(dispatch) {
     dispatch,
   };
 }
-
+*/
 const mapStateToProps = createStructuredSelector({
     shopimg: selectShopimg(),
 });
 
 
 // Wrap the component to inject dispatch and state into it
-export default connect(mapStateToProps, mapDispatchToProps)(Shopimg);
+export default connect(mapStateToProps, null)(Shopimg);

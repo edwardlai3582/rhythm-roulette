@@ -2,7 +2,7 @@
 import { take, takeEvery, call, put, select, fork, cancel } from 'redux-saga/effects';
 import { LOCATION_CHANGE } from 'react-router-redux';
 import { LOAD_SHOP } from 'containers/App/constants';
-import { loadShop, shopLoaded, shopLoadingError } from 'containers/App/actions';
+import { loadShop, shopLoaded, shopLoadingError,loadShopimg } from 'containers/App/actions';
 
 import request from 'utils/request';
 
@@ -21,6 +21,11 @@ export function* getShop(placeid) {
 
     if (!shop.err) {
         yield put(shopLoaded(shop));
+        if(shop.data.result.photos){
+                    //photo_reference = this.props.shop.data.result.photos[0].photo_reference;
+            yield put(loadShopimg(shop.data.result.photos[0].photo_reference));
+        }         
+
     } else {
         yield put(shopLoadingError(shop.err));
     }

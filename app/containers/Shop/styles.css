@@ -1,5 +1,43 @@
 .shopWrpper {
-    background-color: black;
+    background-color: dimgrey;
     color: white;
     padding: 5%;
+    text-align: center;
+}
+
+.shopWrpper header {
+    font-weight: bold;
+}
+
+.shopWrpper p {
+    font-size: 16px;
+    font-family: 'Helvetica Neue', Helvetica;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.shopimgWrapper{
+    margin-top: 5px;
+}
+
+.shopWrpper .textWrapper{
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+    .shopWrpper {
+        padding: 10px 0;
+    }
+    
+    .shopImgTextWrpper {
+        display: flex;
+        text-align: left;
+        justify-content:space-around;
+    }
+    
+    .shopimgWrapper {
+        max-width: 30%;
+        margin: 10px;
+    }
 }

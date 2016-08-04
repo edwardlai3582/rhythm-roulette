@@ -29,9 +29,9 @@ export class Producer extends React.Component {
             <div className={styles.producerImgWrapper}>
                 <img src={this.props.photo} alt={this.props.name} className={styles.producerImg} />
             </div>
-            <span>
-                {this.props.name} 
-            </span>   
+            <div className={styles.producerNameWrapper}>
+                <span>{this.props.name}</span>
+            </div>       
         </Link>
     );
   }

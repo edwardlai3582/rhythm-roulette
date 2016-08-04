@@ -10,12 +10,15 @@
     position: relative;
     width: 90%;
     left: 5%;
+    padding-bottom: 30px;
 }
 
 .epSectionH1 {
     position: relative;
     padding: 10px 0;
     margin: 0;
+    font-family: Exo, 'Helvetica Neue', Helvetica;
+    font-size: 5vw;
 }
 
 .epContentUpperWrapper {
@@ -46,15 +49,80 @@
 }
 
 .shopWrapper {
+    position: relative;
     width: 30%;
+}
+
+.shopWrapper h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+.recordsTotalWrapper{
+    width: 100%;
+    color: white;
+    box-sizing: border-box;
+    padding: 1vw;
+}
+
+.recordsTotalWrapper h2{
+    padding: 1vw 0 1vw 1vw;
+    margin: 0;
+    font-size: 4vw;
+    color: black;
 }
 
 .recordsWrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    font-family: 'Helvetica Neue', Helvetica;
+    background-color: black;
 }
 
 .recordWrapper {
-    width: 30%;
+    width: 33%;
+    font-family: 'Helvetica Neue', Helvetica;
+    margin-top: 2vw;
+}
+
+@media only screen and (max-width: 800px) {
+    .epContentUpperWrapper {
+        display: block;    
+    }
+
+    .videoAndShopWrapper {
+        width: 100%;
+    }    
+
+    .shopWrapper {
+        width: 100%;
+        margin-top: 2vw;
+    } 
+    
+    .shopWrapper h2 {
+        font-size: 4vw;
+    }
+    
+    .recordsTotalWrapper h2{
+        padding: 1vw 0 1vw 1vw;
+        margin: 0;
+        
+    }        
+}
+
+@media only screen and (max-width: 600px) {
+    .recordsWrapper {
+        display: block;
+    }
+
+    .recordWrapper {
+        width: 100%;
+    }
+    
+    .recordsTotalWrapper h2 {
+        padding: 0;    
+    }
 }
