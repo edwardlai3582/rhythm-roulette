@@ -1,11 +1,16 @@
 {
     "rhythmroulettes": [
-      {
+        {
+            "name":"Childish Major",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Childish%20Major.jpg?alt=media&token=f9b71bc5-807c-48a9-8054-663bc510ee9c",
+            "date": "1470350457"
+        },
+        {
             "name":"The 45 King",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/45-king.jpg?alt=media&token=3a019c5d-6d52-4b6d-b26c-a4d38161ffd6",
             "date": "1469770485"
         },        
-      {
+        {
             "name":"Brasstracks",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Brasstracks.jpg?alt=media&token=71ee6f2c-941f-4aa6-a170-260cd55edba5",
             "date": "1469126021"
@@ -282,6 +287,30 @@
         }
     ],
     "eps":{
+        "Childish Major":{
+            "name":"Childish Major",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Childish%20Major.jpg?alt=media&token=f9b71bc5-807c-48a9-8054-663bc510ee9c",
+            "date": "1470350457",                     
+            "youtubeId": "qniiWpi_Sf8",
+            "placeid": "ChIJeTYzs5NZwokRgai7uICeKNU",
+            "records": [
+                {
+                    "artist": "Samantha Ronson",
+                    "album": "Pull My Hair Out",
+                    "master_id": "2704838"
+                },
+                {
+                    "artist": "Various",
+                    "album": "Son Of Homegrown",
+                    "master_id": "3115978"
+                },
+                {
+                    "artist": "Chuck Wagon Gang",
+                    "album": "Lord Lead Me On",
+                    "master_id": "833753"
+                }
+            ]            
+        },
         "The 45 King":{
             "name":"The 45 King",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/45-king.jpg?alt=media&token=3a019c5d-6d52-4b6d-b26c-a4d38161ffd6",
