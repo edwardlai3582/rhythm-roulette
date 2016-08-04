@@ -21,8 +21,7 @@ export function* getShop(placeid) {
 
     if (!shop.err) {
         yield put(shopLoaded(shop));
-        if(shop.data.result.photos){
-                    //photo_reference = this.props.shop.data.result.photos[0].photo_reference;
+        if(shop.data.status !== "INVALID_REQUEST" && shop.data.result.photos){
             yield put(loadShopimg(shop.data.result.photos[0].photo_reference));
         }         
 

@@ -164,6 +164,121 @@
             "name":"Oh No",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Oh%20No.jpg?alt=media&token=97faf1a4-a285-47b4-a443-eccc7ed10fbd",
             "date": "1418161401"    
+        },
+        {
+            "name":"Pyramid Vritra",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Pyramid%20Vritra.jpg?alt=media&token=351a0ab0-fd65-4bf0-a897-f97fcd07a828",
+            "date": "1414132778"
+        },
+        {
+            "name":"Mac Miller",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Mac%20Miller.jpg?alt=media&token=6c195896-80fd-49de-bdd8-3b981b9c0383",
+            "date": "1412318378"    
+        },
+        {
+            "name":"Jonwayne",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Jonwayne.jpg?alt=media&token=12ca240e-51a9-4a87-9268-53ba4cd390a9",
+            "date": "1411713578"    
+        },
+        {
+            "name":"Cardiak",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Cardiak.jpg?alt=media&token=3ef05418-e589-473b-810d-d9c045498377",
+            "date": "1411108778"    
+        },
+        {
+            "name":"DJ Babu",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DJ%20Babu.jpg?alt=media&token=52e16f84-1932-4773-b01d-ede5ab7f30c0",
+            "date": "1410503978"       
+        },
+        {
+            "name":"Apollo Brown",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Apollo%20Brown.jpeg?alt=media&token=51cc4ceb-7395-409e-87e0-3bbc3b8b6d81",
+            "date": "1406270378"    
+        },
+        {
+            "name":"Digga",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Digga.jpg?alt=media&token=6e37f3f9-0449-4076-8ae9-44affed1214f",
+            "date": "1400654378"    
+        },
+        {
+            "name":"Ski Beatz",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Ski%20Beatz.jpg?alt=media&token=dc3cb56b-1fb9-4434-950a-c47d7c6ceae7",
+            "date": "1398407978"
+        },
+        {
+            "name":"Erick Sermon",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Erick%20Sermon.jpg?alt=media&token=ae2e7c0d-2f06-4e47-92f6-9c63e402b2b4",
+            "date": "1397198378"
+        },
+        {
+            "name":"Black Milk",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Black%20Milk.jpg?alt=media&token=77d0ba40-c847-4d85-be50-e0f3bb7c3770",
+            "date": "1395988778"
+        },
+        {
+            "name":"Brenmar",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Brenmar.jpg?alt=media&token=34e465e0-49bf-4dc2-8000-25520de02c7a",
+            "date": "1394177978"
+        },
+        {
+            "name":"Nick Catchdubs",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Nick%20Catchdubs.jpg?alt=media&token=ac60e7a2-b6e6-4d18-8960-3aa510ce328b",
+            "date": "1392968378"
+        },
+        {
+            "name":"Mr Green",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Mr.%20Green.jpg?alt=media&token=078344a0-0018-4a6f-bcea-ac45e87239ee",
+            "date": "1391153978"
+        },
+        {
+            "name":"Damu The Fudgemunk",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Damu%20The%20Fudgemunk.jpg?alt=media&token=1f50b976-f2b2-456b-9e77-2567d75816bc",
+            "date": "1389944378"
+        },
+        {
+            "name":"J-Zone",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/J-Zone.jpg?alt=media&token=0f6e55b7-f8a3-4b92-80db-4d8d36e77dee",
+            "date": "1386315578"
+        },
+        {
+            "name":"Marco Polo",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Marco%20Polo.jpg?alt=media&token=e6239a2c-a84c-4da7-aa2a-96d19614e5cb",
+            "date": "1383896378"
+        },
+        {
+            "name":"6th Sense",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/6th%20Sense.jpg?alt=media&token=1dbc8d76-4723-440e-9181-abca4d8d6e94",
+            "date": "1381300778"
+        },
+        {
+            "name":"El-P",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/El-P.jpg?alt=media&token=81ae732c-77e8-4c8d-b29d-8dec6c580004",
+            "date": "1377844778"
+        },
+        {
+            "name":"Illmind",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Illmind.jpg?alt=media&token=7f8d4f80-f1af-4440-ba9c-c3d0fb3abaa4",
+            "date": "1375943978"
+        },
+        {
+            "name":"Statik Selektah",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Statik%20Selektah.jpg?alt=media&token=79c13ca6-0987-419d-a316-af9ef4b0a676",
+            "date": "1374734378"
+        },
+        {
+            "name":"Lee Bannon",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Lee%20Bannon.jpg?alt=media&token=7695732e-7396-426a-a2a2-ea58ae682edd",
+            "date": "1373611178"
+        },
+        {
+            "name":"88-Keys",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/88-Keys.jpg?alt=media&token=55d65df7-cc96-4835-87b5-94ae631ebeef",
+            "date": "1366094378"
+        },
+        {
+            "name":"Party Supplies",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Party%20Supplies.jpg?alt=media&token=2a87d733-815b-4340-a5cf-24d5bd1307ff",
+            "date": "1362641978"
         }
     ],
     "eps":{
@@ -958,6 +1073,558 @@
                     "master_id": ""
                 }
             ]            
-        }    
+        },
+        "Pyramid Vritra":{
+            "name":"Pyramid Vritra",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Pyramid%20Vritra.jpg?alt=media&token=351a0ab0-fd65-4bf0-a897-f97fcd07a828",
+            "date": "1414132778",                     
+            "youtubeId": "xlLRXe9rxMQ",
+            "placeid": "ChIJR0vrtxHEwoARj_JXOqSdGfM",
+            "records": [
+                {
+                    "artist": "Hilt",
+                    "album": "Get Stuck",
+                    "master_id": "7812"
+                },
+                {
+                    "artist": "Son Of Earth",
+                    "album": "Improvements",
+                    "master_id": "3363598"
+                },
+                {
+                    "artist": "Sohail Rana",
+                    "album": "Khyber Mail",
+                    "master_id": "339843"
+                }
+            ]            
+        },
+        "Mac Miller":{
+            "name":"Mac Miller",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Mac%20Miller.jpg?alt=media&token=6c195896-80fd-49de-bdd8-3b981b9c0383",
+            "date": "1412318378",                     
+            "youtubeId": "X-R47DwZWkU",
+            "placeid": "ChIJ62_JwUO7woARHpFTQ5EZ42s",
+            "records": [
+                {
+                    "artist": "Charles Lloyd",
+                    "album": "In The Soviet Union: Recorded At The Tallinn Jazz Festival",
+                    "master_id": "571145"
+                },
+                {
+                    "artist": "Buddy Rich Band",
+                    "album": "Buddy Rich Band",
+                    "master_id": "538246"
+                },
+                {
+                    "artist": "Elvin Jones/Jimmy Garrison Sextet Featuring McCoy Tyner",
+                    "album": "Illumination!",
+                    "master_id": "138667"
+                }
+            ]            
+        }, 
+        "Jonwayne":{
+            "name":"Jonwayne",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Jonwayne.jpg?alt=media&token=12ca240e-51a9-4a87-9268-53ba4cd390a9",
+            "date": "1411713578",                     
+            "youtubeId": "UuCbdbgOOS8",
+            "placeid": "ChIJKWQhpljbwoARWvHyjA7fkjk",
+            "records": [
+                {
+                    "artist": "THP",
+                    "album": "#2 - Tender Is The Night",
+                    "master_id": "114812"
+                },
+                {
+                    "artist": "The Ritchie Family",
+                    "album": "Give Me A Break",
+                    "master_id": "117719"
+                },
+                {
+                    "artist": "The Stylistics",
+                    "album": "Sun & Soul",
+                    "master_id": "124358"
+                }
+            ]            
+        },
+        "Cardiak":{
+            "name":"Cardiak",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Cardiak.jpg?alt=media&token=3ef05418-e589-473b-810d-d9c045498377",
+            "date": "1411108778",                     
+            "youtubeId": "PRBJ7BnFjg4",
+            "placeid": "ChIJRdmfADq_woARYaVhnfQSUTI",
+            "records": [
+                {
+                    "artist": "Rihanna",
+                    "album": "Pon De Replay",
+                    "master_id": "20296"
+                },
+                {
+                    "artist": "Allure",
+                    "album": "Kool Wit Me",
+                    "master_id": "368806"
+                },
+                {
+                    "artist": "Omarion",
+                    "album": "Entourage",
+                    "master_id": "89747"
+                }
+            ]            
+        },
+        "DJ Babu":{
+            "name":"DJ Babu",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DJ%20Babu.jpg?alt=media&token=52e16f84-1932-4773-b01d-ede5ab7f30c0",
+            "date": "1410503978",                     
+            "youtubeId": "_vInRKCNJiw",
+            "placeid": "ChIJ79VeUzPOwoARbrnw1sAR2dY",
+            "records": [
+                {
+                    "artist": "The Association",
+                    "album": "Stop Your Motor",
+                    "master_id": "509837"
+                },
+                {
+                    "artist": "John & Anne Ryder",
+                    "album": "I Still Believe In Tomorrow",
+                    "master_id": "2375173"
+                },
+                {
+                    "artist": "Chicago",
+                    "album": "Chicago III",
+                    "master_id": "83131"
+                }
+            ]            
+        },  
+        "Apollo Brown":{
+            "name":"Apollo Brown",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Apollo%20Brown.jpeg?alt=media&token=51cc4ceb-7395-409e-87e0-3bbc3b8b6d81",
+            "date": "1406270378",                     
+            "youtubeId": "-A8guoBpIfA",
+            "placeid": "ChIJz6m1ymrSJIgRPWHhUIjBQdQ",
+            "records": [
+                {
+                    "artist": "Marlon McClain",
+                    "album": "Changes",
+                    "master_id": "1932798"
+                },
+                {
+                    "artist": "The Futures",
+                    "album": "The Greetings Of Peace",
+                    "master_id": "713288"
+                },
+                {
+                    "artist": "Sister Lucille Pope",
+                    "album": "The Very Best Of Sister Lucille Pope",
+                    "master_id": "6331273"
+                }
+            ]            
+        },
+        "Digga":{
+            "name":"Digga",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Digga.jpg?alt=media&token=6e37f3f9-0449-4076-8ae9-44affed1214f",
+            "date": "1400654378",                     
+            "youtubeId": "SOvJ2E1Eosw",
+            "placeid": "ChIJD7FMnAv2wokRkuNqS_ECQvA",
+            "records": [
+                {
+                    "artist": "Johnny Mathis",
+                    "album": "You Light Up My Life",
+                    "master_id": "235361"
+                },
+                {
+                    "artist": "Rufus And Chaka Khan",
+                    "album": "Live - Stompin' At The Savoy",
+                    "master_id": "133749"
+                },
+                {
+                    "artist": "Peabo Bryson",
+                    "album": "Reaching For The Sky",
+                    "master_id": "400639"
+                }
+            ]            
+        },
+        "Ski Beatz":{
+            "name":"Ski Beatz",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Ski%20Beatz.jpg?alt=media&token=dc3cb56b-1fb9-4434-950a-c47d7c6ceae7",
+            "date": "1398407978",                     
+            "youtubeId": "Np8jwtO9mZs",
+            "placeid": "ChIJr2dYZr70wokRMiltquDt07A",
+            "records": [
+                {
+                    "artist": "Rick James",
+                    "album": "Cold Blooded",
+                    "master_id": "79294"
+                },
+                {
+                    "artist": "Squeeze",
+                    "album": "Argybargy",
+                    "master_id": "118624"
+                },
+                {
+                    "artist": "Delroy Wilson",
+                    "album": "The Best Of Delroy Wilson (Original Twelve)",
+                    "master_id": "379491"
+                }
+            ]            
+        },  
+        "Erick Sermon":{
+            "name":"Erick Sermon",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Erick%20Sermon.jpg?alt=media&token=ae2e7c0d-2f06-4e47-92f6-9c63e402b2b4",
+            "date": "1397198378",                     
+            "youtubeId": "6fzj40vi3DA",
+            "placeid": "",
+            "records": [
+                {
+                    "artist": "Michel Legrand",
+                    "album": "Scarlet Ribbons - Michel Legrand's Folksongs For Orchestra",
+                    "master_id": "4417271"
+                },
+                {
+                    "artist": "Sheena Easton",
+                    "album": "Sheena Easton",
+                    "master_id": "116605"
+                },
+                {
+                    "artist": "Morton Gould And His Orchestra",
+                    "album": "Rimsky-Korsakoff's Scheherazade",
+                    "master_id": "4943801"
+                }
+            ]            
+        },
+        "Black Milk":{
+            "name":"Black Milk",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Black%20Milk.jpg?alt=media&token=77d0ba40-c847-4d85-be50-e0f3bb7c3770",
+            "date": "1395988778",                     
+            "youtubeId": "rC09Jh8lwNc",
+            "placeid": "ChIJrZmpvDQgTIYRpk9Z3jqIn7Q",
+            "records": [
+                {
+                    "artist": "Freddy Fender",
+                    "album": "Since I Met You Baby",
+                    "master_id": "862102"
+                },
+                {
+                    "artist": "Paul And Paula",
+                    "album": "Holiday For Teens",
+                    "master_id": "595065"
+                },
+                {
+                    "artist": "Herb Albert",
+                    "album": "Magic Man",
+                    "master_id": "117390"
+                }
+            ]            
+        },
+        "Brenmar":{
+            "name":"Brenmar",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Brenmar.jpg?alt=media&token=34e465e0-49bf-4dc2-8000-25520de02c7a",
+            "date": "1394177978",                     
+            "youtubeId": "-LisGg6KiIw",
+            "placeid": "ChIJlXJ4R5tZwokRauBJl6bHQ1c",
+            "records": [
+                {
+                    "artist": "Nature Born",
+                    "album": "If You Only Knew",
+                    "master_id": "1089238"
+                },
+                {
+                    "artist": "Paul Kantner, Grace Slick",
+                    "album": "Sunfighter",
+                    "master_id": "82731"
+                },
+                {
+                    "artist": "No Artist",
+                    "album": "Dance Hall Of Shame: No Thinking. No Talking. No Music",
+                    "master_id": "2271671"
+                }
+            ]            
+        }, 
+        "Nick Catchdubs":{
+            "name":"Nick Catchdubs",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Nick%20Catchdubs.jpg?alt=media&token=ac60e7a2-b6e6-4d18-8960-3aa510ce328b",
+            "date": "1392968378",                     
+            "youtubeId": "nUsB5QoGqGA",
+            "placeid": "ChIJlXJ4R5tZwokRauBJl6bHQ1c",
+            "records": [
+                {
+                    "artist": "Los Hermanos Rosario",
+                    "album": "Acabando!",
+                    "master_id": "4303546"
+                },
+                {
+                    "artist": "Quarteto Em Cy",
+                    "album": "Resistindo - Ao Vivo",
+                    "master_id": "910260"
+                },
+                {
+                    "artist": "The Pack",
+                    "album": "Vans",
+                    "master_id": "251793"
+                }
+            ]            
+        },  
+        "Mr Green":{
+            "name":"Mr Green",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Mr.%20Green.jpg?alt=media&token=078344a0-0018-4a6f-bcea-ac45e87239ee",
+            "date": "1391153978",                     
+            "youtubeId": "8XUv0V4AKaE",
+            "placeid": "ChIJuQLkeB1cwokRqYfmUrT5KCY",
+            "records": [
+                {
+                    "artist": "Henry Mancini",
+                    "album": "This Is Henry Mancini!",
+                    "master_id": "368139"
+                },
+                {
+                    "artist": "Barbra Streisand",
+                    "album": "My Name Is Barbra",
+                    "master_id": "74510"
+                },
+                {
+                    "artist": "Maurice Jarre",
+                    "album": "Doctor Zhivago Original Soundtrack Album",
+                    "master_id": "425270"
+                }
+            ]            
+        },  
+        "Damu The Fudgemunk":{
+            "name":"Damu The Fudgemunk",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Damu%20The%20Fudgemunk.jpg?alt=media&token=1f50b976-f2b2-456b-9e77-2567d75816bc",
+            "date": "1389944378",                     
+            "youtubeId": "S4niO8ZaTlo",
+            "placeid": "",
+            "records": [
+                {
+                    "artist": "",
+                    "album": "",
+                    "master_id": ""
+                },
+                {
+                    "artist": "",
+                    "album": "",
+                    "master_id": ""
+                },
+                {
+                    "artist": "",
+                    "album": "",
+                    "master_id": ""
+                }
+            ]            
+        },
+        "J-Zone":{
+            "name":"J-Zone",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/J-Zone.jpg?alt=media&token=0f6e55b7-f8a3-4b92-80db-4d8d36e77dee",
+            "date": "1386315578",                     
+            "youtubeId": "nlh6pSNCjLc",
+            "placeid": "ChIJjeyJL31hwokRtJgz6yzp3Us",
+            "records": [
+                {
+                    "artist": "Ramsey Lewis",
+                    "album": "Up Pops Ramsey Lewis",
+                    "master_id": "255801"
+                },
+                {
+                    "artist": "Roy Clark",
+                    "album": "Roy Clark In Concert",
+                    "master_id": "419426"
+                },
+                {
+                    "artist": "Tommy Dorsey & His Clambake Seven",
+                    "album": "This Is Tommy Dorsey & His Clambake Seven",
+                    "master_id": "705894"
+                }
+            ]            
+        },
+        "Marco Polo":{
+            "name":"Marco Polo",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Marco%20Polo.jpg?alt=media&token=e6239a2c-a84c-4da7-aa2a-96d19614e5cb",
+            "date": "1383896378",                     
+            "youtubeId": "BZq4n2FIjVE",
+            "placeid": "ChIJA__cIj9ZwokRD9s7i1_n5hA",
+            "records": [
+                {
+                    "artist": "Centerfold",
+                    "album": "Party Rebels",
+                    "master_id": "343015"
+                },
+                {
+                    "artist": "Sandee",
+                    "album": "You're The One",
+                    "master_id": "140485"
+                },
+                {
+                    "artist": "Future Trouble / Little Hero",
+                    "album": "Kung Fu / God Alone",
+                    "master_id": "3696146"
+                }
+            ]            
+        }, 
+        "6th Sense":{
+            "name":"6th Sense",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/6th%20Sense.jpg?alt=media&token=1dbc8d76-4723-440e-9181-abca4d8d6e94",
+            "date": "1381300778",                     
+            "youtubeId": "YsXyXDZWqlo",
+            "placeid": "ChIJR5dM6pFZwokRe3YTJLm8JEg",
+            "records": [
+                {
+                    "artist": "Earl Klugh",
+                    "album": "Nightsongs",
+                    "master_id": "65042"
+                },
+                {
+                    "artist": "Tony Orlando & Dawn",
+                    "album": "Tony Orlando & Dawn II",
+                    "master_id": "1618759"
+                },
+                {
+                    "artist": "Billy Ocean",
+                    "album": "Tear Down These Walls",
+                    "master_id": "167036"
+                }
+            ]            
+        },
+        "El-P":{
+            "name":"El-P",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/El-P.jpg?alt=media&token=81ae732c-77e8-4c8d-b29d-8dec6c580004",
+            "date": "1377844778",                     
+            "youtubeId": "q06UxOKc7io",
+            "placeid": "ChIJQfDULFRZwokR1LfEC_EStVc",
+            "records": [
+                {
+                    "artist": "Leon Haywood",
+                    "album": "I'm Out To Catch",
+                    "master_id": "156715"
+                },
+                {
+                    "artist": "",
+                    "album": "Beethoven Choral Schubert Geister Wassern Wuehrer / Krauss",
+                    "master_id": ""
+                },
+                {
+                    "artist": "Theo Vaness",
+                    "album": "Back To Music",
+                    "master_id": "156557"
+                }
+            ]            
+        },
+        "Illmind":{
+            "name":"Illmind",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Illmind.jpg?alt=media&token=7f8d4f80-f1af-4440-ba9c-c3d0fb3abaa4",
+            "date": "1375943978",                     
+            "youtubeId": "DC6F7HKe7QE",
+            "placeid": "ChIJr96CSp1ZwokRvJd4ai6oKXM",
+            "records": [
+                {
+                    "artist": "Labelle",
+                    "album": "Moon Shadow",
+                    "master_id": "154217"
+                },
+                {
+                    "artist": "Quarterflash",
+                    "album": "Take Another Picture",
+                    "master_id": "64026"
+                },
+                {
+                    "artist": "Freddie Hubbard",
+                    "album": "First Light",
+                    "master_id": "72355"
+                }
+            ]            
+        }, 
+        "Statik Selektah":{
+            "name":"Statik Selektah",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Statik%20Selektah.jpg?alt=media&token=79c13ca6-0987-419d-a316-af9ef4b0a676",
+            "date": "1374734378",                     
+            "youtubeId": "3_QTDaynDhg",
+            "placeid": "ChIJS8twamdZwokRng4DKW3Jjno",
+            "records": [
+                {
+                    "artist": "The Tymes",
+                    "album": "Diggin' Their Roots",
+                    "master_id": "310168"
+                },
+                {
+                    "artist": "The Sylvers",
+                    "album": "Something Special",
+                    "master_id": "216056"
+                },
+                {
+                    "artist": "The Mystic Moods Orchestra",
+                    "album": "Emotions",
+                    "master_id": "2773558"
+                }
+            ]            
+        },
+        "Lee Bannon":{
+            "name":"Lee Bannon",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Lee%20Bannon.jpg?alt=media&token=7695732e-7396-426a-a2a2-ea58ae682edd",
+            "date": "1373611178",                     
+            "youtubeId": "-t48UvWt0xE",
+            "placeid": "ChIJB3eXcERZwokRDM_78NHAmYg",
+            "records": [
+                {
+                    "artist": "Todd Duncan, Maxwell Anderson, Kurt Weill, Maurice Levine",
+                    "album": "Lost In The Stars",
+                    "master_id": "530746"
+                },
+                {
+                    "artist": "Burt Bacharach",
+                    "album": "Lost Horizon (Original Soundtrack)",
+                    "master_id": "86311"
+                },
+                {
+                    "artist": "Various",
+                    "album": "Modern Girls (Original Motion Picture Soundtrack)",
+                    "master_id": "834787"
+                }
+            ]            
+        }, 
+        "88-Keys":{
+            "name":"88-Keys",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/88-Keys.jpg?alt=media&token=55d65df7-cc96-4835-87b5-94ae631ebeef",
+            "date": "1366094378",                     
+            "youtubeId": "Jr3qGDpvvvI",
+            "placeid": "ChIJFZtIA3ZZwokRNYCPhdEZml0",
+            "records": [
+                {
+                    "artist": "David Werner",
+                    "album": "David Werner",
+                    "master_id": "94140"
+                },
+                {
+                    "artist": "Grisly Fiction",
+                    "album": "Scrape Face",
+                    "master_id": "500255"
+                },
+                {
+                    "artist": "Steve Martin",
+                    "album": "Let's Get Small",
+                    "master_id": "19766"
+                }
+            ]            
+        }, 
+        "Party Supplies":{
+            "name":"Party Supplies",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Party%20Supplies.jpg?alt=media&token=2a87d733-815b-4340-a5cf-24d5bd1307ff",
+            "date": "1362641978",                     
+            "youtubeId": "CI_ulmRb1fw",
+            "placeid": "ChIJS8twamdZwokRng4DKW3Jjno",
+            "records": [
+                {
+                    "artist": "O'Conner",
+                    "album": "Come Alive",
+                    "master_id": "932868"
+                },
+                {
+                    "artist": "Tender Aggression",
+                    "album": "Fly Disco Fly",
+                    "master_id": "2373351"
+                },
+                {
+                    "artist": "Instant Funk",
+                    "album": "Instant Funk V",
+                    "master_id": "8225"
+                }
+            ]            
+        }         
     }
 }

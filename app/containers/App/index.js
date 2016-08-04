@@ -80,9 +80,14 @@ class App extends React.Component {
                     { name: 'description', content: 'A Rhythm Roulette information site' },
                     ]}
                 />
+                
                 <header className={headerWrapperClass}>
-                        <img src={logoWhite} alt="massappeal" className={styles.logo} onClick={this.openHomePage} />
+                    <a className={styles.headerA}  onClick={this.openHomePage}>
+                        <img src={logoWhite} alt="massappeal" className={styles.logo} />
+                        <h1>RHYTHM ROULETTE</h1>
+                    </a>
                 </header>
+            
                 {this.props.children}
                 
             </div>

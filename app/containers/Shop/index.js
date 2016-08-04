@@ -59,6 +59,9 @@ export class Shop extends React.Component {
                     photo_reference = this.props.shop.data.result.photos[0].photo_reference;    
                 }  
             }
+            else if(this.props.shop.data.status==="INVALID_REQUEST"){
+                name = "I don't know!";    
+            }    
         }
         //*/
         return (
@@ -102,4 +105,4 @@ const mapStateToProps = createStructuredSelector({
 
 
 // Wrap the component to inject dispatch and state into it
-export default connect(mapStateToProps, mapDispatchToProps)(Shop);
+export default connect(null, null)(Shop);
