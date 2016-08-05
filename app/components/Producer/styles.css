@@ -26,6 +26,6 @@
 
 .producerImg {
     width: 100%;
-    height: 25vw;
+    height: 100%;
     filter: grayscale(0.5) sepia(0.5);
 }

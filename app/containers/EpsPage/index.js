@@ -59,28 +59,27 @@ export class EpsPage extends React.Component {
   };
 
     render() {
-    let content = (<LoadingIndicator />);    
-    if (this.props.rrs) {
-        content = this.props.rrs.rhythmroulettes.map(function(rr) {
-            return <Producer  key={rr.name} name={rr.name} photo={rr.photo} youtubeLink={rr.youtubeLink} />
-        });
-    }
+        let content = (<LoadingIndicator />);    
+        if (this.props.rrs) {
+            content = this.props.rrs.rhythmroulettes.map(function(rr) {
+                return <Producer  key={rr.name} name={rr.name} photo={rr.photo} youtubeLink={rr.youtubeLink} />
+            });
+        }
         
         return (
-            <article className={styles.epPageWrapper}>
+            <article className={styles.epsPageWrapper}>
                 <Helmet
                     title= "episodes"
                     meta={[
                     { name: 'description', content: "episodes" },
                     ]}
                 />
-                <section className={styles.epSectionWrapper}>
-            <section >
-                <h2>EPISODES</h2>
-                <div >
-                    {content}  
-                </div>
-            </section>  
+            
+                <section className={styles.epsSectionWrapper}>
+                    <h1>EPISODES</h1>
+                    <div >
+                        {content}  
+                    </div> 
                 </section>
             </article>
         );

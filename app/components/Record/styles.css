@@ -11,6 +11,7 @@
     margin: 0 auto;
     width: 25vw;
     height: 25vw;
+    background-color: #2E2E2E;
 }
 
 .recordWrapper img {
@@ -21,7 +22,7 @@
     background-color: #FC0;
     border-radius: 3px;
     padding: 1vw;
-    color: purple;
+    color: black;
     text-decoration: none;
 }
 

@@ -77,7 +77,7 @@
 .recordsWrapper {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     font-family: 'Helvetica Neue', Helvetica;
     background-color: black;
 }

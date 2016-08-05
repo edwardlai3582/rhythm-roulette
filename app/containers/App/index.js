@@ -86,9 +86,11 @@ class App extends React.Component {
                         <img src={logoWhite} alt="massappeal" className={styles.logo} />
                         <h1>RHYTHM ROULETTE</h1>
                     </a>
-                    <Link className={styles.epLink}  to={"/ep"}>
-                        EPISODES
-                    </Link>
+                    <nav>
+                        <Link className={styles.epLink}  to={"/ep"}>
+                            EPISODES
+                        </Link>
+                    </nav>
                 </header>
             
                 {this.props.children}
