@@ -13,75 +13,74 @@ import Helmet from 'react-helmet';
 import { createStructuredSelector } from 'reselect';
 
 import {
-    selectLocationState,
-    selectEp,
-    selectRecord1, selectRecord1Loading,
-    selectRecord2, selectRecord2Loading,
-    selectRecord3, selectRecord3Loading,
-    selectShop, selectShopLoading 
+  selectLoading,
+  selectError,
+    selectRrs
 } from 'containers/App/selectors';
 
-import { 
-    loadEp
-} from '../App/actions';
+import { changeUsername } from './actions';
+import { loadRrs } from '../App/actions';
 
+import { FormattedMessage } from 'react-intl';
+
+import Button from 'components/Button';
+import H2 from 'components/H2';
+import List from 'components/List';
+import ListItem from 'components/ListItem';
 import LoadingIndicator from 'components/LoadingIndicator';
-import Record from 'components/Record';
 
 import styles from './styles.css';
 
-import Shop from 'containers/Shop';
+import FullSizeImgWithText from 'components/fullSizeImgWithText';
+import HowTo from 'components/HowTo';
+
+import Producer from 'containers/Producer';
 
 export class EpsPage extends React.Component {
 
-    componentWillMount() {
-        //console.log(this.props.params.name);
-        if(!this.props.ep || this.props.ep.name !== this.props.params.name.replace(/\_/gi, ' ')){
-          this.props.searchEp();     
-        } 
-        
-        //http://edwardlai3582.com/goo?placeid=ChIJCabEhUJbwokRRogoDkVJzTM
-        
-    }
+  componentDidMount() {
+    if(!this.props.rrs){this.props.searchRrs();}  
+  }
+    
+  /**
+   * Changes the route
+   *
+   * @param  {string} route The route we want to go to
+   */
+  openRoute = (route) => {
+    this.props.changeRoute(route);
+  };
+
+  /**
+   * Changed route to '/features'
+   */
+  openFeaturesPage = () => {
+    this.openRoute('/features');
+  };
 
     render() {
-        let producerName = "";
-        let pathNameArray;
-        let youtubeSrc = "";
-        let placeid = "";
-        let r1Artist = "";
-        let r1Album = "";
-        let r2Artist = "";
-        let r2Album = "";
-        let r3Artist = "";
-        let r3Album = "";
-        if(this.props.location.locationBeforeTransitions){
-            pathNameArray= this.props.location.locationBeforeTransitions.pathname.split("/");
-            producerName=pathNameArray[pathNameArray.length-1].replace(/\_/gi, ' ');            
-        }
-        
-        if(this.props.ep){
-            //console.log(this.props.ep);
-            youtubeSrc = "https://www.youtube.com/embed/"+this.props.ep.youtubeId;
-            placeid = this.props.ep.placeid;
-            r1Artist = this.props.ep.records[0].artist;
-            r1Album = this.props.ep.records[0].album;
-            r2Artist = this.props.ep.records[1].artist;
-            r2Album = this.props.ep.records[1].album;
-            r3Artist = this.props.ep.records[2].artist;
-            r3Album = this.props.ep.records[2].album;
-        }
+    let content = (<LoadingIndicator />);    
+    if (this.props.rrs) {
+        content = this.props.rrs.rhythmroulettes.map(function(rr) {
+            return <Producer  key={rr.name} name={rr.name} photo={rr.photo} youtubeLink={rr.youtubeLink} />
+        });
+    }
         
         return (
             <article className={styles.epPageWrapper}>
                 <Helmet
-                    title={producerName}
+                    title= "episodes"
                     meta={[
-                    { name: 'description', content: {producerName} },
+                    { name: 'description', content: "episodes" },
                     ]}
                 />
                 <section className={styles.epSectionWrapper}>
-                ddd
+            <section >
+                <h2>EPISODES</h2>
+                <div >
+                    {content}  
+                </div>
+            </section>  
                 </section>
             </article>
         );
@@ -89,38 +88,30 @@ export class EpsPage extends React.Component {
 }
 
 EpsPage.propTypes = {
-    changeRoute: React.PropTypes.func,
-    ep: React.PropTypes.oneOfType([
-        React.PropTypes.object,
-        React.PropTypes.bool,
-     ]),
-    shop: React.PropTypes.oneOfType([
-        React.PropTypes.object,
-        React.PropTypes.bool,
-     ]),
-    shopLoading:  React.PropTypes.bool,
+  changeRoute: React.PropTypes.func,
+  loading: React.PropTypes.bool,
+  error: React.PropTypes.oneOfType([
+    React.PropTypes.object,
+    React.PropTypes.bool,
+  ]),
 };
 
 function mapDispatchToProps(dispatch) {
   return {
     changeRoute: (url) => dispatch(push(url)),
 
-    searchEp: () => dispatch(loadEp()),
+
+    searchRrs: () => dispatch(loadRrs()),
 
     dispatch,
   };
 }
 
 const mapStateToProps = createStructuredSelector({
-    location: selectLocationState(),
-    ep: selectEp(),
-    record1 : selectRecord1(),
-    record2 : selectRecord2(),
-    record3 : selectRecord3(),
-    shop: selectShop(),
-    shopLoading: selectShopLoading(),    
+  loading: selectLoading(),
+  error: selectError(),
+  rrs: selectRrs(),
 });
-
 
 // Wrap the component to inject dispatch and state into it
 export default connect(mapStateToProps, mapDispatchToProps)(EpsPage);

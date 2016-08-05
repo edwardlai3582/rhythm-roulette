@@ -65,6 +65,10 @@ body.fontLoaded {
     font-family: 'Oswald', sans-serif;
 }
 
+.epLink{
+    color: white;
+}
+
 @media only screen and (max-width: 600px) {
     .headerA > h1 {
         font-size: 16px;
