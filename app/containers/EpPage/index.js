@@ -38,10 +38,7 @@ export class EpPage extends React.Component {
         //console.log(this.props.params.name);
         if(!this.props.ep || this.props.ep.name !== this.props.params.name.replace(/\_/gi, ' ')){
           this.props.searchEp();     
-        } 
-        
-        //http://edwardlai3582.com/goo?placeid=ChIJCabEhUJbwokRRogoDkVJzTM
-        
+        }         
     }
 
     render() {

@@ -18,15 +18,24 @@
 import {
   LOAD_RRS,
   LOAD_RRS_SUCCESS,
-  LOAD_RRS_ERROR,     
+  LOAD_RRS_ERROR,
+/////////////////////
+  ADD_YOUTUBE_TO_RR,    
 /////////////////////
   LOAD_EP_SUCCESS,
   LOAD_EP,
   LOAD_EP_ERROR, 
 /////////////////////
+  LOAD_YOUTUBE_SUCCESS,
+  LOAD_YOUTUBE,
+  LOAD_YOUTUBE_ERROR,     
+/////////////////////
   LOAD_SHOP_SUCCESS,
   LOAD_SHOP,
-  LOAD_SHOP_ERROR,  
+  LOAD_SHOP_ERROR,
+    
+  CLEAR_SHOP,    
+  CLEAR_SHOPIMG,    
 /////////////////////
   LOAD_SHOPIMG_SUCCESS,
   LOAD_SHOPIMG,
@@ -103,6 +112,26 @@ export function epLoadingError(eperror) {
   };
 }
 ///////////////////////////////////////////////////////////////////////
+export function loadYoutube() {
+  return {
+    type: LOAD_YOUTUBE,
+  };
+}
+
+export function youtubeLoaded(youtube) {
+  return {
+    type: LOAD_YOUTUBE_SUCCESS,
+    ep,
+  };
+}
+
+export function youtubeLoadingError(youtubeerror) {
+  return {
+    type: LOAD_YOUTUBE_ERROR,
+    eperror,
+  };
+}
+///////////////////////////////////////////////////////////////////////
 export function loadShop(placeid) {
     //console.log("from loadShop: "+placeid)
   return {
@@ -122,6 +151,17 @@ export function shopLoadingError(shoperror) {
   return {
     type: LOAD_SHOP_ERROR,
     shoperror,
+  };
+}
+
+export function clearShop() {
+  return {
+    type: CLEAR_SHOP,
+  };
+}
+export function clearShopImg() {
+  return {
+    type: CLEAR_SHOPIMG,
   };
 }
 ///////////////////////////////////////////////////////////////////////
@@ -210,5 +250,13 @@ export function record3LoadingError(record3error) {
   return {
     type: LOAD_RECORD3_ERROR,
     record3error,
+  };
+}
+///////////////////////////////////////////////////
+export function addYoutube(index, youtubeData) {
+  return {
+    type: ADD_YOUTUBE_TO_RR,
+    index,  
+    youtubeData,
   };
 }

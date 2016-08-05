@@ -15,17 +15,25 @@ import {
   LOAD_RRS,
   LOAD_RRS_ERROR,
 /////////////////////
+  ADD_YOUTUBE_TO_RR,    
+/////////////////////
   LOAD_EP_SUCCESS,
   LOAD_EP,
   LOAD_EP_ERROR, 
 /////////////////////
+  LOAD_YOUTUBE_SUCCESS,
+  LOAD_YOUTUBE,
+  LOAD_YOUTUBE_ERROR,     
+/////////////////////
   LOAD_SHOP_SUCCESS,
   LOAD_SHOP,
-  LOAD_SHOP_ERROR,  
+  LOAD_SHOP_ERROR,
+  CLEAR_SHOP,    
 /////////////////////
   LOAD_SHOPIMG_SUCCESS,
   LOAD_SHOPIMG,
   LOAD_SHOPIMG_ERROR,
+  CLEAR_SHOPIMG,    
 /////////////////////
   LOAD_RECORD1_SUCCESS,
   LOAD_RECORD1,
@@ -95,7 +103,7 @@ function appReducer(state = initialState, action) {
         .set('error', false)
         .setIn(['rrData', 'rhythmroulettes'], false);
     case LOAD_RRS_SUCCESS:
-          //console.log("success: "+action.rrs);
+          console.log("success: "+action.rrs);
       return state
         .setIn(['rrData', 'rhythmroulettes'], action.rrs)
         .set('loading', false);
@@ -103,7 +111,14 @@ function appReducer(state = initialState, action) {
           console.log("error: "+action.error);
       return state
         .set('error', action.error)
-        .set('loading', false);   
+        .set('loading', false);
+/////////////////////////////////////////////////////////////
+    case ADD_YOUTUBE_TO_RR:
+          let rhythmroulettesArray = state.getIn(['rrData', 'rhythmroulettes']);
+          rhythmroulettesArray.rhythmroulettes[action.index].youtubeData= action.youtubeData;
+          console.log(action.index);
+          //console.log(rhythmroulettesArray);          
+      return state.setIn(['rrData', 'rhythmroulettes'], rhythmroulettesArray);
 /////////////////////////////////////////////////////////////
     case LOAD_EP:
       return state
@@ -136,7 +151,10 @@ function appReducer(state = initialState, action) {
           console.log("shop error: "+action.shoperror);
       return state
         .set('shoperror', action.shoperror)
-        .set('shoploading', false);  
+        .set('shoploading', false);
+    case CLEAR_SHOP:
+      return state
+        .setIn(['shopData', 'shop'], false);
 /////////////////////////////////////////////////////////////
     case LOAD_SHOPIMG:
       return state
@@ -153,7 +171,10 @@ function appReducer(state = initialState, action) {
           console.log("shop img error: "+action.shopimgerror);
       return state
         .set('shopimgerror', action.shopimgerror)
-        .set('shopimgloading', false);            
+        .set('shopimgloading', false);   
+    case CLEAR_SHOPIMG:
+      return state
+        .setIn(['shopimgData', 'shopimg'], false);          
 /////////////////////////////////////////////////////////////// 
     case LOAD_RECORD1:
       return state

@@ -3,287 +3,344 @@
         {
             "name":"Childish Major",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Childish%20Major.jpg?alt=media&token=f9b71bc5-807c-48a9-8054-663bc510ee9c",
-            "date": "1470350457"
+            "date": "1470350457",                     
+            "youtubeId": "qniiWpi_Sf8"
         },
         {
             "name":"The 45 King",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/45-king.jpg?alt=media&token=3a019c5d-6d52-4b6d-b26c-a4d38161ffd6",
-            "date": "1469770485"
+            "date": "1469770485",
+            "youtubeId": "7vpgCapG6lg"
         },        
         {
             "name":"Brasstracks",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Brasstracks.jpg?alt=media&token=71ee6f2c-941f-4aa6-a170-260cd55edba5",
-            "date": "1469126021"
+            "date": "1469126021",
+            "youtubeId": "Nj5bdyqYCN0"
         },
         {
             "name":"MeLo-X",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/MeLo-X.jpg?alt=media&token=9389a44e-c0a6-47aa-83a4-a6adec835d13",
-            "date": "1468523287"
+            "date": "1468523287",
+            "youtubeId": "M4WyOKU_hWI"
         },
         {
             "name":"DJ Dahi",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DJ-Dahi.jpg?alt=media&token=0c4b49c5-03c7-456c-a0f9-0e6cb5068d1b",
-            "date": "1466708887"
+            "date": "1466708887",
+            "youtubeId": "-DEGJMQxPR4"
         },
         {
             "name":"Dot Da Genius",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DotDaGenius.jpg?alt=media&token=e53c77cb-3bfb-4956-9e78-6f01ed4d4550",
-            "date": "1465499287"
+            "date": "1465499287",
+            "youtubeId": "RapBG3Erq5I"
         },
         {
             "name":"Da Beatminerz",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DaBeatminerz.jpg?alt=media&token=c4de0b07-6f41-42f5-9b3f-2b25bc7ac4b9",
-            "date": "1464246860"
+            "date": "1464246860",
+            "youtubeId": "1ydKvzllJD4"
         },
         {
             "name":"Havoc",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/havoc.jpg?alt=media&token=3d67b93c-7b5c-49a8-973d-fc9877db6242",
-            "date": "1463642060"
+            "date": "1463642060",
+            "youtubeId": "R4uZ8S8HBKg"
         },
         {
             "name":"Hi-Tek",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Hi-Tek.jpg?alt=media&token=ebd6bbab-59ea-4527-877f-3c301914b742",
-            "date": "1462432460"            
+            "date": "1462432460",                     
+            "youtubeId": "R4VSQLLImNc"           
         },
         {
             "name":"BINK!",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/bink!.jpeg?alt=media&token=16f273a3-d6b6-4add-9b13-f132eba71874",
-            "date": "1461827660"    
+            "date": "1461827660",                     
+            "youtubeId": "_v_K2UKayic"    
         },
         {
             "name":"Nottz",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Nottz.jpg?alt=media&token=c428db13-3c02-453b-9cac-5bcf47fbe3cb",
-            "date": "1461222860"    
+            "date": "1461222860",                     
+            "youtubeId": "dIT8nYyHPYI"    
         },
         {
             "name":"Big KRIT",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/bigkrit.jpg?alt=media&token=25088cac-abcc-4c19-9306-a50e148f4f4f",
-            "date": "1456820060"
+            "date": "1456820060",                     
+            "youtubeId": "cyLtodgl-eg"
         },
         {
             "name":"Erick The Architect",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Erick%20The%20Architect.jpg?alt=media&token=f05acee4-8314-45b3-9546-cc331d509514",
-            "date": "1458112460"    
+            "date": "1458112460",                     
+            "youtubeId": "5Kyg3NRyaR0"    
         },
         {
             "name":"Apathy",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Apathy.jpg?alt=media&token=b9cbe772-878b-4fc3-a5eb-d23971c89187",
-            "date": "1456906460"    
+            "date": "1456906460",                     
+            "youtubeId": "85W7g-8-8K0"    
         },
         {
             "name":"K-Def",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/k-def.jpg?alt=media&token=4a506c12-252f-4ef8-b106-f142f380254a",
-            "date": "1456301660"    
+            "date": "1456301660",                     
+            "youtubeId": "FnOnX7rwHNw"    
         },
         {
             "name":"Psycho Les",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/PSYCHOLES.jpg?alt=media&token=159e6bcb-36c5-450e-99a4-f3b546d65ae1",
-            "date": "1455092060"
+            "date": "1455092060",                     
+            "youtubeId": "ndesJ5ecLvA"
         },
         {
             "name":"9th Wonder",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/9thwonder.jpg?alt=media&token=d4e69e80-a071-4d17-b816-359d6bada4e3",
-            "date": "1451031260"
+            "date": "1451031260",                     
+            "youtubeId": "Ce8r9RfK1wk"
         },
         {
             "name":"Khrysis",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/khrysis.jpg?alt=media&token=975a9001-7d81-4cd7-a49e-a77f55bb214d",
-            "date": "1450340060"
+            "date": "1450340060",                     
+            "youtubeId": "A7HbNN9Mknc"
         },
         {
             "name":"Large Professor",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Large%20Professor.jpg?alt=media&token=866ba737-d274-40ea-91d1-b678160f2c8c",
-            "date": "1448352860"
+            "date": "1448352860",                     
+            "youtubeId": "1w0vv8BqRcw"
         },
         {
             "name":"Scoop DeVille",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Scoop_DeVille.jpg?alt=media&token=b613f67d-3a91-40ef-9255-eb9d006952be",
-            "date": "1447229660"
+            "date": "1447229660",                     
+            "youtubeId": "dy7w8Nui5ww"
         },
         {
             "name":"Organized Noize",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/organizednoize.jpg?alt=media&token=0605ccaf-0afa-4ce0-ada2-bdcefce60c8d", 
-            "date": "1446102860"
+            "date": "1446102860",
+            "youtubeId": "0G4fmSMzM_A"
         },
         {
             "name":"Sporting Life",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Sporting%20Life.jpg?alt=media&token=219f965a-23ff-4105-9114-4b8676db3904",
-            "date": "1443732201"
+            "date": "1443732201",                     
+            "youtubeId": "axMjk2ksETE"
         },
         {
             "name":"Just Blaze",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Just_Blaze.jpg?alt=media&token=e6596c06-f37f-41f2-ae4e-b254ae500292",
-            "date": "1441917801"    
+            "date": "1441917801",                     
+            "youtubeId": "wQ7rkIppxPM"    
         },
         {
             "name":"Georgia Anne Muldrow",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/GeorgiaAnneMuldrow.jpg?alt=media&token=5e6b69d0-af64-42a9-aa61-0bf1f82cf90b",
-            "date": "1441745001"    
+            "date": "1441745001",                     
+            "youtubeId": "XLX8qSvtFXE"    
         },
         {
             "name":"Exile",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Exile.jpg?alt=media&token=094443f3-1200-43e5-891b-f2bea839f67e",
-            "date": "1441313001"    
+            "date": "1441313001",                     
+            "youtubeId": "VJW4S06RtUU"    
         },
         {
             "name":"Mannie Fresh",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Mannie%20Fresh.jpg?alt=media&token=7713078c-4898-4a50-8897-3aea2b2bbc36",
-            "date": "1440794601"    
+            "date": "1440794601",                     
+            "youtubeId": "n4Y-_ZjIeNg"    
         },
         {
             "name":"Paul White",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Paul%20White.jpg?alt=media&token=caa030f9-672b-428b-9bf0-f61b283d5d4e",
-            "date": "1438289001"    
+            "date": "1438289001",                     
+            "youtubeId": "PfmK5VMnDLQ"    
         },
         {
             "name":"The Heatmakerz",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Heatmakerz.jpg?alt=media&token=d0c3ccd9-e694-4f76-ba2b-8d3a81fe5994",
-            "date": "1436993001"    
+            "date": "1436993001",                     
+            "youtubeId": "l8JCVoBmNNw"    
         },
         {
             "name":"Kirk Knight",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Kirk%20Knight.jpg?alt=media&token=981b018a-5378-430c-84e7-2f3b2d392849",
-            "date": "1429821801"    
+            "date": "1429821801",                     
+            "youtubeId": "OzOkEYNXs1o"    
         },
         {
             "name":"Filthy Rockwell",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Filthy%20Rockwell.jpg?alt=media&token=ed9a40e3-c21f-4476-947f-591bc104eaab",
-            "date": "1428007401"    
+            "date": "1428007401",                     
+            "youtubeId": "0-3G0e-7uqw"    
         },
         {
             "name":"Skywlkr",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Skywlkr.jpg?alt=media&token=55890b19-678c-4a2d-a811-6e3d3cfef470",
-            "date": "1422567801"    
+            "date": "1422567801",                     
+            "youtubeId": "N_j0bNd5PBU"    
         },
         {
             "name":"Wara From the NBHD",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Wara%20From%20the%20NBHD.jpg?alt=media&token=f04da821-9c6b-41cf-b195-a2979c6d5883",
-            "date": "1421358201"    
+            "date": "1421358201",                     
+            "youtubeId": "8GbMX-g7xmE"    
         },
         {
             "name":"DJ Nu-Mark",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DJ%20Nu-Mark.jpg?alt=media&token=0f883b38-cbde-46ad-b839-f055034deb9d",
-            "date": "1418939001"    
+            "date": "1418939001",                     
+            "youtubeId": "GtyHIXQj3sI"    
         },
         {
             "name":"Oh No",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Oh%20No.jpg?alt=media&token=97faf1a4-a285-47b4-a443-eccc7ed10fbd",
-            "date": "1418161401"    
+            "date": "1418161401",                     
+            "youtubeId": "rSfUiKUo6m4"    
         },
         {
             "name":"Pyramid Vritra",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Pyramid%20Vritra.jpg?alt=media&token=351a0ab0-fd65-4bf0-a897-f97fcd07a828",
-            "date": "1414132778"
+            "date": "1414132778",                     
+            "youtubeId": "xlLRXe9rxMQ"
         },
         {
             "name":"Mac Miller",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Mac%20Miller.jpg?alt=media&token=6c195896-80fd-49de-bdd8-3b981b9c0383",
-            "date": "1412318378"    
+            "date": "1412318378",                     
+            "youtubeId": "X-R47DwZWkU"    
         },
         {
             "name":"Jonwayne",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Jonwayne.jpg?alt=media&token=12ca240e-51a9-4a87-9268-53ba4cd390a9",
-            "date": "1411713578"    
+            "date": "1411713578",                     
+            "youtubeId": "UuCbdbgOOS8"    
         },
         {
             "name":"Cardiak",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Cardiak.jpg?alt=media&token=3ef05418-e589-473b-810d-d9c045498377",
-            "date": "1411108778"    
+            "date": "1411108778",                     
+            "youtubeId": "PRBJ7BnFjg4"    
         },
         {
             "name":"DJ Babu",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/DJ%20Babu.jpg?alt=media&token=52e16f84-1932-4773-b01d-ede5ab7f30c0",
-            "date": "1410503978"       
+            "date": "1410503978",                     
+            "youtubeId": "_vInRKCNJiw"       
         },
         {
             "name":"Apollo Brown",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Apollo%20Brown.jpeg?alt=media&token=51cc4ceb-7395-409e-87e0-3bbc3b8b6d81",
-            "date": "1406270378"    
+            "date": "1406270378",                     
+            "youtubeId": "-A8guoBpIfA"    
         },
         {
             "name":"Digga",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Digga.jpg?alt=media&token=6e37f3f9-0449-4076-8ae9-44affed1214f",
-            "date": "1400654378"    
+            "date": "1400654378",                     
+            "youtubeId": "SOvJ2E1Eosw"    
         },
         {
             "name":"Ski Beatz",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Ski%20Beatz.jpg?alt=media&token=dc3cb56b-1fb9-4434-950a-c47d7c6ceae7",
-            "date": "1398407978"
+            "date": "1398407978",                     
+            "youtubeId": "Np8jwtO9mZs"
         },
         {
             "name":"Erick Sermon",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Erick%20Sermon.jpg?alt=media&token=ae2e7c0d-2f06-4e47-92f6-9c63e402b2b4",
-            "date": "1397198378"
+            "date": "1397198378",                     
+            "youtubeId": "6fzj40vi3DA"
         },
         {
             "name":"Black Milk",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Black%20Milk.jpg?alt=media&token=77d0ba40-c847-4d85-be50-e0f3bb7c3770",
-            "date": "1395988778"
+            "date": "1395988778",                     
+            "youtubeId": "rC09Jh8lwNc"
         },
         {
             "name":"Brenmar",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Brenmar.jpg?alt=media&token=34e465e0-49bf-4dc2-8000-25520de02c7a",
-            "date": "1394177978"
+            "date": "1394177978",                     
+            "youtubeId": "-LisGg6KiIw"
         },
         {
             "name":"Nick Catchdubs",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Nick%20Catchdubs.jpg?alt=media&token=ac60e7a2-b6e6-4d18-8960-3aa510ce328b",
-            "date": "1392968378"
+            "date": "1392968378",                     
+            "youtubeId": "nUsB5QoGqGA"
         },
         {
             "name":"Mr Green",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Mr.%20Green.jpg?alt=media&token=078344a0-0018-4a6f-bcea-ac45e87239ee",
-            "date": "1391153978"
+            "date": "1391153978",                     
+            "youtubeId": "8XUv0V4AKaE"
         },
         {
             "name":"Damu The Fudgemunk",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Damu%20The%20Fudgemunk.jpg?alt=media&token=1f50b976-f2b2-456b-9e77-2567d75816bc",
-            "date": "1389944378"
+            "date": "1389944378",                     
+            "youtubeId": "S4niO8ZaTlo"
         },
         {
             "name":"J-Zone",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/J-Zone.jpg?alt=media&token=0f6e55b7-f8a3-4b92-80db-4d8d36e77dee",
-            "date": "1386315578"
+            "date": "1386315578",                     
+            "youtubeId": "nlh6pSNCjLc"
         },
         {
             "name":"Marco Polo",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Marco%20Polo.jpg?alt=media&token=e6239a2c-a84c-4da7-aa2a-96d19614e5cb",
-            "date": "1383896378"
+            "date": "1383896378",                     
+            "youtubeId": "BZq4n2FIjVE"
         },
         {
             "name":"6th Sense",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/6th%20Sense.jpg?alt=media&token=1dbc8d76-4723-440e-9181-abca4d8d6e94",
-            "date": "1381300778"
+            "date": "1381300778",                     
+            "youtubeId": "YsXyXDZWqlo"
         },
         {
             "name":"El-P",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/El-P.jpg?alt=media&token=81ae732c-77e8-4c8d-b29d-8dec6c580004",
-            "date": "1377844778"
+            "date": "1377844778",                     
+            "youtubeId": "q06UxOKc7io"
         },
         {
             "name":"Illmind",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Illmind.jpg?alt=media&token=7f8d4f80-f1af-4440-ba9c-c3d0fb3abaa4",
-            "date": "1375943978"
+            "date": "1375943978",                     
+            "youtubeId": "DC6F7HKe7QE"
         },
         {
             "name":"Statik Selektah",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Statik%20Selektah.jpg?alt=media&token=79c13ca6-0987-419d-a316-af9ef4b0a676",
-            "date": "1374734378"
+            "date": "1374734378",                     
+            "youtubeId": "3_QTDaynDhg"
         },
         {
             "name":"Lee Bannon",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Lee%20Bannon.jpg?alt=media&token=7695732e-7396-426a-a2a2-ea58ae682edd",
-            "date": "1373611178"
+            "date": "1373611178",                     
+            "youtubeId": "-t48UvWt0xE"
         },
         {
             "name":"88-Keys",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/88-Keys.jpg?alt=media&token=55d65df7-cc96-4835-87b5-94ae631ebeef",
-            "date": "1366094378"
+            "date": "1366094378",                     
+            "youtubeId": "Jr3qGDpvvvI"
         },
         {
             "name":"Party Supplies",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Party%20Supplies.jpg?alt=media&token=2a87d733-815b-4340-a5cf-24d5bd1307ff",
-            "date": "1362641978"
+            "date": "1362641978",                     
+            "youtubeId": "CI_ulmRb1fw"
         }
     ],
     "eps":{
@@ -833,9 +890,9 @@
                     "master_id": "3079617"
                 },
                 {
-                    "artist": "",
-                    "album": "",
-                    "master_id": ""
+                    "artist": "Nolan Strong And The Diablos",
+                    "album": "Fortune Of Hits Vol 2",
+                    "master_id": "5218830"
                 }
             ]            
         },
@@ -871,9 +928,9 @@
             "placeid": "ChIJCfs0I5JZwokRWcvv0UpOYpo",
             "records": [
                 {
-                    "artist": "",
-                    "album": "",
-                    "master_id": ""
+                    "artist": "My Romance",
+                    "album": "This Little Boy Of Mine",
+                    "master_id": "179462"
                 },
                 {
                     "artist": "",
@@ -895,19 +952,19 @@
             "placeid": "ChIJR5dM6pFZwokRe3YTJLm8JEg",
             "records": [
                 {
-                    "artist": "",
-                    "album": "",
-                    "master_id": ""
+                    "artist": "Bobby Darin",
+                    "album": "Darin At The Copa",
+                    "master_id": "326705"
                 },
                 {
-                    "artist": "",
-                    "album": "",
-                    "master_id": ""
+                    "artist": "Jerry Vale",
+                    "album": "The Language Of Love",
+                    "master_id": "451229"
                 },
                 {
-                    "artist": "",
-                    "album": "",
-                    "master_id": ""
+                    "artist": "Lobo",
+                    "album": "Calumet",
+                    "master_id": "3690336"
                 }
             ]            
         },

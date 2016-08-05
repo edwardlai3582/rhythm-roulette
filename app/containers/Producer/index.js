@@ -9,7 +9,9 @@ import { Link } from 'react-router';
 import { push } from 'react-router-redux';
 import Helmet from 'react-helmet';
 
-
+import { 
+    clearShopImg, clearShop
+} from '../App/actions';
 
 import styles from './styles.css';
 
@@ -20,19 +22,21 @@ export class Producer extends React.Component {
    * @param  {string} route The route we want to go to
    */
   openRoute = (route) => {
+    this.props.clearShop();  
+    this.props.clearShopImg();    
     this.props.changeRoute(route);
   };
 //onClick={this.openRoute.bind(this,'/ep')}
   render() {
     return (
-        <Link className={styles.wrapperA}  to={"/ep/"+this.props.name.replace(/\s/gi, '_')}>
+        <a className={styles.wrapperA}  onClick={this.openRoute.bind(this,'/ep/'+this.props.name.replace(/\s/gi, '_'))} >
             <div className={styles.producerImgWrapper}>
                 <img src={this.props.photo} alt={this.props.name} className={styles.producerImg} />
             </div>
             <div className={styles.producerNameWrapper}>
                 <span>{this.props.name}</span>
             </div>       
-        </Link>
+        </a>
     );
   }
 }
@@ -44,7 +48,21 @@ Producer.propTypes = {
 function mapDispatchToProps(dispatch) {
   return {
     changeRoute: (url) => dispatch(push(url)),
+    clearShopImg: () => dispatch(clearShopImg()),  
+    clearShop: () => dispatch(clearShop()),
+     
   };
 }
 
 export default connect(null, mapDispatchToProps)(Producer);
+
+/*
+        <Link className={styles.wrapperA}  to={"/ep/"+this.props.name.replace(/\s/gi, '_')}>
+            <div className={styles.producerImgWrapper}>
+                <img src={this.props.photo} alt={this.props.name} className={styles.producerImg} />
+            </div>
+            <div className={styles.producerNameWrapper}>
+                <span>{this.props.name}</span>
+            </div>       
+        </Link>
+*/

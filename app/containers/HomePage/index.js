@@ -65,14 +65,35 @@ export class HomePage extends React.Component {
   };
 
   render() {
-    let content = (<LoadingIndicator />);    
+      console.log("rrrr");
+    let content = (<LoadingIndicator />);
+    let contentMostViewed = (<LoadingIndicator />);
+                   
     if (this.props.rrs) {
-        content = this.props.rrs.rhythmroulettes.map(function(rr) {
+        content = this.props.rrs.rhythmroulettes.map(function(rr, i) {
+            if(i>3){ return; }
             return <Producer  key={rr.name} name={rr.name} photo={rr.photo} youtubeLink={rr.youtubeLink} />
         });
     }
-    //handleRoute={this.props.changeRoute.bind(this,'/ep')}
-
+    
+    /*  
+    if (this.props.rrs.rhythmroulettes && this.props.rrs.rhythmroulettes[this.props.rrs.rhythmroulettes.length-1].youtubeData) {
+        
+        let sortByViewed = this.props.rrs.rhythmroulettes.sort(function(a, b) {
+            var viewA = a.youtubeData.data.items[0].statistics.viewCount;
+            var viewB = b.youtubeData.data.items[0].statistics.viewCount;
+            return viewB - viewA;
+        });
+        for(let i=0; i<sortByViewed.length; i++){
+            console.log(sortByViewed[i].youtubeData.data.items[0].statistics.viewCount);    
+        }
+        
+        contentMostViewed = sortByViewed.map(function(rr, i) {
+            if(i>3){ return; }
+            return <Producer  key={rr.name} name={rr.name} photo={rr.photo} youtubeLink={rr.youtubeLink} />
+        });
+    }      
+    */
                      
     return (
       <article>
@@ -88,11 +109,13 @@ export class HomePage extends React.Component {
             <HowTo />
 
             <section className={styles.ProducerlistWrapper}>
-                <h2>EPISODES</h2>
+                <h2>LATEST EPISODES</h2>
                 <div className={styles.ProducerItemsWrapper}>
                     {content}  
                 </div>
-            </section>   
+            </section> 
+        
+
         
         </div>
         
@@ -121,10 +144,10 @@ HomePage.propTypes = {
     React.PropTypes.object,
     React.PropTypes.bool,
   ]),
-
-  onSubmitForm: React.PropTypes.func,
-  username: React.PropTypes.string,
-  onChangeUsername: React.PropTypes.func,
+  rrs: React.PropTypes.oneOfType([
+    React.PropTypes.object,
+    React.PropTypes.bool,
+  ]),    
 };
 
 function mapDispatchToProps(dispatch) {

@@ -17,6 +17,12 @@ export const LOAD_RRS = 'boilerplate/App/LOAD_RRS';
 export const LOAD_RRS_SUCCESS = 'boilerplate/App/LOAD_RRS_SUCCESS';
 export const LOAD_RRS_ERROR = 'boilerplate/App/LOAD_RRS_ERROR';
 
+export const ADD_YOUTUBE_TO_RR = 'boilerplate/App/ADD_YOUTUBE_TO_RR';
+
+export const LOAD_YOUTUBE =         'boilerplate/App/LOAD_YOUTUBE';
+export const LOAD_YOUTUBE_SUCCESS = 'boilerplate/App/LOAD_YOUTUBE_SUCCESS';
+export const LOAD_YOUTUBE_ERROR =   'boilerplate/App/LOAD_YOUTUBE_ERROR';
+
 export const LOAD_EP =         'boilerplate/App/LOAD_EP';
 export const LOAD_EP_SUCCESS = 'boilerplate/App/LOAD_EP_SUCCESS';
 export const LOAD_EP_ERROR =   'boilerplate/App/LOAD_EP_ERROR';
@@ -24,6 +30,9 @@ export const LOAD_EP_ERROR =   'boilerplate/App/LOAD_EP_ERROR';
 export const LOAD_SHOP =         'boilerplate/App/LOAD_SHOP';
 export const LOAD_SHOP_SUCCESS = 'boilerplate/App/LOAD_SHOP_SUCCESS';
 export const LOAD_SHOP_ERROR =   'boilerplate/App/LOAD_SHOP_ERROR';
+
+export const CLEAR_SHOP =            'boilerplate/App/CLEAR_SHOP';
+export const CLEAR_SHOPIMG =         'boilerplate/App/CLEAR_SHOPIMG';
 
 export const LOAD_SHOPIMG =         'boilerplate/App/LOAD_SHOPIMG';
 export const LOAD_SHOPIMG_SUCCESS = 'boilerplate/App/LOAD_SHOPIMG_SUCCESS';

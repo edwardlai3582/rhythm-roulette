@@ -5,7 +5,7 @@
 import { take, call, put, select, fork, cancel } from 'redux-saga/effects';
 import { LOCATION_CHANGE } from 'react-router-redux';
 import { LOAD_RRS } from 'containers/App/constants';
-import { rrsLoaded, rrsLoadingError } from 'containers/App/actions';
+import { rrsLoaded, rrsLoadingError, addYoutube } from 'containers/App/actions';
 
 import request from 'utils/request';
 
@@ -14,6 +14,16 @@ import { getAll, get } from 'firebase-saga';
 export function* getRrs() {
     const rhythmroulettes = yield call(getAll, 'rhythmroulettes');
     yield put(rrsLoaded({rhythmroulettes:rhythmroulettes}));
+    
+    /*
+    const youtubeurlPre = "https://www.googleapis.com/youtube/v3/videos?id=";
+    const youtubeurlPost = "&key=AIzaSyABOvyyjtmu4ioGemSRy4SJcjtBU5DUsqA&part=statistics";
+    for(let i=0; i<rhythmroulettes.length; i++){
+        //yield call(getYoutube, [i, rhythmroulettes[i].youtubeId]);
+        let youtubeData = yield call(request, youtubeurlPre+rhythmroulettes[i].youtubeId+youtubeurlPost);
+        yield put(addYoutube(i, youtubeData));
+    }
+    */
 }
 
 /**
