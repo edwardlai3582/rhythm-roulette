@@ -27,7 +27,7 @@ import {
 
 import LoadingIndicator from 'components/LoadingIndicator';
 import Record from 'components/Record';
-
+import Footer from 'components/Footer';
 import styles from './styles.css';
 
 import Shop from 'containers/Shop';
@@ -116,6 +116,8 @@ export class EpPage extends React.Component {
                         </section>            
                     </section>
                 </section>
+            
+                <Footer />
             </article>
         );
     }

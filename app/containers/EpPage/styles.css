@@ -54,7 +54,7 @@
 }
 
 .shopWrapper h2 {
-    padding: 0;
+    padding: 0 0 1vw;
     margin: 0;
     font-size: 2vw;
     font-weight: bold;
@@ -64,11 +64,11 @@
     width: 100%;
     color: white;
     box-sizing: border-box;
-    padding: 1vw;
+    padding: 1vw 0;
 }
 
 .recordsTotalWrapper h2{
-    padding: 1vw 0 1vw 1vw;
+    padding: 0 0 1vw;
     margin: 0;
     font-size: 4vw;
     color: black;
@@ -80,6 +80,7 @@
     justify-content: space-around;
     font-family: 'Helvetica Neue', Helvetica;
     background-color: black;
+    padding: 1vw;
 }
 
 .recordWrapper {

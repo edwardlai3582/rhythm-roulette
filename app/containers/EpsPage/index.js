@@ -28,7 +28,7 @@ import H2 from 'components/H2';
 import List from 'components/List';
 import ListItem from 'components/ListItem';
 import LoadingIndicator from 'components/LoadingIndicator';
-
+import Footer from 'components/Footer';
 import styles from './styles.css';
 
 import FullSizeImgWithText from 'components/fullSizeImgWithText';
@@ -81,6 +81,8 @@ export class EpsPage extends React.Component {
                         {content}  
                     </div> 
                 </section>
+            
+                <Footer />
             </article>
         );
     }
