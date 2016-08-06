@@ -20,15 +20,13 @@ export function* getRrs() {
     
     ///*
     yield put(loadRrsForSort());
+    
     const rhythmroulettesCopy = JSON.parse(JSON.stringify(rhythmroulettes))//Object.assign({}, rhythmroulettes);
-    console.log(rhythmroulettes);    
-    console.log(rhythmroulettesCopy);
-    const youtubeurlPre = "https://www.googleapis.com/youtube/v3/videos?id=";
-    const youtubeurlPost = "&key=AIzaSyABOvyyjtmu4ioGemSRy4SJcjtBU5DUsqA&part=statistics";
+
+    const youtubeUrl = "https://edwardlai3582.com/youtube?id="
+    
     for(let i=0; i<rhythmroulettesCopy.length; i++){
-        //yield call(getYoutube, [i, rhythmroulettes[i].youtubeId]);
-        let youtubeData = yield call(request, youtubeurlPre+rhythmroulettesCopy[i].youtubeId+youtubeurlPost);
-        //yield put(addYoutube(i, youtubeData));
+        let youtubeData = yield call(request, youtubeUrl+rhythmroulettesCopy[i].youtubeId);
         console.log(youtubeData);
         rhythmroulettesCopy[i].youtubeData = youtubeData;
     }

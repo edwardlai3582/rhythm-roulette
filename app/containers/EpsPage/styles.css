@@ -13,13 +13,28 @@
 }
 
 .epsSectionWrapper h1 {
-    padding: 5px 0 5px 10px;
+    padding: 5px 0 0 10px;
     margin: 0;
     font-family: Anton, sans-serif;
     font-weight: bold;
     font-size: 5vw;
 }
 
+.sortWrapper {
+    color: gray;
+    font-size: 2.5vw;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.sortWrapper button {
+    cursor: pointer;
+}
+
+.sortSelected {
+    color: black;
+    font-weight: bolder;
+}
 
 @media only screen and (max-width: 600px) {
 

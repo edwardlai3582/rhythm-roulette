@@ -1,3 +1,14 @@
+@keyframes spin { 
+    100% { transform:rotate(360deg); }
+}
+
+.vinyl {
+    margin: 0 auto;
+    width: 10vw;
+    animation:spin 4s linear infinite;
+    margin-right: 2vw;
+}
+
 .loadingIndicatorWrapper {
     padding: 15px;
 }

@@ -81,8 +81,8 @@ export class HomePage extends React.Component {
     if (this.props.rrsForSort) {
         
         let sortByViewed = this.props.rrsForSort.rhythmroulettes.sort(function(a, b) {
-            var viewA = a.youtubeData.data.items[0].statistics.viewCount;
-            var viewB = b.youtubeData.data.items[0].statistics.viewCount;
+            var viewA = a.youtubeData.data.viewCount;
+            var viewB = b.youtubeData.data.viewCount;
             return viewB - viewA;
         });
         /*

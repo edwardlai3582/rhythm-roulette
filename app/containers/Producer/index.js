@@ -16,17 +16,13 @@ import {
 import styles from './styles.css';
 
 export class Producer extends React.Component {
-  /**
-   * Changes the route
-   *
-   * @param  {string} route The route we want to go to
-   */
+
   openRoute = (route) => {
     this.props.clearShop();  
     this.props.clearShopImg();    
     this.props.changeRoute(route);
   };
-//onClick={this.openRoute.bind(this,'/ep')}
+
   render() {
     return (
         <a className={styles.wrapperA}  onClick={this.openRoute.bind(this,'/ep/'+this.props.name.replace(/\s/gi, '_'))} >

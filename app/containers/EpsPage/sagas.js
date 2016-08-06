@@ -13,12 +13,11 @@ import { getAll, get } from 'firebase-saga';
 
 export function* getEps() {
     const rhythmroulettes = yield call(getAll, 'rhythmroulettes');
-    
-    const youtubeurlPre = "https://www.googleapis.com/youtube/v3/videos?id=";
-    const youtubeurlPost = "&key=AIzaSyABOvyyjtmu4ioGemSRy4SJcjtBU5DUsqA&part=statistics";
+
+    const youtubeUrl = "https://edwardlai3582.com/youtube?id="
     
     for(let i=0; i<rhythmroulettes.length; i++){
-        let youtubeData = yield call(request, youtubeurlPre+rhythmroulettes[i].youtubeId+youtubeurlPost);
+        let youtubeData = yield call(request, youtubeUrl+rhythmroulettes[i].youtubeId);
         console.log(youtubeData);
         rhythmroulettes[i].youtubeData = youtubeData;
     }    

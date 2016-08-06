@@ -1,9 +1,17 @@
 import React from 'react';
 
 import styles from './styles.css';
+import VINYL from './vinyl.png';
 
 function LoadingIndicator() {
   return (
+    <div className={styles.loadingIndicatorWrapper}>
+      <img src={VINYL} className={styles.vinyl}/>
+      loading...
+    </div>
+  );
+}
+/*
     <div className={styles.loadingIndicatorWrapper}>
       <div className={styles['sk-fading-circle']}>
         <div className={styles.skCircle}></div>
@@ -20,7 +28,5 @@ function LoadingIndicator() {
         <div className={styles['sk-circle12']}></div>
       </div>
     </div>
-  );
-}
-
+*/
 export default LoadingIndicator;

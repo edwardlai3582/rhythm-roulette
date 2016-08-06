@@ -38,14 +38,14 @@ export class EpsPage extends React.Component {
     }
 
     sortByViews = (a, b) => {
-        var viewA = a.youtubeData.data.items[0].statistics.viewCount;
-        var viewB = b.youtubeData.data.items[0].statistics.viewCount;
+        var viewA = a.youtubeData.data.viewCount;
+        var viewB = b.youtubeData.data.viewCount;
         return viewB - viewA;
     }
 
     sortByLikes = (a, b) => {
-        var likeA = a.youtubeData.data.items[0].statistics.likeCount;
-        var likeB = b.youtubeData.data.items[0].statistics.likeCount;
+        var likeA = a.youtubeData.data.likeCount;
+        var likeB = b.youtubeData.data.likeCount;
         return likeB - likeA;
     }
     
@@ -71,6 +71,7 @@ export class EpsPage extends React.Component {
     render() {
         let content = "";
         let sortedArray = [];
+        let selectnewest ="", selectviews="", selectlikes="";
         
         if (this.props.rrsForSortLoading) {
             content = (<LoadingIndicator />);     
@@ -78,13 +79,16 @@ export class EpsPage extends React.Component {
                        
         if (this.props.rrsForSort) {
             if(this.state.sortBy === "newest" ){
-                sortedArray = this.props.rrsForSort.rhythmroulettes.sort(this.sortByNewest);    
+                sortedArray = this.props.rrsForSort.rhythmroulettes.sort(this.sortByNewest);
+                selectnewest = styles.sortSelected;
             }
             else if(this.state.sortBy === "views" ){
-                sortedArray = this.props.rrsForSort.rhythmroulettes.sort(this.sortByViews);    
+                sortedArray = this.props.rrsForSort.rhythmroulettes.sort(this.sortByViews);
+                selectviews = styles.sortSelected;
             } 
             else if(this.state.sortBy === "likes" ){
-                sortedArray = this.props.rrsForSort.rhythmroulettes.sort(this.sortByLikes);    
+                sortedArray = this.props.rrsForSort.rhythmroulettes.sort(this.sortByLikes);  
+                selectlikes = styles.sortSelected;
             }     
                 
             content = sortedArray.map(function(rr) {
@@ -104,10 +108,10 @@ export class EpsPage extends React.Component {
                 <section className={styles.epsSectionWrapper}>
                     <h1>EPISODES</h1>
                     
-                    <div>
-                        <button onClick={this.changeSort.bind(this, 'newest')} >NEWEST</button>
-                        <button onClick={this.changeSort.bind(this, 'views')} >VIEWS</button>
-                        <button onClick={this.changeSort.bind(this, 'likes')} >LIKES</button>            
+                    <div className={styles.sortWrapper}>
+                        <button className={selectnewest} onClick={this.changeSort.bind(this, 'newest')} >NEWEST</button>
+                        <button className={selectviews} onClick={this.changeSort.bind(this, 'views')} >VIEWS</button>
+                        <button className={selectlikes} onClick={this.changeSort.bind(this, 'likes')} >LIKES</button>            
                     </div>        
             
                     <div >

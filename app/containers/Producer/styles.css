@@ -1,6 +1,6 @@
 .wrapperA {
     position: relative;
-    width: 25%;
+    width: 20%;
     text-align: center;
     font-family: Exo, 'Helvetica Neue', Helvetica;
     font-size: 2.5vw;
@@ -29,7 +29,7 @@
 
 .producerImg {
     width: 100%;
-    height: 25vw;
+    height: 20vw;
     filter: grayscale(0.5) sepia(0.5);
 }
 
@@ -37,5 +37,19 @@
     text-align: center;
     padding: 1vw 0;
     margin: 0;
-    font-size: 2vw;
+    font-size: 1.5vw;
+}
+
+@media only screen and (max-width: 800px) {
+    .wrapperA {
+        width: 25%;
+    }
+    
+    .producerImg {
+        height: 25vw;
+    } 
+    
+    .producerNameWrapper{
+        font-size: 2vw;
+    }    
 }
