@@ -72,7 +72,7 @@ export class HomePage extends React.Component {
                    
     if (this.props.rrs) {
         content = this.props.rrs.rhythmroulettes.map(function(rr, i) {
-            if(i>3){ return; }
+            if(i>4){ return; }
             return <Producer  key={rr.name} name={rr.name} photo={rr.photo} youtubeLink={rr.youtubeLink} />
         });
     }
@@ -91,7 +91,7 @@ export class HomePage extends React.Component {
         }
         */
         contentMostViewed = sortByViewed.map(function(rr, i) {
-            if(i>3){ return; }
+            if(i>4){ return; }
             return <Producer  key={rr.name} name={rr.name} photo={rr.photo} youtubeLink={rr.youtubeLink} />
         });
     }      
