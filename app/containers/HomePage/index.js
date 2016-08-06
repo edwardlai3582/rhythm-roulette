@@ -57,14 +57,14 @@ export class HomePage extends React.Component {
    */
   openRoute = (route) => {
     this.props.changeRoute(route);
-  };
+  }
 
   /**
    * Changed route to '/features'
    */
   openFeaturesPage = () => {
     this.openRoute('/features');
-  };
+  }
 
   render() {
     let content = (<LoadingIndicator />);
@@ -85,10 +85,11 @@ export class HomePage extends React.Component {
             var viewB = b.youtubeData.data.items[0].statistics.viewCount;
             return viewB - viewA;
         });
+        /*
         for(let i=0; i<sortByViewed.length; i++){
             console.log(sortByViewed[i].youtubeData.data.items[0].statistics.viewCount);    
         }
-        
+        */
         contentMostViewed = sortByViewed.map(function(rr, i) {
             if(i>3){ return; }
             return <Producer  key={rr.name} name={rr.name} photo={rr.photo} youtubeLink={rr.youtubeLink} />

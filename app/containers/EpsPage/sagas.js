@@ -18,9 +18,7 @@ export function* getEps() {
     const youtubeurlPost = "&key=AIzaSyABOvyyjtmu4ioGemSRy4SJcjtBU5DUsqA&part=statistics";
     
     for(let i=0; i<rhythmroulettes.length; i++){
-        //yield call(getYoutube, [i, rhythmroulettes[i].youtubeId]);
         let youtubeData = yield call(request, youtubeurlPre+rhythmroulettes[i].youtubeId+youtubeurlPost);
-        //yield put(addYoutube(i, youtubeData));
         console.log(youtubeData);
         rhythmroulettes[i].youtubeData = youtubeData;
     }    

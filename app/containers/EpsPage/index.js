@@ -18,13 +18,8 @@ import {
 } from 'containers/App/selectors';
 
 import { loadRrsForSort } from '../App/actions';
-
-import Button from 'components/Button';
-import H2 from 'components/H2';
-import List from 'components/List';
-import ListItem from 'components/ListItem';
-import LoadingIndicator from 'components/LoadingIndicator';
 import Footer from 'components/Footer';
+import LoadingIndicator from 'components/LoadingIndicator';
 import styles from './styles.css';
 
 import FullSizeImgWithText from 'components/fullSizeImgWithText';
@@ -33,31 +28,66 @@ import HowTo from 'components/HowTo';
 import Producer from 'containers/Producer';
 
 export class EpsPage extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {sortBy: "newest"};
+    }
 
-  componentDidMount() {
-    if(!this.props.rrsForSort){this.props.searchRrsForSort();}  
-  }
+    componentDidMount() {
+        if(!this.props.rrsForSort){this.props.searchRrsForSort();}  
+    }
+
+    sortByViews = (a, b) => {
+        var viewA = a.youtubeData.data.items[0].statistics.viewCount;
+        var viewB = b.youtubeData.data.items[0].statistics.viewCount;
+        return viewB - viewA;
+    }
+
+    sortByLikes = (a, b) => {
+        var likeA = a.youtubeData.data.items[0].statistics.likeCount;
+        var likeB = b.youtubeData.data.items[0].statistics.likeCount;
+        return likeB - likeA;
+    }
     
-  /**
-   * Changes the route
-   *
-   * @param  {string} route The route we want to go to
-   */
-  openRoute = (route) => {
-    this.props.changeRoute(route);
-  };
+    sortByNewest = (a, b) => {
+        var dateA = a.date;
+        var dateB = b.date;
+        
+        return dateB - dateA;
+    }
+    
+    changeSort = (name) => {
+        this.setState({sortBy: name});
+    }
+    
+    openRoute = (route) => {
+        this.props.changeRoute(route);
+    }
 
-  /**
-   * Changed route to '/features'
-   */
-  openFeaturesPage = () => {
-    this.openRoute('/features');
-  };
+    openFeaturesPage = () => {
+        this.openRoute('/features');
+    }
 
     render() {
-        let content = (<LoadingIndicator />);    
+        let content = "";
+        let sortedArray = [];
+        
+        if (this.props.rrsForSortLoading) {
+            content = (<LoadingIndicator />);     
+        }         
+                       
         if (this.props.rrsForSort) {
-            content = this.props.rrsForSort.rhythmroulettes.map(function(rr) {
+            if(this.state.sortBy === "newest" ){
+                sortedArray = this.props.rrsForSort.rhythmroulettes.sort(this.sortByNewest);    
+            }
+            else if(this.state.sortBy === "views" ){
+                sortedArray = this.props.rrsForSort.rhythmroulettes.sort(this.sortByViews);    
+            } 
+            else if(this.state.sortBy === "likes" ){
+                sortedArray = this.props.rrsForSort.rhythmroulettes.sort(this.sortByLikes);    
+            }     
+                
+            content = sortedArray.map(function(rr) {
                 return <Producer  key={rr.name} name={rr.name} photo={rr.photo} youtubeLink={rr.youtubeLink} />
             });
         }
@@ -73,6 +103,13 @@ export class EpsPage extends React.Component {
             
                 <section className={styles.epsSectionWrapper}>
                     <h1>EPISODES</h1>
+                    
+                    <div>
+                        <button onClick={this.changeSort.bind(this, 'newest')} >NEWEST</button>
+                        <button onClick={this.changeSort.bind(this, 'views')} >VIEWS</button>
+                        <button onClick={this.changeSort.bind(this, 'likes')} >LIKES</button>            
+                    </div>        
+            
                     <div >
                         {content}  
                     </div> 

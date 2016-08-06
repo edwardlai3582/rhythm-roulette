@@ -12,7 +12,7 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <section>
-        <p>So I build this site just to practice (also a big fan of Rhythm Roulette).</p>
+        <p>So I build this site just for practice (also a big fan of Rhythm Roulette).</p>
         <p>I don't own any content, logos, pictures, videos showed on this site.</p>
         <p>If you have any questions, this is my email: edwardlai3582@gmail.com</p>
         <p>Peace!</p>
