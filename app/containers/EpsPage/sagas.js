@@ -4,8 +4,8 @@
 
 import { take, call, put, select, fork, cancel } from 'redux-saga/effects';
 import { LOCATION_CHANGE } from 'react-router-redux';
-import { LOAD_RRS } from 'containers/App/constants';
-import { rrsLoaded, rrsLoadingError } from 'containers/App/actions';
+import { LOAD_RRSFORSORT } from 'containers/App/constants';
+import { rrsForSortLoaded, rrsForSortLoadingError } from 'containers/App/actions';
 
 import request from 'utils/request';
 
@@ -13,14 +13,26 @@ import { getAll, get } from 'firebase-saga';
 
 export function* getEps() {
     const rhythmroulettes = yield call(getAll, 'rhythmroulettes');
-    yield put(rrsLoaded({rhythmroulettes:rhythmroulettes}));
+    
+    const youtubeurlPre = "https://www.googleapis.com/youtube/v3/videos?id=";
+    const youtubeurlPost = "&key=AIzaSyABOvyyjtmu4ioGemSRy4SJcjtBU5DUsqA&part=statistics";
+    
+    for(let i=0; i<rhythmroulettes.length; i++){
+        //yield call(getYoutube, [i, rhythmroulettes[i].youtubeId]);
+        let youtubeData = yield call(request, youtubeurlPre+rhythmroulettes[i].youtubeId+youtubeurlPost);
+        //yield put(addYoutube(i, youtubeData));
+        console.log(youtubeData);
+        rhythmroulettes[i].youtubeData = youtubeData;
+    }    
+    
+    yield put(rrsForSortLoaded({rhythmroulettes:rhythmroulettes}));
 }
 
 /**
  * Watches for LOAD_REPOS action and calls handler
  */
 export function* getEpsWatcher() {
-  while (yield take(LOAD_RRS)) {
+  while (yield take(LOAD_RRSFORSORT)) {
     yield call(getEps);
   }
 }

@@ -13,15 +13,11 @@ import Helmet from 'react-helmet';
 import { createStructuredSelector } from 'reselect';
 
 import {
-  selectLoading,
-  selectError,
-    selectRrs
+    selectRrsForSort,
+    selectRrsForSortLoading    
 } from 'containers/App/selectors';
 
-import { changeUsername } from './actions';
-import { loadRrs } from '../App/actions';
-
-import { FormattedMessage } from 'react-intl';
+import { loadRrsForSort } from '../App/actions';
 
 import Button from 'components/Button';
 import H2 from 'components/H2';
@@ -39,7 +35,7 @@ import Producer from 'containers/Producer';
 export class EpsPage extends React.Component {
 
   componentDidMount() {
-    if(!this.props.rrs){this.props.searchRrs();}  
+    if(!this.props.rrsForSort){this.props.searchRrsForSort();}  
   }
     
   /**
@@ -60,8 +56,8 @@ export class EpsPage extends React.Component {
 
     render() {
         let content = (<LoadingIndicator />);    
-        if (this.props.rrs) {
-            content = this.props.rrs.rhythmroulettes.map(function(rr) {
+        if (this.props.rrsForSort) {
+            content = this.props.rrsForSort.rhythmroulettes.map(function(rr) {
                 return <Producer  key={rr.name} name={rr.name} photo={rr.photo} youtubeLink={rr.youtubeLink} />
             });
         }
@@ -90,11 +86,11 @@ export class EpsPage extends React.Component {
 
 EpsPage.propTypes = {
   changeRoute: React.PropTypes.func,
-  loading: React.PropTypes.bool,
-  error: React.PropTypes.oneOfType([
+  rrsForSort: React.PropTypes.oneOfType([
     React.PropTypes.object,
     React.PropTypes.bool,
   ]),
+  rrsForSortLoading: React.PropTypes.bool,
 };
 
 function mapDispatchToProps(dispatch) {
@@ -102,16 +98,15 @@ function mapDispatchToProps(dispatch) {
     changeRoute: (url) => dispatch(push(url)),
 
 
-    searchRrs: () => dispatch(loadRrs()),
+    searchRrsForSort: () => dispatch(loadRrsForSort()),
 
     dispatch,
   };
 }
 
 const mapStateToProps = createStructuredSelector({
-  loading: selectLoading(),
-  error: selectError(),
-  rrs: selectRrs(),
+    rrsForSort: selectRrsForSort(),
+    rrsForSortLoading: selectRrsForSortLoading(),
 });
 
 // Wrap the component to inject dispatch and state into it
