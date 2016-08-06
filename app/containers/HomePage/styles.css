@@ -12,6 +12,12 @@
     font-weight: bold;
 }
 
+@media only screen and (max-width: 500px) {
+    .ProducerlistWrapper > h2 {
+        font-size: 10vw;    
+    }    
+}
+
 .ProducerItemsWrapper {
     width: 100%;
     position: relative;
