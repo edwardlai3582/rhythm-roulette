@@ -17,7 +17,9 @@ export const LOAD_RRS = 'boilerplate/App/LOAD_RRS';
 export const LOAD_RRS_SUCCESS = 'boilerplate/App/LOAD_RRS_SUCCESS';
 export const LOAD_RRS_ERROR = 'boilerplate/App/LOAD_RRS_ERROR';
 
-export const ADD_YOUTUBE_TO_RR = 'boilerplate/App/ADD_YOUTUBE_TO_RR';
+export const LOAD_RRSFORSORT = 'boilerplate/App/LOAD_RRSFORSORT';
+export const LOAD_RRSFORSORT_SUCCESS = 'boilerplate/App/LOAD_RRSFORSORT_SUCCESS';
+export const LOAD_RRSFORSORT_ERROR = 'boilerplate/App/LOAD_RRSFORSORT_ERROR';
 
 export const LOAD_YOUTUBE =         'boilerplate/App/LOAD_YOUTUBE';
 export const LOAD_YOUTUBE_SUCCESS = 'boilerplate/App/LOAD_YOUTUBE_SUCCESS';

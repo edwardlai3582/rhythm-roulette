@@ -20,7 +20,9 @@ import {
   LOAD_RRS_SUCCESS,
   LOAD_RRS_ERROR,
 /////////////////////
-  ADD_YOUTUBE_TO_RR,    
+  LOAD_RRSFORSORT,
+  LOAD_RRSFORSORT_SUCCESS,
+  LOAD_RRSFORSORT_ERROR,   
 /////////////////////
   LOAD_EP_SUCCESS,
   LOAD_EP,
@@ -92,6 +94,24 @@ export function rrsLoadingError(error) {
   };
 }
 ///////////////////////////////////////////////////////////////////////
+export function loadRrsForSort() {
+  return {
+    type: LOAD_RRSFORSORT,
+  };
+}
+export function rrsForSortLoaded(rrsForSort) {
+  return {
+    type: LOAD_RRSFORSORT_SUCCESS,
+    rrsForSort,
+  };
+}
+export function rrsForSortLoadingError(rrsForSorterror) {
+  return {
+    type: LOAD_RRSFORSORT_ERROR,
+    rrsForSorterror,
+  };
+}
+///////////////////////////////////////////////////////////////////////
 export function loadEp() {
   return {
     type: LOAD_EP,
@@ -108,26 +128,6 @@ export function epLoaded(ep) {
 export function epLoadingError(eperror) {
   return {
     type: LOAD_EP_ERROR,
-    eperror,
-  };
-}
-///////////////////////////////////////////////////////////////////////
-export function loadYoutube() {
-  return {
-    type: LOAD_YOUTUBE,
-  };
-}
-
-export function youtubeLoaded(youtube) {
-  return {
-    type: LOAD_YOUTUBE_SUCCESS,
-    ep,
-  };
-}
-
-export function youtubeLoadingError(youtubeerror) {
-  return {
-    type: LOAD_YOUTUBE_ERROR,
     eperror,
   };
 }
@@ -250,13 +250,5 @@ export function record3LoadingError(record3error) {
   return {
     type: LOAD_RECORD3_ERROR,
     record3error,
-  };
-}
-///////////////////////////////////////////////////
-export function addYoutube(index, youtubeData) {
-  return {
-    type: ADD_YOUTUBE_TO_RR,
-    index,  
-    youtubeData,
   };
 }

@@ -15,7 +15,9 @@ import {
   LOAD_RRS,
   LOAD_RRS_ERROR,
 /////////////////////
-  ADD_YOUTUBE_TO_RR,    
+  LOAD_RRSFORSORT,
+  LOAD_RRSFORSORT_SUCCESS,
+  LOAD_RRSFORSORT_ERROR,    
 /////////////////////
   LOAD_EP_SUCCESS,
   LOAD_EP,
@@ -51,15 +53,16 @@ import { fromJS } from 'immutable';
 const initialState = fromJS({
   loading: false,
   error: false,
-  currentUser: false,
-  //userData: fromJS({
-//    repositories: false,
-  //}),
-///////////////////////////
   rrData: fromJS({
     rhythmroulettes: false,    
   }),
 ///////////////////////////
+  rrForSortLoading: false,
+  rrForSortError: false,    
+  rrForSortData: fromJS({
+    rhythmroulettes: false,    
+  }),
+///////////////////////////    
     eploading: false,
     eperror: false,    
     epData: fromJS({
@@ -113,12 +116,21 @@ function appReducer(state = initialState, action) {
         .set('error', action.error)
         .set('loading', false);
 /////////////////////////////////////////////////////////////
-    case ADD_YOUTUBE_TO_RR:
-          let rhythmroulettesArray = state.getIn(['rrData', 'rhythmroulettes']);
-          rhythmroulettesArray.rhythmroulettes[action.index].youtubeData= action.youtubeData;
-          console.log(action.index);
-          //console.log(rhythmroulettesArray);          
-      return state.setIn(['rrData', 'rhythmroulettes'], rhythmroulettesArray);
+    case LOAD_RRSFORSORT:
+      return state
+        .set('rrForSortLoading', true)
+        .set('rrForSortError', false)
+        .setIn(['rrForSortData', 'rhythmroulettes'], false);
+    case LOAD_RRSFORSORT_SUCCESS:
+          console.log("success: "+action.rrsForSort);
+      return state
+        .setIn(['rrForSortData', 'rhythmroulettes'], action.rrsForSort)
+        .set('rrForSortLoading', false);
+    case LOAD_RRSFORSORT_ERROR:
+          console.log("error: "+action.error);
+      return state
+        .set('rrForSortError', action.error)
+        .set('rrForSortLoading', false);
 /////////////////////////////////////////////////////////////
     case LOAD_EP:
       return state

@@ -13,9 +13,11 @@ import messages from './messages';
 import { createStructuredSelector } from 'reselect';
 
 import {
-  selectLoading,
-  selectError,
-    selectRrs
+    selectLoading,
+    selectError,
+    selectRrs,
+    selectRrsForSortLoading,
+    selectRrsForSort
 } from 'containers/App/selectors';
 
 import {
@@ -65,7 +67,6 @@ export class HomePage extends React.Component {
   };
 
   render() {
-      console.log("rrrr");
     let content = (<LoadingIndicator />);
     let contentMostViewed = (<LoadingIndicator />);
                    
@@ -76,10 +77,10 @@ export class HomePage extends React.Component {
         });
     }
     
-    /*  
-    if (this.props.rrs.rhythmroulettes && this.props.rrs.rhythmroulettes[this.props.rrs.rhythmroulettes.length-1].youtubeData) {
+      
+    if (this.props.rrsForSort) {
         
-        let sortByViewed = this.props.rrs.rhythmroulettes.sort(function(a, b) {
+        let sortByViewed = this.props.rrsForSort.rhythmroulettes.sort(function(a, b) {
             var viewA = a.youtubeData.data.items[0].statistics.viewCount;
             var viewB = b.youtubeData.data.items[0].statistics.viewCount;
             return viewB - viewA;
@@ -93,7 +94,7 @@ export class HomePage extends React.Component {
             return <Producer  key={rr.name} name={rr.name} photo={rr.photo} youtubeLink={rr.youtubeLink} />
         });
     }      
-    */
+    
                      
     return (
       <article>
@@ -115,7 +116,12 @@ export class HomePage extends React.Component {
                 </div>
             </section> 
         
-
+            <section className={styles.ProducerlistWrapper}>
+                <h2>MOST VIEWED EPISODES</h2>
+                <div className={styles.ProducerItemsWrapper}>
+                    {contentMostViewed}  
+                </div>
+            </section> 
         
         </div>
         
@@ -124,18 +130,6 @@ export class HomePage extends React.Component {
     );
   }
 }
-
-/*
-          <section className={`${styles.textSection} ${styles.centered}`}>
-            <H2>
-              How to Rhythm Roulette?
-            </H2>
-            <p> 1. Find record store </p>
-            <p> 2. Blind-fold producer </p>
-            <p> 3. Pick 3 random records </p>
-            <p> 4. Make a beat by sampling </p>
-          </section>
-*/
 
 HomePage.propTypes = {
   changeRoute: React.PropTypes.func,
@@ -147,7 +141,12 @@ HomePage.propTypes = {
   rrs: React.PropTypes.oneOfType([
     React.PropTypes.object,
     React.PropTypes.bool,
-  ]),    
+  ]), 
+  rrsForSort: React.PropTypes.oneOfType([
+    React.PropTypes.object,
+    React.PropTypes.bool,
+  ]),
+  rrsForSortLoading: React.PropTypes.bool,    
 };
 
 function mapDispatchToProps(dispatch) {
@@ -168,6 +167,8 @@ const mapStateToProps = createStructuredSelector({
   loading: selectLoading(),
   error: selectError(),
   rrs: selectRrs(),
+  rrsForSort: selectRrsForSort(),
+  rrsForSortLoading: selectRrsForSortLoading(),
 });
 
 // Wrap the component to inject dispatch and state into it

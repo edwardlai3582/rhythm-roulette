@@ -31,6 +31,16 @@ const selectRrs = () => createSelector(
   (globalState) => globalState.getIn(['rrData', 'rhythmroulettes'])
 );
 
+const selectRrsForSort = () => createSelector(
+  selectGlobal(),
+  (globalState) => globalState.getIn(['rrForSortData', 'rhythmroulettes'])
+);
+
+const selectRrsForSortLoading = () => createSelector(
+  selectGlobal(),
+  (globalState) => globalState.get('rrForSortLoading')
+);
+
 const selectEp = () => createSelector(
   selectGlobal(),
   (globalState) => globalState.getIn(['epData', 'ep'])
@@ -110,6 +120,8 @@ export {
     //selectRepos,
     selectLocationState,
     selectRrs,
+    selectRrsForSort,
+    selectRrsForSortLoading,    
     selectEp,
     selectShop,
     selectShopLoading,    
