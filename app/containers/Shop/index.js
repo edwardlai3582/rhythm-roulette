@@ -46,7 +46,7 @@ export class Shop extends React.Component {
         let phone = "";
         ///*
         if(this.props.shopLoading){
-            name = (<LoadingIndicator />);     
+            name = "";//(<LoadingIndicator />);     
         }            
                     
         if(this.props.shop.data){

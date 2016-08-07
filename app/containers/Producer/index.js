@@ -25,14 +25,14 @@ export class Producer extends React.Component {
 
   render() {
     return (
-        <a className={styles.wrapperA}  onClick={this.openRoute.bind(this,'/ep/'+this.props.name.replace(/\s/gi, '_'))} >
+        <Link className={styles.wrapperA}  onClick={this.openRoute.bind(this,'/ep/'+this.props.name.replace(/\s/gi, '_'))} to={"/ep/"+this.props.name.replace(/\s/gi, '_')}>
             <div className={styles.producerImgWrapper}>
                 <img src={this.props.photo} alt={this.props.name} className={styles.producerImg} />
             </div>
             <div className={styles.producerNameWrapper}>
                 <span>{this.props.name}</span>
             </div>       
-        </a>
+        </Link>
     );
   }
 }

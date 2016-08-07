@@ -29,7 +29,7 @@ export class Record extends React.Component {
                 <div className={styles.textWrapper}>
                     <p>{this.props.album}</p>
                     <p>{this.props.artist}</p>
-                    <p>{discogsLink}</p>                            
+                    <p>{discogsLink}</p>
                 </div>                
             </section>
         );

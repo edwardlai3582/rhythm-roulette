@@ -82,10 +82,10 @@ class App extends React.Component {
                 />
                 
                 <header className={headerWrapperClass}>
-                    <a className={styles.headerA}  onClick={this.openHomePage}>
+                    <Link className={styles.headerA}  to="/">
                         <img src={logoWhite} alt="massappeal" className={styles.logo} />
                         <h1>RHYTHM ROULETTE</h1>
-                    </a>
+                    </Link>
                     <nav>
                         <Link className={styles.epLink}  to={"/ep"}>
                             EPISODES
@@ -99,7 +99,7 @@ class App extends React.Component {
         );
     }
 }
-
+//onClick={this.openHomePage}
 /*
       <A className={styles.logoWrapper} href="https://twitter.com/mxstbr">
         <Img className={styles.logo} src={Banner} alt="react-boilerplate - Logo" />

@@ -4,7 +4,7 @@
     color: white;
     text-align: center;
     padding: 5px;
-    font-family: 'Helvetica Neue', Helvetica;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .recordWrapper .recordImgWRapper {
@@ -18,12 +18,17 @@
     width: 100%;
 }
 
+.textWrapper p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .discogsA {
     background-color: #FC0;
     border-radius: 3px;
     padding: 1vw;
     color: black;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @media only screen and (max-width: 600px) {

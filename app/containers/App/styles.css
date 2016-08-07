@@ -44,7 +44,7 @@ body.fontLoaded {
     transition: ease-in-out, all 0.25s ease-in-out;
     display: flex;
     justify-content:space-between;
-    align-items:baseline;
+    align-items:center;
 }
 
 .headerWrapperBlack {
@@ -60,6 +60,7 @@ body.fontLoaded {
     display: flex;
     align-items: center;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .headerA > h1 {
@@ -71,9 +72,10 @@ body.fontLoaded {
 }
 
 .headerWrapper nav {
-    margin-right: 2vw;
+    margin-right: 10px;
     font-size: 20px;
     color: white;
+    align-self:flex-end;
 }
 
 .headerWrapper nav a{
@@ -91,9 +93,11 @@ body.fontLoaded {
 
     .logo {
         width: 30%;
-    }
+    }   
+}
 
-    .headerWrapper nav a{
-        font-size: 5vw;
-    }    
+@media only screen and (max-width: 400px) {
+    .headerWrapper nav {
+        font-size: 16px;
+    }
 }

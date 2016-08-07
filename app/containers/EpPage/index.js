@@ -36,9 +36,9 @@ export class EpPage extends React.Component {
 
     componentWillMount() {
         //console.log(this.props.params.name);
-        if(!this.props.ep || this.props.ep.name !== this.props.params.name.replace(/\_/gi, ' ')){
+        //if(!this.props.ep || this.props.ep.name !== this.props.params.name.replace(/\_/gi, ' ')){
           this.props.searchEp();     
-        }         
+        //}         
     }
 
     render() {
