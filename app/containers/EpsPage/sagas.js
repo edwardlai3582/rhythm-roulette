@@ -15,12 +15,22 @@ export function* getEps() {
     const rhythmroulettes = yield call(getAll, 'rhythmroulettes');
 
     const youtubeUrl = "https://edwardlai3582.com/youtube?id="
-    
+    /*
     for(let i=0; i<rhythmroulettes.length; i++){
         let youtubeData = yield call(request, youtubeUrl+rhythmroulettes[i].youtubeId);
         console.log(youtubeData);
         rhythmroulettes[i].youtubeData = youtubeData;
-    }    
+    }  
+    */
+    let callArray=[];
+    for(let i=0; i<rhythmroulettes.length; i++){
+        callArray.push(call(request, youtubeUrl+rhythmroulettes[i].youtubeId));
+    }      
+    
+    let callArrayResult = yield callArray;
+    for(var i=0; i<callArrayResult.length; i++){
+        rhythmroulettes[i].youtubeData = callArrayResult[i];    
+    }
     
     yield put(rrsForSortLoaded({rhythmroulettes:rhythmroulettes}));
 }

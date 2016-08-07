@@ -24,14 +24,25 @@ export function* getRrs() {
     const rhythmroulettesCopy = JSON.parse(JSON.stringify(rhythmroulettes))//Object.assign({}, rhythmroulettes);
 
     const youtubeUrl = "https://edwardlai3582.com/youtube?id="
-    
+    /*
     for(let i=0; i<rhythmroulettesCopy.length; i++){
         let youtubeData = yield call(request, youtubeUrl+rhythmroulettesCopy[i].youtubeId);
         console.log(youtubeData);
         rhythmroulettesCopy[i].youtubeData = youtubeData;
     }
+    */
+    let callArray=[];
+    for(let i=0; i<rhythmroulettesCopy.length; i++){
+        callArray.push(call(request, youtubeUrl+rhythmroulettesCopy[i].youtubeId));
+    }      
+    
+    let callArrayResult = yield callArray;
+    for(var i=0; i<callArrayResult.length; i++){
+        rhythmroulettesCopy[i].youtubeData = callArrayResult[i];    
+    }    
+    
+    
     yield put(rrsForSortLoaded({rhythmroulettes:rhythmroulettesCopy}));
-    //*/
 }
 
 /**
