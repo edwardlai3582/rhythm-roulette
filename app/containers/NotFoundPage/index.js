@@ -12,20 +12,14 @@ import messages from './messages';
 import { FormattedMessage } from 'react-intl';
 import Button from 'components/Button';
 import H1 from 'components/H1';
+import styles from './styles.css';
 
 export function NotFound(props) {
   return (
-    <article>
+    <article className={styles.notFoundWRapper}>
       <H1>
         <FormattedMessage {...messages.header} />
       </H1>
-      <Button
-        handleRoute={function redirect() {
-          props.changeRoute('/');
-        }}
-      >
-        <FormattedMessage {...messages.homeButton} />
-      </Button>
     </article>
   );
 }
