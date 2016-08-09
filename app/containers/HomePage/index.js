@@ -126,7 +126,7 @@ export class HomePage extends React.Component {
         
         </div>
         
-        <Footer />
+     
       </article>
     );
   }

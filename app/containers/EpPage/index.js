@@ -114,7 +114,7 @@ export class EpPage extends React.Component {
                     </section>
                 </section>
             
-                <Footer />
+               
             </article>
         );
     }

@@ -1,6 +1,6 @@
 .epPageWrapper {
     position: relative;
-    top: 76px;
+    padding-top: 76px;
     width: 100%;
     min-height: calc(100vh - 76px);
     background-color: #FC0;

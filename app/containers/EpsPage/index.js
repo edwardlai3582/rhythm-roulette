@@ -119,7 +119,7 @@ export class EpsPage extends React.Component {
                     </div> 
                 </section>
             
-                <Footer />
+         
             </article>
         );
     }

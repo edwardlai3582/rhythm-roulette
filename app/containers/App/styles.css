@@ -84,6 +84,7 @@ body.fontLoaded {
 
 .epLink{
     color: white;
+    margin-left: 1vw;
 }
 
 @media only screen and (max-width: 600px) {
