@@ -22,7 +22,7 @@ body.fontLoaded {
 
 /* Open Sans */
 :global(#app) {
-    background-color: #FAFAFA;
+    background-color: #FC0;
     min-height: 100%;
     min-width: 100%;
 }
