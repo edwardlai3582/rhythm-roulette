@@ -20,7 +20,7 @@ import { fromJS } from 'immutable';
 
 const initialState = fromJS({ });
 
-function epReducer(state = initialState, action) {
+function uploadReducer(state = initialState, action) {
     switch (action.type) {
     /*        
     case LOAD_EP:
@@ -44,4 +44,4 @@ function epReducer(state = initialState, action) {
     }
 }
 
-export default epReducer;
+export default uploadReducer;

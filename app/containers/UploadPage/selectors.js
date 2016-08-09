@@ -4,7 +4,7 @@
 
 import { createSelector } from 'reselect';
 
-const selectEps   = () => (state) => state.get('eps');
+const selectAuth   = () => (state) => state.get('auth');
 
 const selectEpsData   = () => createSelector(
   selectEps(),
@@ -12,7 +12,6 @@ const selectEpsData   = () => createSelector(
 );
 
 export {
-  selectEps,
-  selectEpsData,
+  selectAuth
 };
    
