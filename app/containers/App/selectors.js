@@ -20,12 +20,7 @@ const selectError = () => createSelector(
   selectGlobal(),
   (globalState) => globalState.get('error')
 );
-/*
-const selectRepos = () => createSelector(
-  selectGlobal(),
-  (globalState) => globalState.getIn(['userData', 'repositories'])
-);
-*/
+
 const selectRrs = () => createSelector(
   selectGlobal(),
   (globalState) => globalState.getIn(['rrData', 'rhythmroulettes'])
@@ -117,7 +112,6 @@ export {
     selectCurrentUser,
     selectLoading,
     selectError,
-    //selectRepos,
     selectLocationState,
     selectRrs,
     selectRrsForSort,

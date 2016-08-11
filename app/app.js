@@ -35,7 +35,7 @@ firebase.initializeApp(config);
 
 
 // Import Language Provider
-import LanguageProvider from 'containers/LanguageProvider';
+//import LanguageProvider from 'containers/LanguageProvider';
 
 // Observe loading of Open Sans (to remove open sans, remove the <link> tag in
 // the index.html file and this observer)
@@ -86,10 +86,9 @@ const rootRoute = {
   childRoutes: createRoutes(store),
 };
 
-const render = (translatedMessages) => {
+const render = () => {
   ReactDOM.render(
     <Provider store={store}>
-      <LanguageProvider messages={translatedMessages}>
         <Router
           history={history}
           routes={rootRoute}
@@ -99,26 +98,27 @@ const render = (translatedMessages) => {
             applyRouterMiddleware(useScroll())
           }
         />
-      </LanguageProvider>
     </Provider>,
     document.getElementById('app')
   );
 };
 
 // Hot reloadable translation json files
+/*
 if (module.hot) {
   // modules.hot.accept does not accept dynamic dependencies,
   // have to be constants at compile-time
   module.hot.accept('./i18n', () => {
-    render(translationMessages);
+    render();
   });
 }
+*/
 
 // Chunked polyfill for browsers without Intl support
 if (!window.Intl) {
   System.import('intl').then(() => render(translationMessages));
 } else {
-  render(translationMessages);
+  render();
 }
 
 // Install ServiceWorker and AppCache in the end since
