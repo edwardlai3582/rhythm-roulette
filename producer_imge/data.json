@@ -1,6 +1,24 @@
 {
     "rhythmroulettes": [
         {
+            "name":"Esta",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/ESTA.jpg?alt=media&token=e19e06a1-823b-4e26-b593-ba2392744839",
+            "date": "1472761834",                     
+            "youtubeId": "HOrC92IqCzw"
+        },  
+        {
+            "name":"Thes One",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Thes%20One.jpg?alt=media&token=dc13f379-ddfa-45be-90d7-78d32d8f14a1",
+            "date": "1472157091",                     
+            "youtubeId": "Z95fxi6g9Is"
+        },        
+        {
+            "name":"Iman Omari",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Iman%20Omari.jpg?alt=media&token=4416c567-778a-47db-be0e-ee2f093a03b0",
+            "date": "1471540873",                     
+            "youtubeId": "s1QbEepN0nc"
+        },        
+        {
             "name":"Childish Major",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Childish%20Major.jpg?alt=media&token=f9b71bc5-807c-48a9-8054-663bc510ee9c",
             "date": "1470350457",                     
@@ -344,6 +362,78 @@
         }
     ],
     "eps":{
+        "Esta":{
+            "name":"Esta",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/ESTA.jpg?alt=media&token=e19e06a1-823b-4e26-b593-ba2392744839",
+            "date": "1472761834",                     
+            "youtubeId": "HOrC92IqCzw",
+            "placeid": "ChIJ62_JwUO7woARHpFTQ5EZ42s",
+            "records": [
+                {
+                    "artist": "The Irish Rovers",
+                    "album": "Tales To Warm Your Mind",
+                    "master_id": "570428"
+                },
+                {
+                    "artist": "The Ritchie Family",
+                    "album": "Arabian Nights",
+                    "master_id": "117703"
+                },
+                {
+                    "artist": "Robert Yanes",
+                    "album": "Disco de Oro",
+                    "master_id": ""
+                }
+            ]            
+        },  
+        "Thes One":{
+            "name":"Thes One",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Thes%20One.jpg?alt=media&token=dc13f379-ddfa-45be-90d7-78d32d8f14a1",
+            "date": "1472157091",                     
+            "youtubeId": "Z95fxi6g9Is",
+            "placeid": "ChIJ6RZ4hA21woARcNzmVgTbLSo",
+            "records": [
+                {
+                    "artist": "Orquesta Conexion Latina",
+                    "album": "Un Poco Loco",
+                    "master_id": "614509"
+                },
+                {
+                    "artist": "Joanna Gardner",
+                    "album": "Joanna Gardner",
+                    "master_id": "325519"
+                },
+                {
+                    "artist": "The Modern Jazz Quartet",
+                    "album": "The Sheriff",
+                    "master_id": "302857"
+                }
+            ]            
+        },         
+        "Iman Omari":{
+            "name":"Iman Omari",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Iman%20Omari.jpg?alt=media&token=4416c567-778a-47db-be0e-ee2f093a03b0",
+            "date": "1471540873",                     
+            "youtubeId": "s1QbEepN0nc",
+            "placeid": "",
+            "records": [
+                {
+                    "artist": "Various",
+                    "album": "Vintage On Vinyl - The Essential Grooves Part 3",
+                    "master_id": "1315677"
+                },
+                {
+                    "artist": "Hanni El Khatib",
+                    "album": "Moonlight",
+                    "master_id": "785868"
+                },
+                {
+                    "artist": "Earth, Wind & Fire",
+                    "album": "Electric Universe",
+                    "master_id": "99452"
+                }
+            ]            
+        },        
         "Childish Major":{
             "name":"Childish Major",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Childish%20Major.jpg?alt=media&token=f9b71bc5-807c-48a9-8054-663bc510ee9c",
