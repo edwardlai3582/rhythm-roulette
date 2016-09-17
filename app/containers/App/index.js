@@ -90,9 +90,6 @@ class App extends React.Component {
                         <Link className={styles.epLink}  to={"/ep"}>
                             EPISODES
                         </Link>
-                        <Link className={styles.epLink}  to={"/upload"}>
-                            UPLOAD
-                        </Link>
                     </nav>
                 </header>
             
