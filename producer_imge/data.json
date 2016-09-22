@@ -1,6 +1,12 @@
 {
     "rhythmroulettes": [
         {
+            "name":"Jake One",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Jake%20One.jpg?alt=media&token=118545a4-ebce-418d-ae51-9ad00856f4b1",
+            "date": "1474565517",                     
+            "youtubeId": "AwLi87C25wQ"
+        },
+        {
             "name":"Ayatollah",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Ayatollah.jpg?alt=media&token=713cfda0-d91d-48cc-abd1-b6ed72a04455",
             "date": "1474016512",                     
@@ -368,6 +374,30 @@
         }
     ],
     "eps":{
+        "Jake One":{
+            "name":"Jake One",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Jake%20One.jpg?alt=media&token=118545a4-ebce-418d-ae51-9ad00856f4b1",
+            "date": "1474565517",                     
+            "youtubeId": "AwLi87C25wQ",
+            "placeid": "ChIJ6Sd77S0VkFQRK6r9ouHmp-w",
+            "records": [
+                {
+                    "artist": "Herbie Hancock",
+                    "album": "The Best Of Herbie Hancock",
+                    "master_id": "416058"
+                },
+                {
+                    "artist": "The Manhattans",
+                    "album": "The Manhattans",
+                    "master_id": "247218"
+                },
+                {
+                    "artist": "Reverend E. Stanley Branch",
+                    "album": "Another Message From The Services of Our Tent Meetings",
+                    "master_id": ""
+                }
+            ]            
+        },          
         "Ayatollah":{
             "name":"Ayatollah",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Ayatollah.jpg?alt=media&token=713cfda0-d91d-48cc-abd1-b6ed72a04455",
