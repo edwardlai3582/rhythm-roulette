@@ -23,7 +23,7 @@ import FontFaceObserver from 'fontfaceobserver';
 import useScroll from 'react-router-scroll';
 import configureStore from './store';
 
-
+/*
 import firebase from 'firebase';
 const config = {
     apiKey: "AIzaSyABOvyyjtmu4ioGemSRy4SJcjtBU5DUsqA",
@@ -32,7 +32,7 @@ const config = {
     storageBucket: "rhythmroulette-78b71.appspot.com",    
 };
 firebase.initializeApp(config);
-
+*/
 
 // Import Language Provider
 //import LanguageProvider from 'containers/LanguageProvider';
