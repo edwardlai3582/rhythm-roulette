@@ -1,6 +1,18 @@
 {
     "rhythmroulettes": [
         {
+            "name":"Nick Hook",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Nick%20Hook.jpg?alt=media&token=bfdedee4-0a38-4a9f-ba98-6dddcc785104",
+            "date": "1475776937",                     
+            "youtubeId": "RBveQ9gXkAw"
+        },
+        {
+            "name":"Stro Elliot",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Stro%20Elliot.jpg?alt=media&token=e6835396-2b74-4a86-a7fa-8038891baa4b",
+            "date": "1475172864",                     
+            "youtubeId": "kOx2rbcfTMs"
+        },
+        {
             "name":"Jake One",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Jake%20One.jpg?alt=media&token=118545a4-ebce-418d-ae51-9ad00856f4b1",
             "date": "1474565517",                     
@@ -374,6 +386,54 @@
         }
     ],
     "eps":{
+        "Nick Hook":{
+            "name":"Nick Hook",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Nick%20Hook.jpg?alt=media&token=bfdedee4-0a38-4a9f-ba98-6dddcc785104",
+            "date": "1475776937",                     
+            "youtubeId": "RBveQ9gXkAw",
+            "placeid": "ChIJr96CSp1ZwokRvJd4ai6oKXM",
+            "records": [
+                {
+                    "artist": "Love Sculpture",
+                    "album": "Blues Helping",
+                    "master_id": "232973"
+                },
+                {
+                    "artist": "Ronnie Foster",
+                    "album": "Sweet Revival",
+                    "master_id": "228200"
+                },
+                {
+                    "artist": "Gordon Henderson & U Convention",
+                    "album": "The Highest Bidder / Hard World",
+                    "master_id": "8563649"
+                }
+            ]            
+        }, 
+        "Stro Elliot":{
+            "name":"Stro Elliot",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Stro%20Elliot.jpg?alt=media&token=e6835396-2b74-4a86-a7fa-8038891baa4b",
+            "date": "1475172864",                     
+            "youtubeId": "kOx2rbcfTMs",
+            "placeid": "ChIJKWQhpljbwoARWvHyjA7fkjk",
+            "records": [
+                {
+                    "artist": "Credo",
+                    "album": "The Great Day",
+                    "master_id": ""
+                },
+                {
+                    "artist": "Rob Mullins",
+                    "album": "Dancing Through The Day",
+                    "master_id": "8372520"
+                },
+                {
+                    "artist": "The Fantastic Los Vegas",
+                    "album": "The Newest Sound In Sounds",
+                    "master_id": "512466"
+                }
+            ]            
+        }, 
         "Jake One":{
             "name":"Jake One",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Jake%20One.jpg?alt=media&token=118545a4-ebce-418d-ae51-9ad00856f4b1",
