@@ -1,6 +1,12 @@
 {
     "rhythmroulettes": [
         {
+            "name":"Wondagurl",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Wondagurl.jpg?alt=media&token=6fd99008-664f-4ada-a352-7389bb1d98a3",
+            "date": "1476417374",                     
+            "youtubeId": "m5q1ckVzOBk"
+        },
+        {
             "name":"Nick Hook",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Nick%20Hook.jpg?alt=media&token=bfdedee4-0a38-4a9f-ba98-6dddcc785104",
             "date": "1475776937",                     
@@ -386,6 +392,30 @@
         }
     ],
     "eps":{
+        "Wondagurl":{
+            "name":"Wondagurl",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Wondagurl.jpg?alt=media&token=6fd99008-664f-4ada-a352-7389bb1d98a3",
+            "date": "1476417374",                     
+            "youtubeId": "m5q1ckVzOBk",
+            "placeid": "ChIJOdyG5OM0K4gRYGhH2tJIXT0",
+            "records": [
+                {
+                    "artist": "Factory Floor",
+                    "album": "Untitled",
+                    "master_id": "409535"
+                },
+                {
+                    "artist": "Images In Vogue",
+                    "album": "In The House",
+                    "master_id": "535834"
+                },
+                {
+                    "artist": "The Magnolias",
+                    "album": "Concrete Pillbox",
+                    "master_id": "2584325"
+                }
+            ] 
+        },
         "Nick Hook":{
             "name":"Nick Hook",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Nick%20Hook.jpg?alt=media&token=bfdedee4-0a38-4a9f-ba98-6dddcc785104",

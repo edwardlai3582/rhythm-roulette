@@ -14,7 +14,7 @@ import { createStructuredSelector } from 'reselect';
 
 import {
     selectRrsForSort,
-    selectRrsForSortLoading    
+    selectRrsForSortLoading
 } from 'containers/App/selectors';
 
 import { loadRrsForSort } from '../App/actions';
@@ -28,7 +28,7 @@ import HowTo from 'components/HowTo';
 import Producer from 'containers/Producer';
 
 export class EpsPage extends React.Component {
-    constructor(props) {
+    constructor (props) {
         super(props);
         this.state = {sortBy: "newest"};
     }
@@ -92,7 +92,7 @@ export class EpsPage extends React.Component {
             }     
                 
             content = sortedArray.map(function(rr) {
-                return <Producer  key={rr.name} name={rr.name} photo={rr.photo} youtubeLink={rr.youtubeLink} />
+                return <Producer key={rr.name} name={rr.name} photo={rr.photo} youtubeLink={rr.youtubeLink} />
             });
         }
         
@@ -112,11 +112,10 @@ export class EpsPage extends React.Component {
                         <button className={selectnewest} onClick={this.changeSort.bind(this, 'newest')} >NEWEST</button>
                         <button className={selectviews} onClick={this.changeSort.bind(this, 'views')} >VIEWS</button>
                         <button className={selectlikes} onClick={this.changeSort.bind(this, 'likes')} >LIKES</button>            
-                    </div>        
-            
-                    <div >
-                        {content}  
-                    </div> 
+                    </div>       
+                    <div>
+                        {content} 
+                    </div>
                 </section>
             
          
