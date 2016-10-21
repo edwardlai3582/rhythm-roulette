@@ -1,6 +1,12 @@
 {
     "rhythmroulettes": [
         {
+            "name":"TENDAI “BABA” MARAIRE",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/TENDAI%20%E2%80%9CBABA%E2%80%9D%20MARAIRE.jpg?alt=media&token=a5ec9924-5b7d-4878-9035-e9fec12faeb0",
+            "date": "1477017122",                     
+            "youtubeId": "A7orRIfVAsg"
+        },
+        {
             "name":"Wondagurl",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Wondagurl.jpg?alt=media&token=6fd99008-664f-4ada-a352-7389bb1d98a3",
             "date": "1476417374",                     
@@ -392,6 +398,30 @@
         }
     ],
     "eps":{
+        "TENDAI “BABA” MARAIRE":{
+            "name":"TENDAI “BABA” MARAIRE",
+            "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/TENDAI%20%E2%80%9CBABA%E2%80%9D%20MARAIRE.jpg?alt=media&token=a5ec9924-5b7d-4878-9035-e9fec12faeb0",
+            "date": "1477017122",                     
+            "youtubeId": "A7orRIfVAsg",
+            "placeid": "ChIJE373mDIVkFQRpVL23Kp231Y",
+            "records": [
+                {
+                    "artist": "Misa Panamericana",
+                    "album": "Grabada En La Catedral de Cuernavaca, Morelos",
+                    "master_id": "5246394"
+                },
+                {
+                    "artist": "Les Troubadours Du Roi Baudouin",
+                    "album": "Missa Luba",
+                    "master_id": "173842"
+                },
+                {
+                    "artist": "Sukay",
+                    "album": "Pacha Siku Traditional Music Of The Andes",
+                    "master_id": "4276417"
+                }
+            ] 
+        },   
         "Wondagurl":{
             "name":"Wondagurl",
             "photo": "https://firebasestorage.googleapis.com/v0/b/rhythmroulette-78b71.appspot.com/o/Wondagurl.jpg?alt=media&token=6fd99008-664f-4ada-a352-7389bb1d98a3",
