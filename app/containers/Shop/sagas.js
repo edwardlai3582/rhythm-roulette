@@ -14,7 +14,7 @@ import shopimgSagas from 'containers/Shopimg/sagas';
 export function* getShop(placeid) {
     //console.log("placeid= "+placeid);
     
-    const requestURL = "https://edwardlai3582.com/goo?placeid="+placeid;
+    const requestURL = "https://edwardlai3582.herokuapp.com/goo?placeid="+placeid;
 
     // Call our request helper (see 'utils/request')
     const shop = yield call(request, requestURL);

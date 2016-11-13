@@ -23,7 +23,7 @@ export function* getRrs() {
     
     const rhythmroulettesCopy = JSON.parse(JSON.stringify(rhythmroulettes))//Object.assign({}, rhythmroulettes);
 
-    const youtubeUrl = "https://edwardlai3582.com/youtube?id="
+    const youtubeUrl = "https://edwardlai3582.herokuapp.com/youtube?id="
     /*
     for(let i=0; i<rhythmroulettesCopy.length; i++){
         let youtubeData = yield call(request, youtubeUrl+rhythmroulettesCopy[i].youtubeId);

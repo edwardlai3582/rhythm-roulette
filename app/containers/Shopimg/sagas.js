@@ -11,7 +11,7 @@ import { selectLocationState } from 'containers/App/selectors';
 export function* getShopimg(photo_reference) {
     //console.log("placeid= "+placeid);
     
-    const requestURL = "https://edwardlai3582.com/goophoto?photoreference="+photo_reference;
+    const requestURL = "https://edwardlai3582.herokuapp.com/goophoto?photoreference="+photo_reference;
 
     // Call our request helper (see 'utils/request')
     const shopimg = yield call(request, requestURL);

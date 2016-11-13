@@ -14,7 +14,7 @@ import { getAll, get } from 'firebase-saga';
 export function* getEps() {
     const rhythmroulettes = yield call(getAll, 'rhythmroulettes');
 
-    const youtubeUrl = "https://edwardlai3582.com/youtube?id="
+    const youtubeUrl = "https://edwardlai3582.herokuapp.com/youtube?id="
     /*
     for(let i=0; i<rhythmroulettes.length; i++){
         let youtubeData = yield call(request, youtubeUrl+rhythmroulettes[i].youtubeId);
